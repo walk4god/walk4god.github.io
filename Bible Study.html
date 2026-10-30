@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<script>if(location.protocol==="http:"&&location.hostname.indexOf("walk4god")>-1){location.replace("https://"+location.host+location.pathname+location.search+location.hash)}</script>
+<title>Weekly Bible Study | Walk4God Church</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#f7f6fb; --surface:#ffffff; --fg:#1f1a2e; --muted:#5d566e;
+  --accent:#4b2a7b; --accent-2:#b8892c; --line:#e3dfec; --hero-fg:#ffffff; --hero-bg:#2c1850;
+  --display:"Libre Caslon Display", Georgia, "Times New Roman", serif;
+  --body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141020; --surface:#1e182d; --fg:#ece8f5; --muted:#a79fba;
+  --accent:#b99bea; --accent-2:#e0b45a; --line:#332a47; --hero-bg:#24133f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141020; --surface:#1e182d; --fg:#ece8f5; --muted:#a79fba;
+  --accent:#b99bea; --accent-2:#e0b45a; --line:#332a47; --hero-bg:#24133f; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent-2);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
+header{position:sticky;top:0;z-index:10;background:var(--surface);border-bottom:1px solid var(--line)}
+.contact-strip{background:var(--hero-bg);color:var(--hero-fg);font-size:13px}
+.contact-strip .wrap{display:flex;flex-wrap:wrap;gap:6px 20px;padding-block:6px;justify-content:flex-end}
+.contact-strip a{color:var(--hero-fg);text-decoration:none}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 24px;padding-block:12px}
+.logo{font-family:var(--display);font-size:28px;letter-spacing:.02em;color:var(--fg);text-decoration:none;line-height:1}
+.logo span{color:var(--accent-2)}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 18px}
+nav a{color:var(--fg);text-decoration:none;font-weight:600;font-size:15px;padding-block:4px;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--accent-2)}
+nav a.give{color:var(--accent)}
+.hero{background:var(--hero-bg);color:var(--hero-fg)}
+.hero .wrap{padding-block:56px 60px}
+.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:700;color:var(--accent-2)}
+.hero h1{font-family:var(--display);font-weight:400;font-size:clamp(36px,7vw,60px);line-height:1.08;margin:10px 0 14px;text-wrap:balance}
+.hero p{max-width:62ch;font-size:18px;opacity:.9;margin:0 0 24px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;font-size:15px;border:0;cursor:pointer;font-family:inherit}
+.btn.primary{background:var(--accent-2);color:#1f1a2e}
+.btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.6);color:var(--hero-fg)}
+section{padding-block:48px;border-bottom:1px solid var(--line)}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,5vw,40px);line-height:1.15;margin:6px 0 14px}
+.intro{color:var(--muted);max-width:70ch;margin:0 0 24px}
+ol.qs{list-style:none;margin:0;padding:0;counter-reset:q;display:grid;gap:14px;max-width:820px}
+ol.qs li{counter-increment:q;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px 18px 66px;position:relative}
+ol.qs li::before{content:counter(q);position:absolute;left:18px;top:16px;width:34px;height:34px;border-radius:50%;
+  background:var(--hero-bg);color:#fff;font-weight:700;display:grid;place-items:center;font-size:15px}
+.ref{display:block;font-weight:700;color:var(--accent);margin-bottom:2px}
+.closing{max-width:820px;margin-top:26px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent-2);border-radius:10px;padding:16px 20px}
+.closing blockquote{margin:6px 0 0;font-family:var(--display);font-size:19px;line-height:1.5}
+.next{color:var(--muted);font-size:15px;margin-top:22px}
+.quiz-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px;max-width:820px}
+.score{font-weight:700;color:var(--accent);font-size:17px}
+.mc{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:16px;max-width:820px;counter-reset:m}
+.mc>li{counter-increment:m;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.mc .qt{font-weight:600;margin:2px 0 12px}
+.mc .qt::before{content:counter(m) ". "}
+.choices{display:grid;gap:8px}
+.choice{display:block;width:100%;text-align:left;font:inherit;font-size:15px;color:var(--fg);background:var(--bg);border:1.5px solid var(--line);
+  border-radius:10px;padding:10px 14px;cursor:pointer}
+.choice:hover:not(:disabled){border-color:var(--accent)}
+.choice b{color:var(--accent);margin-right:8px}
+.choice:disabled{cursor:default}
+.choice.right{background:#e3f2e1;border-color:#2e6b34;color:#1f1a2e}
+.choice.wrong{background:#f8e3e1;border-color:#9b1c1c;color:#1f1a2e}
+.choice.right b,.choice.wrong b{color:#1f1a2e}
+.fb{margin:10px 0 0;font-weight:600;font-size:15px}
+.fb.ok{color:#2e6b34}.fb.no{color:#9b1c1c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .fb.ok{color:#7bc47f}:root:not([data-theme="light"]) .fb.no{color:#f08a80}}
+.btn.outline{background:transparent;border:1.5px solid var(--accent);color:var(--accent)}
+.final{max-width:820px;margin-top:18px;display:none;align-items:center;flex-wrap:wrap;gap:12px 20px;background:var(--surface);border:1px solid var(--line);
+  border-left:4px solid var(--accent-2);border-radius:10px;padding:16px 20px}
+.final.show{display:flex}
+footer{padding-block:32px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+@media (max-width:640px){ol.qs li{padding:16px 16px 16px 58px} ol.qs li::before{left:14px;width:30px;height:30px}}
+@media print{
+  header,footer,.btns,.next,.score,.final,.fb{display:none}
+  .choice{border:1px solid #999;background:#fff}
+  .hero{background:none;color:#000} .hero .wrap{padding-block:0 10px}
+  body{background:#fff;color:#000}
+  ol.qs li{break-inside:avoid;border-color:#ccc}
+  ol.qs li::before{background:#fff;color:#000;border:1px solid #000}
+  section{padding-block:10px;border:0}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="contact-strip"><div class="wrap">
+    <a href="tel:+18777745356">877-774-5356</a>
+    <a href="tel:+12145010399">214-501-0399</a>
+  </div></div>
+  <div class="wrap bar">
+    <a class="logo" href="index.html#home">WALK<span>4</span>GOD</a>
+    <nav aria-label="Main"><ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#/about">About Us</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#/sermons">Sermons</a></li>
+      <li><a href="index.html#giving" class="give">Giving</a></li>
+      <li><a href="index.html#/contact">Contact Us</a></li>
+    </ul></nav>
+  </div>
+</header>
+<main>
+<div class="hero"><div class="wrap">
+  <div class="eyebrow">Wednesday Bible Study · <span id="week-range"></span></div>
+  <h1 id="study-title">This Week's Bible Study</h1>
+  <p id="study-intro">Join us Wednesday at 7:00 PM. Read each scripture, then talk through the question with your group or family.</p>
+  <div class="btns">
+    <button class="btn primary" type="button" onclick="window.print()">Print this study</button>
+    <a class="btn ghost" href="index.html#teachings">Back to Home</a>
+  </div>
+</div></div>
+
+<section><div class="wrap">
+  <p class="intro">Bible Study meets every <b>Wednesday at 7:00 PM</b>. A new study is posted here each Wednesday. Scriptures are from the King James Version.</p>
+  <ol class="qs" id="questions"></ol>
+  <div class="closing" id="closing"></div>
+  <p class="next" id="next-study"></p>
+</div></section>
+
+<section id="quiz"><div class="wrap">
+  <div class="quiz-head">
+    <div><div class="eyebrow">Test Yourself</div><h2 style="margin-bottom:4px">Multiple-Choice Quiz</h2></div>
+    <div class="score" id="score" aria-live="polite">Score: 0 of 10</div>
+  </div>
+  <p class="intro" style="margin-bottom:0">Tap the answer you think is right. You'll see right away if it's correct, with the scripture to read.</p>
+  <ol class="mc" id="mc"></ol>
+  <div class="final" id="final" aria-live="polite">
+    <div id="final-text" style="font-weight:700;font-size:17px"></div>
+    <button class="btn outline" type="button" id="retry">Try again</button>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <span>© 2026 Walk4God. All rights reserved.</span>
+  <span><a href="tel:+18777745356" style="color:inherit;text-decoration:none">877-774-5356</a> · <a href="index.html#/contact" style="color:inherit">Contact Us</a></span>
+</div></footer>
+
+<script>
+/* Weekly Bible studies. A new one shows every Wednesday (Central Time) and the list repeats after the last one.
+   To add a study, copy one { ... } block, change the words, and keep the commas between blocks. */
+var STUDIES = [
+{ title:"Walking with God",
+  intro:"What it means to walk daily with the Lord, step by step, in faith and obedience.",
+  q:[
+  ["Genesis 5:22–24","Scripture says Enoch \"walked with God\" for 300 years. What do you think a daily walk with God looked like for him, and what might it look like for us today?"],
+  ["Amos 3:3","\"Can two walk together, except they be agreed?\" In what areas of our lives might we be out of agreement with God, and how do we get back in step?"],
+  ["Micah 6:8","God asks us to do justly, love mercy and walk humbly with Him. Which of these three is hardest for you, and why?"],
+  ["Psalm 1:1–3","What does it mean not to walk in the counsel of the ungodly? Where do we get \"counsel\" today without realizing it?"],
+  ["Psalm 119:105","God's Word is a lamp to our feet. A lamp shows the next few steps, not the whole road. What does that teach us about trusting God?"],
+  ["Proverbs 3:5–6","What does it look like in real life to acknowledge God \"in all thy ways\"? Share a time He directed your path."],
+  ["Galatians 5:16, 25","What is the difference between living in the Spirit and walking in the Spirit?"],
+  ["1 John 1:7","What does it mean to \"walk in the light,\" and how does it affect our fellowship with one another?"],
+  ["Ephesians 5:15–16","Paul tells us to walk carefully and redeem the time. What are some ways we waste time that could be given to God?"],
+  ["Isaiah 40:31","Those who wait on the Lord \"shall walk, and not faint.\" When have you felt weary in your walk, and how did God renew your strength?"]],
+  close:["Colossians 2:6","As ye have therefore received Christ Jesus the Lord, so walk ye in him."] },
+
+{ title:"Living by Faith",
+  intro:"What faith is, where it comes from, and how it shows up in the way we live.",
+  q:[
+  ["Hebrews 11:1","How would you explain faith to someone who has never read the Bible, using this verse?"],
+  ["Hebrews 11:6","Why is it impossible to please God without faith? What does it mean to \"diligently seek him\"?"],
+  ["Genesis 15:5–6","Abraham believed God when the promise seemed impossible. What promise of God are you holding on to right now?"],
+  ["Romans 10:17","Faith comes by hearing the Word of God. What habits help your faith grow, and what habits weaken it?"],
+  ["James 2:17–18","Why is faith without works called \"dead\"? How can others see our faith in action?"],
+  ["Mark 9:23–24","The father cried, \"Lord, I believe; help thou mine unbelief.\" Is it wrong to have doubts? How should we bring them to God?"],
+  ["Matthew 17:20","Jesus said faith as small as a mustard seed can move mountains. What \"mountain\" in your life needs to be moved?"],
+  ["2 Corinthians 5:7","What is the difference between walking by faith and walking by sight? Give an example from your own life."],
+  ["Ephesians 2:8–9","We are saved by grace through faith, not by works. Why is it important that salvation is a gift we cannot earn?"],
+  ["Hebrews 12:1–2","Jesus is \"the author and finisher of our faith.\" What \"weights\" do we need to lay aside to run our race?"]],
+  close:["Romans 1:17","The just shall live by faith."] },
+
+{ title:"The Power of Prayer",
+  intro:"How Jesus taught us to pray, and why prayer changes us and our circumstances.",
+  q:[
+  ["Matthew 6:5–8","Jesus warned against praying to be seen by others. What does sincere, private prayer look like for you?"],
+  ["Matthew 6:9–13","Walk through the Lord's Prayer one line at a time. Which line speaks to you most this week, and why?"],
+  ["Luke 18:1–8","What does the parable of the persistent widow teach us about not giving up in prayer?"],
+  ["Philippians 4:6–7","What does God promise to those who bring their worries to Him in prayer with thanksgiving?"],
+  ["James 5:16","Why does James tell us to pray for one another? How can we be faithful to pray for others this week?"],
+  ["1 Thessalonians 5:17","What does it mean to \"pray without ceasing\" in a busy life with work and family?"],
+  ["Daniel 6:10","Daniel kept praying even when it was against the law. What can his example teach us about faithfulness under pressure?"],
+  ["Mark 1:35","Jesus rose early to pray alone. Why do you think He made time for this, and how can we follow His example?"],
+  ["1 John 5:14–15","What does it mean to pray \"according to his will\"? How does that change the way we ask?"],
+  ["Matthew 26:39","In Gethsemane Jesus prayed, \"not as I will, but as thou wilt.\" How do we pray honestly while still surrendering to God?"]],
+  close:["Jeremiah 33:3","Call unto me, and I will answer thee, and shew thee great and mighty things, which thou knowest not."] },
+
+{ title:"Remember the Sabbath",
+  intro:"God's holy day of rest: why He made it, what it means, and how we keep it.",
+  q:[
+  ["Genesis 2:2–3","God rested on the seventh day, blessed it and sanctified it. Why do you think God set apart a day from the very beginning?"],
+  ["Exodus 20:8–11","The commandment begins with \"Remember.\" Why do you think God chose that word?"],
+  ["Deuteronomy 5:12–15","Here the Sabbath is tied to Israel's freedom from slavery in Egypt. How is the Sabbath a reminder of freedom for us?"],
+  ["Isaiah 58:13–14","What does it mean to call the Sabbath \"a delight\"? How can we make it a delight and not a burden?"],
+  ["Mark 2:27–28","\"The sabbath was made for man, and not man for the sabbath.\" What did Jesus mean by this?"],
+  ["Luke 4:16","Jesus went to the synagogue on the Sabbath \"as his custom was.\" What does His example show us?"],
+  ["Luke 23:56","Even after the crucifixion, the women \"rested the sabbath day according to the commandment.\" What stands out to you about this?"],
+  ["Exodus 31:16–17","The Sabbath is called a sign between God and His people. What does a sign show to others?"],
+  ["Hebrews 4:9–10","What is the \"rest\" that remains for the people of God, and how does the Sabbath point to it?"],
+  ["Isaiah 66:22–23","What does this passage tell us about the Sabbath in the new heavens and new earth?"]],
+  close:["Ezekiel 20:12","Moreover also I gave them my sabbaths, to be a sign between me and them, that they might know that I am the LORD that sanctify them."] },
+
+{ title:"The Greatest of These Is Love",
+  intro:"God's love for us, and how He calls us to love Him and one another.",
+  q:[
+  ["1 Corinthians 13:4–7","Read this list slowly. Which description of love is easiest for you, and which is hardest?"],
+  ["John 13:34–35","Jesus said the world would know we are His disciples by our love. How is that true or not true of the church today?"],
+  ["Matthew 22:37–40","Why do you think Jesus said all the law hangs on these two commandments?"],
+  ["1 John 4:7–8","\"God is love.\" How does knowing God's nature change the way we treat people?"],
+  ["1 John 4:19–21","Why can't we say we love God while hating our brother?"],
+  ["Romans 5:8","God loved us \"while we were yet sinners.\" What does that teach us about how we should love others?"],
+  ["Luke 6:27–28","Jesus tells us to love our enemies and pray for those who mistreat us. How is that possible?"],
+  ["John 15:13","What does laying down your life for others look like in everyday life, not only in death?"],
+  ["Romans 13:8–10","How is love \"the fulfilling of the law\"?"],
+  ["1 Peter 4:8","What does it mean that love \"shall cover the multitude of sins\"?"]],
+  close:["John 3:16","For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life."] },
+
+{ title:"Forgiveness",
+  intro:"Receiving God's forgiveness and learning to forgive others the way He forgives us.",
+  q:[
+  ["Matthew 6:14–15","Why does Jesus connect our forgiveness from God with our forgiveness of others?"],
+  ["Matthew 18:21–22","Peter asked if seven times was enough. What was Jesus teaching with \"seventy times seven\"?"],
+  ["Matthew 18:23–35","In the parable of the unforgiving servant, what does the size of the two debts teach us?"],
+  ["Ephesians 4:31–32","What must we \"put away\" before we can be kind and forgiving?"],
+  ["Colossians 3:13","\"Even as Christ forgave you, so also do ye.\" How did Christ forgive us, and what does that mean for our relationships?"],
+  ["Luke 23:34","Jesus prayed for those who were crucifying Him. What does this show us about forgiveness?"],
+  ["Psalm 103:10–12","How far has God removed our sins from us? How should that change the way we see ourselves?"],
+  ["1 John 1:9","What does God promise when we confess our sins? Why is confession important?"],
+  ["Genesis 50:19–21","Joseph forgave his brothers after years of suffering. How did his view of God help him forgive?"],
+  ["Mark 11:25","Why should we forgive before we pray? Is there someone you need to forgive this week?"]],
+  close:["Isaiah 1:18","Come now, and let us reason together, saith the LORD: though your sins be as scarlet, they shall be as white as snow."] },
+
+{ title:"Trusting God in Trials",
+  intro:"How God uses hard seasons to grow our faith, and how He stays with us through them.",
+  q:[
+  ["James 1:2–4","How can we \"count it all joy\" when we face trials? What do trials produce in us?"],
+  ["Romans 8:28","Does \"all things work together for good\" mean all things are good? What is the difference?"],
+  ["1 Peter 1:6–7","Peter compares our faith to gold tried in the fire. What does fire do to gold, and how is that like our trials?"],
+  ["2 Corinthians 4:16–18","Paul called his troubles a \"light affliction.\" How did focusing on eternal things help him?"],
+  ["Job 1:20–22","After losing everything, Job worshipped. What can we learn from his first response?"],
+  ["Psalm 34:19","The righteous still have many afflictions. How does this verse give both honesty and hope?"],
+  ["Isaiah 43:2","God promises to be with us through the waters and the fire. When have you felt His presence in a hard time?"],
+  ["2 Corinthians 12:9–10","\"My grace is sufficient for thee.\" How is God's strength made perfect in our weakness?"],
+  ["Romans 5:3–5","Follow the chain: tribulation, patience, experience, hope. Where are you in that chain right now?"],
+  ["Daniel 3:17–18","\"But if not...\" How did these three young men trust God even if He did not deliver them?"]],
+  close:["Psalm 46:1","God is our refuge and strength, a very present help in trouble."] },
+
+{ title:"The Word of God",
+  intro:"Why Scripture matters, and how to read it, keep it and live by it.",
+  q:[
+  ["2 Timothy 3:16–17","What four things is Scripture profitable for? Which one do you need most right now?"],
+  ["Hebrews 4:12","The Word is \"quick, and powerful, and sharper than any twoedged sword.\" How has God's Word spoken directly to your heart?"],
+  ["Joshua 1:8","What did God promise Joshua if he meditated on the law day and night?"],
+  ["Psalm 119:11","How does hiding God's Word in our hearts help us not to sin?"],
+  ["Matthew 4:4","Jesus answered Satan with Scripture. Why is knowing the Word important in times of temptation?"],
+  ["James 1:22–25","What is the difference between a hearer of the Word and a doer of the Word?"],
+  ["Isaiah 55:10–11","God says His Word will not return to Him void. What encouragement does this give when we share it?"],
+  ["Acts 17:11","The Bereans searched the Scriptures daily to check what they were taught. Why is that a good example for us?"],
+  ["Psalm 1:2","What does it mean to delight in the law of the Lord? How can reading the Bible become a delight?"],
+  ["John 1:1, 14","Jesus is called \"the Word.\" What does that teach us about who He is?"]],
+  close:["Isaiah 40:8","The grass withereth, the flower fadeth: but the word of our God shall stand for ever."] },
+
+{ title:"The Holy Spirit",
+  intro:"Who the Holy Spirit is, what He does, and how He works in the life of a believer.",
+  q:[
+  ["John 14:16–17, 26","Jesus called the Holy Spirit \"the Comforter.\" What does the Spirit do according to these verses?"],
+  ["Acts 1:8","What did Jesus say the Holy Spirit would give His followers, and for what purpose?"],
+  ["Acts 2:1–4","Describe what happened on the day of Pentecost. What changed in the disciples?"],
+  ["Romans 8:26","How does the Spirit help us when we don't know how to pray?"],
+  ["Galatians 5:22–23","Look at the fruit of the Spirit. Which fruit is growing in you, and which needs more growth?"],
+  ["1 Corinthians 6:19–20","Our bodies are the temple of the Holy Spirit. How should that affect how we care for ourselves?"],
+  ["Ephesians 4:30","What kinds of things \"grieve\" the Holy Spirit?"],
+  ["John 16:13","The Spirit guides us into all truth. How do we listen for His guidance?"],
+  ["Romans 8:14","\"As many as are led by the Spirit of God, they are the sons of God.\" What does being led by the Spirit look like day to day?"],
+  ["1 Corinthians 12:4–7","Every believer is given gifts by the same Spirit. What gifts do you see God has given you to serve others?"]],
+  close:["Zechariah 4:6","Not by might, nor by power, but by my spirit, saith the LORD of hosts."] },
+
+{ title:"The Feasts of the LORD",
+  intro:"God's appointed times in Leviticus 23, and how each one points to His plan of redemption.",
+  q:[
+  ["Leviticus 23:1–4","God calls these \"the feasts of the LORD\" and \"holy convocations.\" Why is it important that they are His feasts and not man's?"],
+  ["Leviticus 23:5–8","What did Passover and the Feast of Unleavened Bread remind Israel of? Read 1 Corinthians 5:7–8. How do they point to Christ?"],
+  ["Leviticus 23:10–11","The first of the harvest was waved before the Lord. Read 1 Corinthians 15:20. How is Jesus the \"firstfruits\"?"],
+  ["Leviticus 23:15–16","Count fifty days to the Feast of Weeks (Pentecost). Read Acts 2:1. What happened on that day?"],
+  ["Leviticus 23:24","The Feast of Trumpets is a memorial of blowing of trumpets. Read 1 Thessalonians 4:16. What future event does a trumpet announce?"],
+  ["Leviticus 23:27–28","What was the purpose of the Day of Atonement? Read Hebrews 9:11–12. What did Christ do as our High Priest?"],
+  ["Leviticus 23:34, 42–43","Why did Israel dwell in booths during the Feast of Tabernacles? What does it remind us about God's care?"],
+  ["John 7:37–38","Jesus stood up on the last great day of the feast. What did He offer the people?"],
+  ["Colossians 2:16–17","Paul calls these things \"a shadow of things to come.\" What does that tell us about how the feasts point to Christ?"],
+  ["Leviticus 23:4","These are appointed times, \"in their seasons.\" How can keeping God's calendar help us remember His plan throughout the year?"]],
+  close:["Leviticus 23:2","Speak unto the children of Israel, and say unto them, Concerning the feasts of the LORD, which ye shall proclaim to be holy convocations, even these are my feasts."] },
+
+{ title:"A God-Centered Family",
+  intro:"Building marriages and homes on the foundation of God's Word.",
+  q:[
+  ["Genesis 2:24","What does it mean for a husband and wife to \"be one flesh\"?"],
+  ["Psalm 127:1","\"Except the LORD build the house, they labour in vain that build it.\" What does it look like to let God build our home?"],
+  ["Ephesians 5:25","Husbands are told to love their wives \"as Christ also loved the church.\" How did Christ love the church?"],
+  ["1 Peter 3:7","Why does Peter say a husband's prayers can be hindered by how he treats his wife?"],
+  ["Ephesians 6:1–3","What promise comes with honoring father and mother?"],
+  ["Ephesians 6:4","How can parents raise children without provoking them to anger?"],
+  ["Deuteronomy 6:6–7","When and where should parents teach God's Word to their children? How can we do this today?"],
+  ["Proverbs 22:6","What does it mean to \"train up a child in the way he should go\"?"],
+  ["Ruth 1:16","Ruth's loyalty to Naomi went beyond what was expected. What does her example teach us about family commitment?"],
+  ["Colossians 3:18–21","What one change could make your home more peaceful and God-centered this week?"]],
+  close:["Joshua 24:15","As for me and my house, we will serve the LORD."] },
+
+{ title:"Called to Serve",
+  intro:"Following Jesus' example of serving others with humility, generosity and love.",
+  q:[
+  ["Mark 10:43–45","Jesus said the greatest among us must be a servant. How is this different from how the world sees greatness?"],
+  ["John 13:12–15","Jesus washed His disciples' feet. What would \"washing feet\" look like in our lives today?"],
+  ["Matthew 25:35–40","When we serve \"the least of these,\" whom are we really serving?"],
+  ["Galatians 6:9–10","Why do we sometimes grow weary in doing good? What does God promise if we don't give up?"],
+  ["1 Peter 4:10","We are stewards of the gifts God gave us. How are you using your gifts to serve others?"],
+  ["2 Corinthians 9:6–7","What does it mean that \"God loveth a cheerful giver\"? Why does our attitude in giving matter?"],
+  ["Acts 20:35","Why is it \"more blessed to give than to receive\"?"],
+  ["Philippians 2:3–4","How can we look out for the interests of others and not only our own?"],
+  ["Luke 10:33–37","In the parable of the Good Samaritan, who turned out to be the neighbor? Who is your neighbor?"],
+  ["Matthew 5:16","How do our good works point people to God rather than to ourselves?"]],
+  close:["Galatians 5:13","By love serve one another."] }
+];
+
+/* Multiple-choice quiz for each week, in the same order as STUDIES above.
+   Each line: [scripture, question, [choice A, B, C, D], number of the correct choice (0 = A, 1 = B, 2 = C, 3 = D)] */
+var QUIZ = [
+[ // Walking with God
+ ["Genesis 5:22","After Methuselah was born, how many years did Enoch walk with God?",["100 years","300 years","365 years","969 years"],1],
+ ["Genesis 5:24","What happened to Enoch at the end of his walk with God?",["He was carried up in a chariot of fire","He died in his sleep","He was not; for God took him","He was swallowed by a great fish"],2],
+ ["Amos 3:3","\"Can two walk together, except they be ___?\"",["agreed","brothers","friends","equal"],0],
+ ["Micah 6:8","Do justly, love mercy, and...",["keep the feasts","give offerings","pray seven times a day","walk humbly with thy God"],3],
+ ["Psalm 1:1","The blessed man walketh not in...",["the light","the counsel of the ungodly","the house of the Lord","the paths of peace"],1],
+ ["Psalm 119:105","\"Thy word is a lamp unto my feet, and a ___ unto my path.\"",["light","guide","shield","staff"],0],
+ ["Proverbs 3:5","Trust in the LORD with all thine heart; and lean not unto...",["the strength of man","thine own understanding","the riches of this world","the words of the wise"],1],
+ ["Galatians 5:16","Walk in the Spirit, and ye shall not fulfil...",["the law of Moses","the will of God","the lust of the flesh","the works of faith"],2],
+ ["1 John 1:7","If we walk in the light, the blood of Jesus Christ cleanseth us from...",["some sin","all sin","sins of the past only","nothing"],1],
+ ["Isaiah 40:31","They that wait upon the LORD shall mount up with wings as...",["doves","angels","the wind","eagles"],3]],
+[ // Living by Faith
+ ["Hebrews 11:1","Faith is the substance of things hoped for, the evidence of things...",["not seen","already done","written in the law","promised to Abraham"],0],
+ ["Hebrews 11:6","Without faith it is...",["hard to pray","impossible to please him","easy to sin","difficult to love"],1],
+ ["Genesis 15:6","Abram believed in the LORD, and He counted it to him for...",["a covenant","a blessing","righteousness","a sign"],2],
+ ["Romans 10:17","Faith cometh by...",["seeing miracles","fasting","good works","hearing, and hearing by the word of God"],3],
+ ["James 2:26","Faith without works is...",["dead","enough","perfect","hidden"],0],
+ ["Mark 9:24","What did the father of the sick child cry out to Jesus?",["\"Lord, remember me\"","\"Lord, I believe; help thou mine unbelief\"","\"Lord, save us: we perish\"","\"Lord, teach us to pray\""],1],
+ ["Matthew 17:20","Jesus said faith as small as a grain of ___ could move a mountain.",["sand","wheat","mustard seed","salt"],2],
+ ["2 Corinthians 5:7","We walk by faith, not by...",["works","sight","law","fear"],1],
+ ["Ephesians 2:8","By grace are ye saved through faith; and that not of yourselves...",["it is the gift of God","it is earned by works","it is from the law","it is for a season"],0],
+ ["Hebrews 12:2","Jesus is the author and ___ of our faith.",["keeper","teacher","finisher","judge"],2]],
+[ // The Power of Prayer
+ ["Matthew 6:6","When you pray, Jesus said to...",["stand on the street corner","enter into thy closet and shut thy door","pray loudly so all can hear","pray only in the temple"],1],
+ ["Matthew 6:7","Use not vain repetitions, as...",["the heathen do","the priests do","the elders do","the angels do"],0],
+ ["Matthew 6:9","How does the Lord's Prayer begin?",["\"Lord, have mercy\"","\"Blessed be the LORD\"","\"Hear, O Israel\"","\"Our Father which art in heaven\""],3],
+ ["Luke 18:1","The parable of the widow teaches that men ought always to pray and not to...",["faint","boast","fast","sleep"],0],
+ ["Philippians 4:7","When we bring our requests to God with thanksgiving, what keeps our hearts and minds?",["the law","the peace of God, which passeth all understanding","the angels","our own strength"],1],
+ ["James 5:16","The effectual fervent prayer of a righteous man...",["is rarely heard","must be long","availeth much","is only for priests"],2],
+ ["1 Thessalonians 5:17","Paul says to pray...",["once a week","only in trouble","on the sabbath only","without ceasing"],3],
+ ["Daniel 6:10","How many times a day did Daniel kneel and pray?",["Once","Three times","Seven times","Twelve times"],1],
+ ["Mark 1:35","When did Jesus go to pray in a solitary place?",["A great while before day","At noon","At midnight only","After every meal"],0],
+ ["Matthew 26:39","In Gethsemane, Jesus prayed...",["\"Deliver me now\"","\"Send twelve legions of angels\"","\"Not as I will, but as thou wilt\"","\"Why hast thou forsaken me?\""],2]],
+[ // Remember the Sabbath
+ ["Genesis 2:3","God ___ the seventh day and sanctified it.",["blessed","named","counted","finished"],0],
+ ["Exodus 20:8","The fourth commandment begins with the word...",["Keep","Remember","Honour","Observe"],1],
+ ["Exodus 20:11","Why did God give the seventh-day Sabbath?",["Because Israel was tired","Because of the harvest","Because in six days the LORD made heaven and earth and rested the seventh day","Because the priests asked for it"],2],
+ ["Deuteronomy 5:15","Keeping the Sabbath also reminded Israel that they were once servants in...",["Babylon","Assyria","Canaan","the land of Egypt"],3],
+ ["Isaiah 58:13","God says to call the Sabbath...",["a burden","a delight","a fast","a test"],1],
+ ["Mark 2:27","The sabbath was made for...",["man","the priests","the angels","the temple"],0],
+ ["Mark 2:28","The Son of man is Lord also of...",["the temple","the law","the sabbath","the nations"],2],
+ ["Luke 4:16","Jesus went into the synagogue on the sabbath day...",["once a year","for the first time","only when asked","as his custom was"],3],
+ ["Exodus 31:17","God calls the Sabbath ___ between Him and the children of Israel for ever.",["a sign","a burden","a tax","a riddle"],0],
+ ["Isaiah 66:23","From one sabbath to another, all flesh shall come to...",["rest in their homes","worship before me","bring their tithes","read the law"],1]],
+[ // The Greatest of These Is Love
+ ["1 Corinthians 13:4","Charity (love) suffereth long, and is...",["proud","rich","kind","quiet"],2],
+ ["1 Corinthians 13:13","Faith, hope, charity, these three; but the greatest of these is...",["faith","hope","charity","wisdom"],2],
+ ["John 13:35","By this shall all men know that ye are my disciples...",["if ye have love one to another","if ye keep the temple","if ye work miracles","if ye fast often"],0],
+ ["Matthew 22:37–38","What did Jesus call the first and great commandment?",["Honour thy father and mother","Thou shalt not kill","Love the Lord thy God with all thy heart, soul and mind","Remember the sabbath day"],2],
+ ["Matthew 22:39","The second commandment is like the first:",["Love thy neighbour as thyself","Give to the poor","Go to the temple","Keep the passover"],0],
+ ["1 John 4:8","He that loveth not knoweth not God; for...",["God is far away","God is love","God is a judge","God is silent"],1],
+ ["1 John 4:19","We love him, because...",["he is powerful","we must","he first loved us","we are afraid"],2],
+ ["Romans 5:8","Christ died for us while...",["we were yet sinners","we were righteous","we were praying","we kept the law"],0],
+ ["John 15:13","Greater love hath no man than this, that a man...",["give all his money","build a temple","lay down his life for his friends","keep every law"],2],
+ ["1 Peter 4:8","Fervent charity among yourselves shall cover...",["the multitude of sins","the land","every debt","the poor"],0]],
+[ // Forgiveness
+ ["Matthew 6:15","If ye forgive not men their trespasses...",["God will forgive you anyway","neither will your Father forgive your trespasses","you must offer a sacrifice","nothing happens"],1],
+ ["Matthew 18:22","How many times did Jesus tell Peter to forgive?",["Seven times","Seventy times","Until seventy times seven","Three times"],2],
+ ["Matthew 18:24","In the parable, how much did the first servant owe the king?",["An hundred pence","Ten thousand talents","Thirty pieces of silver","One talent"],1],
+ ["Ephesians 4:32","Be kind, tenderhearted, forgiving one another, even as...",["God for Christ's sake hath forgiven you","they deserve it","the law requires","they ask you to"],0],
+ ["Luke 23:34","What did Jesus say from the cross about those who crucified Him?",["\"It is finished\"","\"I thirst\"","\"Remember me\"","\"Father, forgive them; for they know not what they do\""],3],
+ ["Psalm 103:12","How far has God removed our transgressions from us?",["As far as the sea","As far as the east is from the west","As high as the mountains","As deep as the grave"],1],
+ ["1 John 1:9","If we confess our sins, he is faithful and just to...",["punish us","forget us","forgive us our sins, and to cleanse us from all unrighteousness","make us pay"],2],
+ ["Genesis 50:20","Joseph told his brothers, \"Ye thought evil against me; but God...\"",["meant it unto good","will punish you","has forgotten it","was not there"],0],
+ ["Mark 11:25","When ye stand praying...",["pray loudly","stand in the temple","forgive, if ye have ought against any","ask for riches"],2],
+ ["Isaiah 1:18","Though your sins be as scarlet, they shall be...",["red like crimson","as white as snow","as dark as night","remembered forever"],1]],
+[ // Trusting God in Trials
+ ["James 1:2","When ye fall into divers temptations (trials), count it all...",["loss","joy","sorrow","punishment"],1],
+ ["James 1:3","The trying of your faith worketh...",["anger","doubt","patience","fear"],2],
+ ["Romans 8:28","All things work together for good to them that...",["love God","are rich","never sin","work hard"],0],
+ ["1 Peter 1:7","The trial of your faith is much more precious than...",["silver","rubies","gold that perisheth","land"],2],
+ ["2 Corinthians 4:17","Paul calls our affliction light because it is...",["small","deserved","but for a moment","easy"],2],
+ ["Job 1:21","After losing everything, Job said, \"The LORD gave, and the LORD hath taken away...\"",["\"why hast thou done this?\"","\"blessed be the name of the LORD\"","\"I will curse God\"","\"I am ruined\""],1],
+ ["Psalm 34:19","Many are the afflictions of the righteous: but...",["the LORD delivereth him out of them all","they must bear them alone","they will soon pass","the wicked suffer more"],0],
+ ["2 Corinthians 12:9","God told Paul, \"My grace is sufficient for thee: for my strength is made perfect in...\"",["power","weakness","victory","prayer"],1],
+ ["Romans 5:3–4","Tribulation worketh patience; and patience, experience; and experience...",["wisdom","riches","hope","fear"],2],
+ ["Daniel 3:20","Shadrach, Meshach and Abed-nego were cast into...",["a den of lions","a pit","the sea","a burning fiery furnace"],3]],
+[ // The Word of God
+ ["2 Timothy 3:16","All scripture is given by...",["the prophets alone","inspiration of God","the church councils","the scribes"],1],
+ ["Hebrews 4:12","The word of God is quick, and powerful, and sharper than...",["any twoedged sword","a spear","an arrow","a knife"],0],
+ ["Joshua 1:8","How often was Joshua told to meditate on the book of the law?",["Once a year","On the sabbath","Day and night","Before battle"],2],
+ ["Psalm 119:11","Thy word have I hid in mine heart...",["that I might be rich","that I might not sin against thee","that no one could find it","that I might be wise"],1],
+ ["Matthew 4:4","Man shall not live by bread alone, but by...",["every word that proceedeth out of the mouth of God","water and wine","the work of his hands","the law of Moses"],0],
+ ["James 1:22","Be ye ___ of the word, and not hearers only.",["readers","teachers","doers","keepers"],2],
+ ["Isaiah 55:11","God's word shall not return unto him...",["slowly","void","unread","changed"],1],
+ ["Acts 17:11","What did the Bereans do daily?",["Fasted","Gave alms","Searched the scriptures","Went to the temple"],2],
+ ["John 1:14","The Word was made ___, and dwelt among us.",["law","flesh","light","stone"],1],
+ ["Isaiah 40:8","The grass withereth, the flower fadeth: but the word of our God shall...",["fade also","be forgotten","change with time","stand for ever"],3]],
+[ // The Holy Spirit
+ ["John 14:16","Jesus said the Father would give you another...",["Comforter","prophet","king","law"],0],
+ ["John 14:26","The Holy Ghost shall teach you all things, and...",["make you rich","bring all things to your remembrance","take away all trouble","replace the scriptures"],1],
+ ["Acts 1:8","When the Holy Ghost comes upon you, ye shall receive power and be...",["kings","priests","witnesses","prophets only"],2],
+ ["Acts 2:1","On what day was the Holy Ghost poured out on the disciples?",["Passover","The Day of Atonement","Tabernacles","Pentecost"],3],
+ ["Acts 2:3","What appeared on each of the disciples?",["Cloven tongues like as of fire","A white dove","A bright cloud","A crown of gold"],0],
+ ["Romans 8:26","The Spirit maketh intercession for us with...",["loud cries","groanings which cannot be uttered","many words","songs"],1],
+ ["Galatians 5:22–23","Which of these is a fruit of the Spirit?",["Wealth","Fame","Longsuffering","Power over others"],2],
+ ["1 Corinthians 6:19","Your body is the temple of...",["the Holy Ghost","the law","the priests","the world"],0],
+ ["Ephesians 4:30","Grieve not...",["the elders","the holy Spirit of God","your neighbours","the angels"],1],
+ ["Zechariah 4:6","Not by might, nor by power, but...",["by my spirit, saith the LORD of hosts","by the sword","by riches","by numbers"],0]],
+[ // The Feasts of the LORD
+ ["Leviticus 23:5","The LORD's passover is on the ___ day of the first month at even.",["first","tenth","fourteenth","fifteenth"],2],
+ ["Leviticus 23:6","How many days must ye eat unleavened bread?",["One day","Three days","Seven days","Forty days"],2],
+ ["1 Corinthians 5:7","Christ our ___ is sacrificed for us.",["passover","firstfruits","high priest","temple"],0],
+ ["1 Corinthians 15:20","Christ is risen from the dead, and become...",["the firstfruits of them that slept","the last Adam only","a prophet","the law"],0],
+ ["Leviticus 23:16","How many days were counted to the Feast of Weeks (Pentecost)?",["Seven days","Forty days","Fifty days","Seventy days"],2],
+ ["Acts 2:1","When the day of Pentecost was fully come, the disciples were...",["scattered","in prison","asleep","all with one accord in one place"],3],
+ ["Leviticus 23:24","The first day of the seventh month is a memorial of...",["unleavened bread","blowing of trumpets","the harvest","the flood"],1],
+ ["Leviticus 23:27","The tenth day of the seventh month is...",["the day of atonement","the feast of weeks","the passover","new moon only"],0],
+ ["Leviticus 23:42","How long did Israel dwell in booths during the Feast of Tabernacles?",["One day","Three days","Seven days","Thirty days"],2],
+ ["Leviticus 23:43","Why did Israel dwell in booths?",["Because their houses were destroyed","So their generations would know God made Israel dwell in booths when He brought them out of Egypt","To prepare for war","Because of the heat"],1]],
+[ // A God-Centered Family
+ ["Genesis 2:24","A man shall leave his father and mother, cleave unto his wife, and they shall be...",["one flesh","two families","servants","strangers"],0],
+ ["Psalm 127:1","Except the LORD build the house...",["it will be small","they labour in vain that build it","it cannot be sold","the walls will fall"],1],
+ ["Ephesians 5:25","Husbands, love your wives, even as...",["they love you","the law requires","Christ also loved the church","your fathers did"],2],
+ ["1 Peter 3:7","Husbands are to honour their wives, that...",["their prayers be not hindered","they may be rich","they live long","others may see"],0],
+ ["Ephesians 6:2","\"Honour thy father and mother\" is the first commandment with...",["a curse","promise","a sacrifice","a feast"],1],
+ ["Ephesians 6:4","Fathers, provoke not your children to wrath: but bring them up in...",["fear","silence","the nurture and admonition of the Lord","strict rules only"],2],
+ ["Deuteronomy 6:7","When should parents talk of God's words with their children?",["Only on the sabbath","Only at the temple","When sitting at home, walking, lying down and rising up","Only when they are grown"],2],
+ ["Proverbs 22:6","Train up a child in the way he should go: and when he is old...",["he will not depart from it","he will forget it","he will leave home","he will teach others"],0],
+ ["Ruth 1:16","Ruth said, \"Whither thou goest, I will go.\" Who was she speaking to?",["Boaz","Orpah","Naomi","Elimelech"],2],
+ ["Joshua 24:15","Joshua said, \"As for me and my house...\"",["we will go to Egypt","we will serve the LORD","we will rest","we will build an altar"],1]],
+[ // Called to Serve
+ ["Mark 10:45","The Son of man came not to be ministered unto, but...",["to rule","to judge","to minister, and to give his life a ransom for many","to build a kingdom on earth"],2],
+ ["John 13:5","What did Jesus do for His disciples at supper?",["Washed their feet","Gave them gold","Built them houses","Sent them away"],0],
+ ["Matthew 25:40","Inasmuch as ye have done it unto one of the least of these my brethren...",["ye have done it unto me","it does not count","ye shall be rich","it is forgotten"],0],
+ ["Galatians 6:9","Let us not be weary in well doing: for in due season we shall reap...",["if we work alone","if we faint not","if we are rich","if others notice"],1],
+ ["1 Peter 4:10","We are to minister our gifts as good ___ of the manifold grace of God.",["owners","stewards","judges","merchants"],1],
+ ["2 Corinthians 9:7","God loveth a ___ giver.",["rich","quiet","cheerful","large"],2],
+ ["Acts 20:35","Jesus said it is more blessed to...",["receive than to give","give than to receive","save than to spend","rest than to work"],1],
+ ["Philippians 2:3","In lowliness of mind let each esteem other...",["better than themselves","equal to themselves","less than themselves","only if deserved"],0],
+ ["Luke 10:33","In the parable, who stopped and helped the wounded man?",["A priest","A Levite","A Samaritan","A soldier"],2],
+ ["Matthew 5:16","Let your light so shine before men, that they may see your good works, and...",["praise you","reward you","follow you","glorify your Father which is in heaven"],3]]
+];
+
+(function(){
+  // Today's date in Central Time (so the study changes at midnight Wednesday in Texas)
+  function centralToday(){
+    try{
+      var parts = new Intl.DateTimeFormat("en-US",{timeZone:"America/Chicago",year:"numeric",month:"numeric",day:"numeric"}).formatToParts(new Date());
+      var y,m,d; parts.forEach(function(p){ if(p.type==="year")y=+p.value; if(p.type==="month")m=+p.value; if(p.type==="day")d=+p.value; });
+      return Date.UTC(y,m-1,d);
+    }catch(e){ var n=new Date(); return Date.UTC(n.getFullYear(),n.getMonth(),n.getDate()); }
+  }
+  var DAY = 86400000;
+  var START = Date.UTC(2026,9,28);          // Wednesday, October 28, 2026 = first study
+  var today = centralToday();
+  var weeks = Math.floor((today - START) / (7*DAY));
+  var n = STUDIES.length;
+  var idx = ((weeks % n) + n) % n;
+  var s = STUDIES[idx];
+  var weekStart = START + weeks*7*DAY;      // the Wednesday this study began
+  var weekEnd = weekStart + 6*DAY;
+
+  function fmt(t, long){
+    return new Date(t).toLocaleDateString("en-US",{timeZone:"UTC",weekday:long?"long":undefined,month:"long",day:"numeric",year:long?"numeric":undefined});
+  }
+  function esc(t){ return String(t).replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c];}); }
+
+  document.getElementById("week-range").textContent = "Week of " + fmt(weekStart,false) + " – " + fmt(weekEnd,false);
+  document.getElementById("study-title").textContent = s.title;
+  document.getElementById("study-intro").textContent = s.intro + " Join us Wednesday at 7:00 PM.";
+  document.title = s.title + " | Weekly Bible Study | Walk4God Church";
+
+  var html = "";
+  s.q.forEach(function(item){
+    html += '<li><span class="ref">' + esc(item[0]) + '</span>' + esc(item[1]) + '</li>';
+  });
+  document.getElementById("questions").innerHTML = html;
+  document.getElementById("closing").innerHTML =
+    '<div class="eyebrow">Closing Scripture · ' + esc(s.close[0]) + '</div><blockquote>“' + esc(s.close[1]) + '”</blockquote>';
+
+  var nx = STUDIES[(idx+1)%n];
+  document.getElementById("next-study").innerHTML =
+    'Next week: <b>' + esc(nx.title) + '</b>, posted ' + fmt(weekStart + 7*DAY, true) + '.';
+
+  // ----- Multiple-choice quiz for this week -----
+  var quiz = (typeof QUIZ !== "undefined" && QUIZ[idx]) ? QUIZ[idx] : [];
+  var quizSec = document.getElementById("quiz");
+  if (!quiz.length) { quizSec.style.display = "none"; return; }
+  var letters = ["A","B","C","D","E"];
+  var answered = 0, correct = 0;
+  var scoreEl = document.getElementById("score"), finalEl = document.getElementById("final");
+
+  function shuffle(a){ for (var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
+
+  function build(){
+    answered = 0; correct = 0;
+    scoreEl.textContent = "Score: 0 of " + quiz.length;
+    finalEl.classList.remove("show");
+    var list = document.getElementById("mc");
+    list.innerHTML = "";
+    quiz.forEach(function(q){
+      var li = document.createElement("li");
+      li.innerHTML = '<span class="ref">' + esc(q[0]) + '</span><p class="qt">' + esc(q[1]) + '</p><div class="choices"></div><p class="fb" hidden></p>';
+      var box = li.querySelector(".choices"), fb = li.querySelector(".fb");
+      var order = shuffle(q[2].map(function(_,i){ return i; }));
+      var buttons = [];
+      order.forEach(function(ci, pos){
+        var b = document.createElement("button");
+        b.type = "button"; b.className = "choice";
+        b.innerHTML = "<b>" + letters[pos] + ".</b>" + esc(q[2][ci]);
+        b.addEventListener("click", function(){
+          buttons.forEach(function(x){ x.disabled = true; });
+          var rightBtn = buttons[order.indexOf(q[3])];
+          rightBtn.classList.add("right");
+          answered++;
+          if (ci === q[3]) { correct++; fb.className = "fb ok"; fb.textContent = "Correct! Read " + q[0] + "."; }
+          else { b.classList.add("wrong"); fb.className = "fb no"; fb.textContent = "Not quite. The answer is \"" + q[2][q[3]] + "\". Read " + q[0] + "."; }
+          fb.hidden = false;
+          scoreEl.textContent = "Score: " + correct + " of " + quiz.length;
+          if (answered === quiz.length) {
+            var msg = correct === quiz.length ? "Perfect score! " : (correct >= 7 ? "Well done! " : "Keep studying! ");
+            document.getElementById("final-text").textContent = msg + "You got " + correct + " out of " + quiz.length + " correct.";
+            finalEl.classList.add("show");
+          }
+        });
+        buttons.push(b); box.appendChild(b);
+      });
+      list.appendChild(li);
+    });
+  }
+  document.getElementById("retry").addEventListener("click", function(){ build(); quizSec.scrollIntoView(); });
+  build();
+})();
+</script>
+</body></html>
