@@ -146,7 +146,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
 </div></footer>
 
 <script>
-/* Weekly Bible studies. A new one shows every Wednesday (Central Time) and the list repeats after the last one.
+/* Weekly Bible studies. A new one shows every Wednesday (Central Time) and the list repeats after the last one (52 studies = one full year).
    To add a study, copy one { ... } block, change the words, and keep the commas between blocks. */
 var STUDIES = [
 { title:"Walking with God",
@@ -466,6 +466,6492 @@ var QUIZ = [
  ["Luke 10:33","In the parable, who stopped and helped the wounded man?",["A priest","A Levite","A Samaritan","A soldier"],2],
  ["Matthew 5:16","Let your light so shine before men, that they may see your good works, and...",["praise you","reward you","follow you","glorify your Father which is in heaven"],3]]
 ];
+
+/* Studies 13-52: each has its own discussion questions (q), closing verse (close) and quiz.
+   They are added after the first 12, so the full rotation is 52 weeks (one year). */
+var MORE_STUDIES = [
+{
+"title": "The Armor of God",
+"intro": "Learning to stand strong in the Lord by putting on the whole armour of God every day.",
+"q": [
+[
+"Ephesians 6:10",
+"\"Be strong in the Lord, and in the power of his might.\" What is the difference between being strong in ourselves and being strong in the Lord?"
+],
+[
+"Ephesians 6:11",
+"Paul tells us to put on \"the whole armour of God.\" Why do you think we need every piece, and not just one or two?"
+],
+[
+"Ephesians 6:12",
+"We wrestle \"not against flesh and blood.\" How would seeing our real battle as spiritual change how we treat people who oppose or hurt us?"
+],
+[
+"Ephesians 6:13",
+"Having done all, we are told \"to stand.\" What does it look like in daily life to simply stand firm when trouble comes?"
+],
+[
+"Ephesians 6:14",
+"Truth is the belt that holds everything together. Where might small untruths be weakening our walk with God?"
+],
+[
+"Ephesians 6:14",
+"How does living rightly before God protect our hearts like a breastplate?"
+],
+[
+"Ephesians 6:15",
+"Our feet are shod with \"the preparation of the gospel of peace.\" How can we be ready to bring God's peace wherever we go this week?"
+],
+[
+"Ephesians 6:16",
+"What \"fiery darts\" does the enemy aim at believers today, and how does the shield of faith put them out?"
+],
+[
+"Ephesians 6:17",
+"The sword of the Spirit is the word of God. How can we know scripture well enough to use it when temptation comes?"
+],
+[
+"Ephesians 6:18",
+"Paul ends with \"praying always.\" Who can we commit to pray for this week, and how can prayer become part of our daily armor?"
+]
+],
+"close": [
+"Ephesians 6:11",
+"Put on the whole armour of God, that ye may be able to stand against the wiles of the devil."
+],
+"quiz": [
+[
+"Ephesians 6:11",
+"We put on the whole armour of God to stand against the wiles of...",
+[
+"the devil",
+"the world",
+"our flesh",
+"false teachers"
+],
+0
+],
+[
+"Ephesians 6:12",
+"We wrestle not against...",
+[
+"principalities",
+"powers",
+"flesh and blood",
+"spiritual wickedness in high places"
+],
+2
+],
+[
+"Ephesians 6:14",
+"Our loins are to be girt about with...",
+[
+"peace",
+"truth",
+"faith",
+"salvation"
+],
+1
+],
+[
+"Ephesians 6:14",
+"Which breastplate are we told to put on?",
+[
+"the breastplate of faith",
+"the breastplate of love",
+"the breastplate of righteousness",
+"the breastplate of truth"
+],
+2
+],
+[
+"Ephesians 6:15",
+"Our feet are to be shod with the preparation of the gospel of...",
+[
+"grace",
+"truth",
+"salvation",
+"peace"
+],
+3
+],
+[
+"Ephesians 6:16",
+"The shield of faith quenches all the fiery darts of...",
+[
+"the world",
+"the wicked",
+"the flesh",
+"the enemy"
+],
+1
+],
+[
+"Ephesians 6:17",
+"We are to take the helmet of...",
+[
+"wisdom",
+"salvation",
+"faith",
+"glory"
+],
+1
+],
+[
+"Ephesians 6:17",
+"The sword of the Spirit is...",
+[
+"prayer",
+"faith",
+"the word of God",
+"the name of Jesus"
+],
+2
+],
+[
+"Ephesians 6:18",
+"How often does Paul say we should be praying?",
+[
+"always",
+"in the morning",
+"three times a day",
+"once a week"
+],
+0
+],
+[
+"Ephesians 6:10",
+"Paul says to be strong in the Lord and in...",
+[
+"the joy of the Lord",
+"the strength of your heart",
+"the faith of the saints",
+"the power of his might"
+],
+3
+]
+]
+},
+{
+"title": "Godly Wisdom",
+"intro": "Learn from Proverbs and James where true wisdom comes from and how it shapes the way we think, speak, and live.",
+"q": [
+[
+"Proverbs 1:7",
+"\"The fear of the LORD is the beginning of knowledge.\" What does it mean to fear the LORD, and why is that the starting point for real wisdom?"
+],
+[
+"Proverbs 3:5–6",
+"\"Lean not unto thine own understanding.\" In what areas of life are we most tempted to rely on our own thinking instead of trusting God?"
+],
+[
+"James 1:5",
+"God gives wisdom liberally to those who ask. What decision are you facing right now that you need to bring to Him in prayer?"
+],
+[
+"James 1:6–8",
+"James says to ask in faith, \"nothing wavering.\" What does a double minded life look like day to day, and how do we become steady?"
+],
+[
+"Proverbs 4:7",
+"\"Wisdom is the principal thing; therefore get wisdom.\" What would change if we pursued wisdom as hard as people pursue money or success?"
+],
+[
+"Proverbs 13:20",
+"\"He that walketh with wise men shall be wise.\" How have the people closest to you shaped your choices, for good or bad?"
+],
+[
+"James 3:13",
+"James says a wise man shows his works \"with meekness of wisdom.\" How does true wisdom show up in our actions and not just our words?"
+],
+[
+"James 3:14–16",
+"James warns about wisdom mixed with envy and strife. Where do we see that kind of earthly wisdom celebrated today?"
+],
+[
+"James 3:17",
+"Heavenly wisdom is \"first pure, then peaceable, gentle, and easy to be intreated.\" Which of these qualities is hardest for you, and why?"
+],
+[
+"Proverbs 15:22",
+"\"In the multitude of counsellors they are established.\" Who are the godly counselors in your life, and how can you make better use of their advice?"
+]
+],
+"close": [
+"Proverbs 9:10",
+"The fear of the LORD is the beginning of wisdom: and the knowledge of the holy is understanding."
+],
+"quiz": [
+[
+"Proverbs 1:7",
+"\"The fear of the LORD is the beginning of...\"",
+[
+"knowledge",
+"riches",
+"honour",
+"strength"
+],
+0
+],
+[
+"Proverbs 3:5",
+"\"Trust in the LORD with all thine heart; and lean not unto...\"",
+[
+"thy neighbour's counsel",
+"thine own understanding",
+"the strength of thine arm",
+"the wisdom of kings"
+],
+1
+],
+[
+"James 1:5",
+"If any of you lack wisdom, what should he do?",
+[
+"Search the scriptures alone",
+"Wait seven days",
+"Ask of God",
+"Consult the elders"
+],
+2
+],
+[
+"Proverbs 4:7",
+"Wisdom is called...",
+[
+"a hidden thing",
+"a costly thing",
+"a simple thing",
+"the principal thing"
+],
+3
+],
+[
+"James 1:8",
+"A double minded man is unstable in...",
+[
+"all his ways",
+"his speech only",
+"the morning",
+"his own house"
+],
+0
+],
+[
+"Proverbs 13:20",
+"He that walketh with wise men shall be...",
+[
+"rich",
+"wise",
+"honoured",
+"safe"
+],
+1
+],
+[
+"James 3:17",
+"The wisdom that is from above is first...",
+[
+"peaceable",
+"gentle",
+"pure",
+"merciful"
+],
+2
+],
+[
+"Proverbs 2:6",
+"According to Proverbs 2:6, who giveth wisdom?",
+[
+"the king",
+"the elders",
+"the teacher",
+"the LORD"
+],
+3
+],
+[
+"James 3:16",
+"Where envying and strife is, there is...",
+[
+"great wealth",
+"quiet rest",
+"much learning",
+"confusion and every evil work"
+],
+3
+],
+[
+"Proverbs 3:13",
+"\"___ is the man that findeth wisdom.\"",
+[
+"Happy",
+"Weary",
+"Proud",
+"Lonely"
+],
+0
+]
+]
+},
+{
+"title": "Peter: From Fisherman to Apostle",
+"intro": "Follow Simon Peter from his fishing boat to bold apostleship, and see how Jesus shapes an ordinary, impulsive man into a faithful leader.",
+"q": [
+[
+"Matthew 4:18–20",
+"Jesus said, \"Follow me, and I will make you fishers of men,\" and Peter left his nets straightway. What \"nets\" might God be asking us to leave behind to follow Him?"
+],
+[
+"Luke 5:4–8",
+"After the great catch of fish, Peter said, \"Depart from me; for I am a sinful man, O Lord.\" Why does a glimpse of Jesus' power make us more aware of our own sin?"
+],
+[
+"Matthew 14:28–31",
+"Peter walked on the water until he saw the wind and became afraid. What storms tend to pull our eyes off Jesus, and how can we keep our focus on Him?"
+],
+[
+"Matthew 16:15–17",
+"Peter confessed, \"Thou art the Christ, the Son of the living God.\" Who do you say Jesus is, and how does your answer show up in your daily life?"
+],
+[
+"Matthew 16:21–23",
+"Right after his great confession, Peter tried to talk Jesus out of going to the cross. How can we be sincere and still be thinking the way men think instead of the way God thinks?"
+],
+[
+"John 13:6–9",
+"Peter first refused to let Jesus wash his feet, then asked to be washed all over. What does this teach us about humbly receiving what Jesus offers?"
+],
+[
+"Luke 22:31–32",
+"Jesus told Peter He had prayed for him, that his faith fail not. How does it encourage you to know Jesus intercedes for you even before you stumble?"
+],
+[
+"Luke 22:60–62",
+"When the cock crew, the Lord turned and looked upon Peter, and Peter went out and wept bitterly. What should godly sorrow over our failures lead us to do next?"
+],
+[
+"John 21:15–17",
+"Three times Jesus asked Peter, \"Lovest thou me?\" and told him to feed His sheep. How does Jesus restore people after failure, and how does our love for Him show up in serving others?"
+],
+[
+"Acts 4:13",
+"The council marveled at the boldness of Peter and John and \"took knowledge of them, that they had been with Jesus.\" What would cause others to notice that we have been with Jesus?"
+]
+],
+"close": [
+"2 Peter 3:18",
+"But grow in grace, and in the knowledge of our Lord and Saviour Jesus Christ. To him be glory both now and for ever. Amen."
+],
+"quiz": [
+[
+"Matthew 4:18",
+"What were Peter and Andrew doing when Jesus called them?",
+[
+"Casting a net into the sea",
+"Mending tents",
+"Collecting taxes",
+"Tending sheep"
+],
+0
+],
+[
+"John 1:40–42",
+"Who first brought Simon to Jesus?",
+[
+"John the Baptist",
+"James",
+"His brother Andrew",
+"Philip"
+],
+2
+],
+[
+"John 1:42",
+"Jesus said Simon would be called Cephas, which is by interpretation...",
+[
+"A stone",
+"A shepherd",
+"A fisher",
+"Beloved"
+],
+0
+],
+[
+"Matthew 14:30",
+"Why did Peter begin to sink while walking on the water?",
+[
+"He looked back at the boat",
+"Jesus stepped away from him",
+"He tried to walk too fast",
+"He saw the wind boisterous and was afraid"
+],
+3
+],
+[
+"Matthew 16:16",
+"Peter confessed, \"Thou art the Christ, the Son of...\"",
+[
+"David",
+"Abraham",
+"the living God",
+"man"
+],
+2
+],
+[
+"Matthew 26:34",
+"Jesus said Peter would deny Him how many times before the cock crew?",
+[
+"Once",
+"Three times",
+"Twice",
+"Seven times"
+],
+1
+],
+[
+"John 18:10",
+"In the garden, Peter cut off the ear of the high priest's servant. What was the servant's name?",
+[
+"Malchus",
+"Caiaphas",
+"Annas",
+"Barabbas"
+],
+0
+],
+[
+"John 21:17",
+"After asking Peter a third time, \"Lovest thou me?\", Jesus told him...",
+[
+"Go home to Galilee",
+"Build a temple",
+"Mend the nets",
+"Feed my sheep"
+],
+3
+],
+[
+"Acts 2:41",
+"About how many souls were added after Peter preached on the day of Pentecost?",
+[
+"Five hundred",
+"Three thousand",
+"Five thousand",
+"Twelve thousand"
+],
+1
+],
+[
+"Acts 3:6",
+"Peter told the lame man, \"In the name of Jesus Christ of Nazareth...\"",
+[
+"be thou clean",
+"rise up and walk",
+"thy sins be forgiven",
+"go in peace"
+],
+1
+]
+]
+},
+{
+"title": "The Kingdom of God",
+"intro": "What Jesus taught about the kingdom of God, how we enter it, and how we live as its citizens today.",
+"q": [
+[
+"Mark 1:14–15",
+"Jesus began His ministry preaching, \"the kingdom of God is at hand: repent ye, and believe the gospel.\" Why do you think repenting and believing go together when we come into God's kingdom?"
+],
+[
+"Matthew 6:33",
+"\"Seek ye first the kingdom of God, and his righteousness.\" What competes for first place in your life, and what would it look like this week to put God's kingdom first?"
+],
+[
+"John 3:3–5",
+"Jesus told Nicodemus that a man must be born again to see the kingdom of God. What does being born again mean to you, and how has it changed the way you see things?"
+],
+[
+"Matthew 13:31–32",
+"Jesus compared the kingdom to a grain of mustard seed that grows into a great tree. Where have you seen God take something small in your life and make it grow?"
+],
+[
+"Matthew 13:44–46",
+"The man who found treasure in a field sold all he had to buy that field. What have you given up for the kingdom, and was it worth it?"
+],
+[
+"Romans 14:17",
+"Paul says the kingdom of God is \"righteousness, and peace, and joy in the Holy Ghost.\" Which of these three do you most need more of right now?"
+],
+[
+"Luke 17:20–21",
+"Jesus said the kingdom of God does not come with observation, for \"the kingdom of God is within you.\" How should God's rule show up in our hearts before it shows up anywhere else?"
+],
+[
+"Matthew 18:3–4",
+"Jesus said we must be converted and become as little children to enter the kingdom of heaven. What childlike qualities does God want to see in us?"
+],
+[
+"Matthew 6:10",
+"Jesus taught us to pray, \"Thy kingdom come. Thy will be done in earth, as it is in heaven.\" What would change in your home or community if God's will were done there as it is in heaven?"
+],
+[
+"Colossians 1:13",
+"God \"hath delivered us from the power of darkness, and hath translated us into the kingdom of his dear Son.\" How should knowing whose kingdom you belong to shape how you live each day?"
+]
+],
+"close": [
+"Matthew 6:33",
+"But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you."
+],
+"quiz": [
+[
+"Mark 1:15",
+"Jesus said, \"The time is fulfilled, and the kingdom of God is...\"",
+[
+"at hand",
+"far off",
+"in Jerusalem",
+"hidden from you"
+],
+0
+],
+[
+"John 3:3",
+"\"Except a man be born again, he cannot...\"",
+[
+"enter the temple",
+"see the kingdom of God",
+"keep the law",
+"understand the scriptures"
+],
+1
+],
+[
+"Matthew 13:31",
+"Jesus likened the kingdom of heaven to a grain of...",
+[
+"wheat",
+"barley",
+"mustard seed",
+"rice"
+],
+2
+],
+[
+"Matthew 13:45–46",
+"In the parable, the merchant man sold all that he had to buy...",
+[
+"a field",
+"a vineyard",
+"a house",
+"one pearl of great price"
+],
+3
+],
+[
+"Romans 14:17",
+"The kingdom of God is not meat and drink, but righteousness, and peace, and...",
+[
+"joy in the Holy Ghost",
+"faith in God",
+"love one to another",
+"hope of glory"
+],
+0
+],
+[
+"Matthew 6:33",
+"What does Jesus tell us to seek first?",
+[
+"riches",
+"the kingdom of God and his righteousness",
+"wisdom",
+"a good name"
+],
+1
+],
+[
+"Luke 17:21",
+"Jesus said, \"Behold, the kingdom of God is...\"",
+[
+"in heaven only",
+"in the temple",
+"within you",
+"among the nations"
+],
+2
+],
+[
+"Matthew 18:3",
+"\"Except ye be converted, and become as...\" ye shall not enter the kingdom of heaven.",
+[
+"kings",
+"priests",
+"prophets",
+"little children"
+],
+3
+],
+[
+"Matthew 19:24",
+"It is easier for a camel to go through the eye of a needle, than for a rich man to...",
+[
+"enter into the kingdom of God",
+"give to the poor",
+"keep the commandments",
+"find peace"
+],
+0
+],
+[
+"Matthew 13:33",
+"The kingdom of heaven is like leaven that a woman hid in how many measures of meal?",
+[
+"one",
+"two",
+"three",
+"seven"
+],
+2
+]
+]
+},
+{
+"title": "Abraham: Friend of God",
+"intro": "Following Abraham's journey of faith and obedience, and what it means to be called the Friend of God.",
+"q": [
+[
+"Genesis 12:1",
+"God told Abram to leave his country and kindred for \"a land that I will shew thee.\" What might God be asking us to leave behind in order to follow Him?"
+],
+[
+"Hebrews 11:8",
+"Abraham \"went out, not knowing whither he went.\" How do we keep obeying when God has not shown us the whole road?"
+],
+[
+"Genesis 12:2–3",
+"God promised to bless Abram so that he would be a blessing. How has God blessed you so that you can bless others?"
+],
+[
+"Genesis 13:8–9",
+"Abram let Lot choose the land first to keep peace between them. What can we learn from Abram about putting peace ahead of our own advantage?"
+],
+[
+"Genesis 15:5–6",
+"Abram believed the LORD, \"and he counted it to him for righteousness.\" Why is simple trust in God's promise so precious to Him?"
+],
+[
+"Genesis 16:1–2",
+"Abram and Sarai tried to bring about God's promise their own way through Hagar. When are we tempted to rush ahead of God, and what can it cost us?"
+],
+[
+"Genesis 18:14",
+"\"Is any thing too hard for the LORD?\" What situation in your life needs to hear that question today?"
+],
+[
+"Genesis 18:23–25",
+"Abraham pleaded boldly with God for the righteous in Sodom. What does his example teach us about praying for others?"
+],
+[
+"Genesis 22:1–2",
+"God asked Abraham to offer Isaac, the son he loved. Is there anything we hold so tightly that it competes with our love for God?"
+],
+[
+"James 2:23",
+"Abraham \"was called the Friend of God.\" What would it look like for your walk with God to grow into a true friendship?"
+]
+],
+"close": [
+"James 2:23",
+"And the scripture was fulfilled which saith, Abraham believed God, and it was imputed unto him for righteousness: and he was called the Friend of God."
+],
+"quiz": [
+[
+"Genesis 11:31",
+"Abram's family went forth from which place to go into the land of Canaan?",
+[
+"Ur of the Chaldees",
+"Babylon",
+"Nineveh",
+"Damascus"
+],
+0
+],
+[
+"Genesis 12:4",
+"How old was Abram when he departed out of Haran?",
+[
+"50",
+"75",
+"90",
+"100"
+],
+1
+],
+[
+"Genesis 14:18–20",
+"Abram gave tithes of all to which king and priest?",
+[
+"Pharaoh",
+"Abimelech",
+"Melchizedek",
+"the king of Sodom"
+],
+2
+],
+[
+"Genesis 15:5",
+"God told Abram to look toward heaven and count the...",
+[
+"angels",
+"clouds",
+"birds",
+"stars"
+],
+3
+],
+[
+"Genesis 17:5",
+"God renamed Abram \"Abraham\" because He made him a father of...",
+[
+"many nations",
+"the faithful",
+"Israel",
+"kings"
+],
+0
+],
+[
+"Genesis 17:15",
+"God changed Sarai's name to...",
+[
+"Rebekah",
+"Sarah",
+"Rachel",
+"Hagar"
+],
+1
+],
+[
+"Genesis 21:5",
+"How old was Abraham when Isaac was born?",
+[
+"75",
+"90",
+"100",
+"120"
+],
+2
+],
+[
+"Genesis 22:2",
+"God told Abraham to take Isaac into the land of...",
+[
+"Egypt",
+"Goshen",
+"Haran",
+"Moriah"
+],
+3
+],
+[
+"Genesis 22:13",
+"What did Abraham offer in the place of his son?",
+[
+"a lamb from his flock",
+"a ram caught in a thicket",
+"a young bullock",
+"two turtledoves"
+],
+1
+],
+[
+"Genesis 22:14",
+"What did Abraham call the name of the place where God provided?",
+[
+"Bethel",
+"Peniel",
+"Ebenezer",
+"Jehovahjireh"
+],
+3
+]
+]
+},
+{
+"title": "Moses: Called to Lead",
+"intro": "Follow Moses from the burning bush to Mount Nebo and discover how God equips the people He calls.",
+"q": [
+[
+"Exodus 3:4–5",
+"God told Moses, \"the place whereon thou standest is holy ground.\" How can we recognize the moments when God meets us in ordinary places?"
+],
+[
+"Exodus 3:11",
+"Moses asked, \"Who am I, that I should go unto Pharaoh?\" When have you felt unqualified for something God asked you to do?"
+],
+[
+"Exodus 3:14",
+"God revealed His name as \"I AM THAT I AM.\" What does this name tell us about who God is, and why was it enough for Moses?"
+],
+[
+"Exodus 4:10–12",
+"Moses said he was slow of speech, but God promised to be with his mouth. How does God use our weaknesses for His purposes?"
+],
+[
+"Exodus 14:13–14",
+"\"Fear ye not, stand still, and see the salvation of the LORD.\" What does it look like to stand still and let God fight for us?"
+],
+[
+"Exodus 17:11–12",
+"Aaron and Hur held up Moses' hands until the battle was won. Who holds up your hands, and whose hands can you hold up?"
+],
+[
+"Exodus 18:17–18",
+"Jethro warned Moses that he would wear himself out doing everything alone. Why is sharing the load a sign of wise leadership?"
+],
+[
+"Exodus 33:15",
+"Moses prayed, \"If thy presence go not with me, carry us not up hence.\" Why did Moses value God's presence more than reaching the promised land?"
+],
+[
+"Numbers 12:3",
+"Moses was \"very meek, above all the men which were upon the face of the earth.\" Why can meekness be one of a leader's greatest strengths?"
+],
+[
+"Deuteronomy 34:10",
+"Moses was a man \"whom the LORD knew face to face.\" What would it look like for you to draw closer to the LORD this week?"
+]
+],
+"close": [
+"Deuteronomy 31:6",
+"Be strong and of a good courage, fear not, nor be afraid of them: for the LORD thy God, he it is that doth go with thee; he will not fail thee, nor forsake thee."
+],
+"quiz": [
+[
+"Exodus 2:10",
+"Who gave Moses his name?",
+[
+"Pharaoh's daughter",
+"his mother",
+"Miriam",
+"Jethro"
+],
+0
+],
+[
+"Exodus 3:2",
+"The bush burned with fire, and the bush was not...",
+[
+"moved",
+"consumed",
+"seen",
+"touched"
+],
+1
+],
+[
+"Exodus 3:14",
+"What name did God give Moses to tell the children of Israel?",
+[
+"The Mighty One",
+"The Ancient of Days",
+"I AM THAT I AM",
+"The God of Egypt"
+],
+2
+],
+[
+"Exodus 4:14",
+"Whom did God name to speak for Moses because he could speak well?",
+[
+"Joshua",
+"Hur",
+"Caleb",
+"Aaron"
+],
+3
+],
+[
+"Exodus 7:20",
+"In the first plague, the waters of the river were turned to...",
+[
+"blood",
+"frogs",
+"dust",
+"hail"
+],
+0
+],
+[
+"Exodus 14:21",
+"The LORD caused the sea to go back by a strong...",
+[
+"north wind",
+"east wind",
+"west wind",
+"south wind"
+],
+1
+],
+[
+"Exodus 17:12",
+"Who held up Moses' hands during the battle with Amalek?",
+[
+"Joshua and Caleb",
+"Miriam and Aaron",
+"Aaron and Hur",
+"Eleazar and Phinehas"
+],
+2
+],
+[
+"Exodus 18:17–21",
+"Who advised Moses to appoint rulers to help judge the people?",
+[
+"Aaron",
+"Joshua",
+"Pharaoh",
+"Jethro"
+],
+3
+],
+[
+"Exodus 34:28",
+"How long was Moses with the LORD on the mount when the words of the covenant were written on the tables?",
+[
+"forty days and forty nights",
+"seven days",
+"three days",
+"twelve days"
+],
+0
+],
+[
+"Deuteronomy 34:7",
+"How old was Moses when he died?",
+[
+"eighty years",
+"an hundred and twenty years",
+"an hundred years",
+"an hundred and fifty years"
+],
+1
+]
+]
+},
+{
+"title": "Repentance: Turning Back to God",
+"intro": "Discover what true repentance is, why God calls everyone to it, and the joy and refreshing that come when we turn back to Him.",
+"q": [
+[
+"Matthew 4:17",
+"Jesus began His preaching with \"Repent: for the kingdom of heaven is at hand.\" Why do you think repentance was the first word of His message?"
+],
+[
+"2 Corinthians 7:10",
+"\"Godly sorrow worketh repentance to salvation.\" What is the difference between being sorry we got caught and the godly sorrow that actually changes us?"
+],
+[
+"Psalm 51:10",
+"David prayed, \"Create in me a clean heart, O God; and renew a right spirit within me.\" What does this prayer teach us about how to come to God after we sin?"
+],
+[
+"Luke 15:17–20",
+"The prodigal son \"came to himself\" and went home to his father. What helps a person come to their senses, and what does the father's welcome show us about God?"
+],
+[
+"Luke 15:7",
+"Jesus said there is joy in heaven over one sinner that repenteth. How should that change the way we treat people who are turning their lives around?"
+],
+[
+"1 John 1:9",
+"\"If we confess our sins, he is faithful and just to forgive us our sins.\" Why is honest confession such an important part of repentance?"
+],
+[
+"Matthew 3:8",
+"John the Baptist said, \"Bring forth therefore fruits meet for repentance.\" What kinds of changed behavior show that repentance is real?"
+],
+[
+"Luke 19:8",
+"After meeting Jesus, Zacchaeus gave half his goods to the poor and offered to restore fourfold anything he had taken wrongly. When might repentance call us to make things right with others?"
+],
+[
+"2 Peter 3:9",
+"The Lord is \"not willing that any should perish, but that all should come to repentance.\" How does God's patience with us encourage you, and how should it shape our patience with others?"
+],
+[
+"Acts 3:19",
+"Peter promised \"times of refreshing\" from the presence of the Lord for those who repent and are converted. Where in your life do you need God's refreshing today?"
+]
+],
+"close": [
+"Isaiah 55:7",
+"Let the wicked forsake his way, and the unrighteous man his thoughts: and let him return unto the LORD, and he will have mercy upon him; and to our God, for he will abundantly pardon."
+],
+"quiz": [
+[
+"Matthew 4:17",
+"Jesus preached, \"Repent: for the kingdom of heaven is...\"",
+[
+"far away",
+"at hand",
+"for the righteous",
+"a mystery"
+],
+1
+],
+[
+"2 Corinthians 7:10",
+"According to Paul, what worketh repentance to salvation?",
+[
+"Fear of punishment",
+"The sorrow of the world",
+"Godly sorrow",
+"Good works"
+],
+2
+],
+[
+"Luke 15:7",
+"Jesus said joy shall be in heaven over one sinner that...",
+[
+"repenteth",
+"giveth alms",
+"keepeth the law",
+"prayeth"
+],
+0
+],
+[
+"Luke 15:15",
+"What job did the prodigal son take when he was in need?",
+[
+"Fishing",
+"Making tents",
+"Collecting taxes",
+"Feeding swine"
+],
+3
+],
+[
+"Luke 15:20",
+"When the father saw his son a great way off, what did he do?",
+[
+"Waited for him to apologize",
+"Sent a servant to meet him",
+"Ran, fell on his neck, and kissed him",
+"Turned him away"
+],
+2
+],
+[
+"Luke 19:8",
+"Zacchaeus said he would restore how many times over to anyone he had taken from by false accusation?",
+[
+"Twofold",
+"Fourfold",
+"Sevenfold",
+"Tenfold"
+],
+1
+],
+[
+"Jonah 3:5",
+"When Jonah preached, what did the people of Nineveh do?",
+[
+"Believed God and proclaimed a fast",
+"Threw Jonah out of the city",
+"Built an altar to Baal",
+"Fled to Tarshish"
+],
+0
+],
+[
+"Acts 2:38",
+"On the day of Pentecost, Peter told the people, \"Repent, and be...\"",
+[
+"circumcised",
+"baptized every one of you",
+"silent",
+"sent away"
+],
+1
+],
+[
+"2 Peter 3:9",
+"The Lord is not willing that any should perish, but that all should come to...",
+[
+"judgment",
+"Jerusalem",
+"riches",
+"repentance"
+],
+3
+],
+[
+"1 John 1:9",
+"If we confess our sins, He is faithful and just to forgive us and to cleanse us from...",
+[
+"all unrighteousness",
+"all sickness",
+"all poverty",
+"all trouble"
+],
+0
+]
+]
+},
+{
+"title": "Jonah: Running from God",
+"intro": "The story of Jonah shows that we cannot outrun God, and that His mercy reaches further than we expect.",
+"q": [
+[
+"Jonah 1:1–3",
+"Jonah rose up \"to flee unto Tarshish from the presence of the LORD.\" What are some ways people today try to run from what God has asked them to do?"
+],
+[
+"Jonah 1:4–6",
+"While the storm raged, Jonah was fast asleep below deck. How can running from God make us numb to danger, and how can our disobedience affect the people around us?"
+],
+[
+"Jonah 1:12",
+"Jonah told the sailors to throw him into the sea, admitting the storm was his fault. Why is owning up to our own sin an important step back toward God?"
+],
+[
+"Jonah 1:17",
+"\"Now the LORD had prepared a great fish to swallow up Jonah.\" How has God used hard or unexpected circumstances to get your attention and turn you around?"
+],
+[
+"Jonah 2:1–2",
+"Jonah prayed from the fish's belly, and God heard him. What does this teach us about praying even when we have brought our trouble on ourselves?"
+],
+[
+"Jonah 2:9",
+"\"Salvation is of the LORD.\" Why do you think Jonah came to this conclusion in the belly of the fish, and how does it encourage you?"
+],
+[
+"Jonah 3:1–2",
+"\"And the word of the LORD came unto Jonah the second time.\" How does it encourage you that God gives second chances to those who have failed Him?"
+],
+[
+"Jonah 3:5–10",
+"When Nineveh believed God and turned from their evil way, God showed mercy. What does true repentance look like, both for a city and for one person?"
+],
+[
+"Jonah 4:1–2",
+"Jonah was angry that God was gracious and merciful to Nineveh. Have you ever struggled when God showed mercy to someone you thought did not deserve it?"
+],
+[
+"Jonah 4:10–11",
+"The book ends with God asking Jonah why He should not spare that great city full of people. Who are the people in our day, like Nineveh, that God may be calling us to care about?"
+]
+],
+"close": [
+"Psalm 139:7",
+"Whither shall I go from thy spirit? or whither shall I flee from thy presence?"
+],
+"quiz": [
+[
+"Jonah 1:2",
+"God told Jonah to go and cry against which great city?",
+[
+"Nineveh",
+"Babylon",
+"Tarshish",
+"Joppa"
+],
+0
+],
+[
+"Jonah 1:3",
+"Where did Jonah try to flee?",
+[
+"Egypt",
+"Tarshish",
+"Damascus",
+"Nineveh"
+],
+1
+],
+[
+"Jonah 1:3",
+"Jonah went down to which city and found a ship?",
+[
+"Tyre",
+"Sidon",
+"Joppa",
+"Caesarea"
+],
+2
+],
+[
+"Jonah 1:7",
+"How did the sailors find out the storm had come because of Jonah?",
+[
+"a dream",
+"an angel told them",
+"a voice from heaven",
+"they cast lots"
+],
+3
+],
+[
+"Jonah 1:9",
+"Jonah told the sailors, \"I am an...\"",
+[
+"Hebrew",
+"Philistine",
+"Egyptian",
+"Assyrian"
+],
+0
+],
+[
+"Jonah 1:17",
+"How long was Jonah in the belly of the fish?",
+[
+"one day and one night",
+"three days and three nights",
+"seven days",
+"forty days"
+],
+1
+],
+[
+"Jonah 3:4",
+"Jonah preached, \"Yet forty days, and Nineveh shall be...\"",
+[
+"blessed",
+"rebuilt",
+"overthrown",
+"forgiven"
+],
+2
+],
+[
+"Jonah 3:5",
+"When the people of Nineveh believed God, they proclaimed a fast and put on...",
+[
+"white robes",
+"crowns",
+"armor",
+"sackcloth"
+],
+3
+],
+[
+"Jonah 4:6",
+"What did God prepare to give Jonah shade?",
+[
+"a gourd",
+"a tent",
+"a cave",
+"a fig tree"
+],
+0
+],
+[
+"Jonah 4:7",
+"What did God prepare to make the gourd wither?",
+[
+"a locust",
+"a fire",
+"a worm",
+"a drought"
+],
+2
+]
+]
+},
+{
+"title": "The Beatitudes",
+"intro": "Exploring the blessings Jesus promised in the Sermon on the Mount and the kind of heart He calls us to have.",
+"q": [
+[
+"Matthew 5:1–2",
+"Jesus went up into a mountain and taught His disciples. What does it mean to come to Jesus ready to be taught?"
+],
+[
+"Matthew 5:3",
+"What does it mean to be \"poor in spirit,\" and why would that be the starting place for the kingdom of heaven?"
+],
+[
+"Matthew 5:4",
+"How have you experienced God's comfort in a time of mourning, and how can we comfort others who grieve?"
+],
+[
+"Matthew 5:5",
+"Meekness is not weakness. What does strength under God's control look like at home, at work, or online?"
+],
+[
+"Matthew 5:6",
+"What things compete with our hunger and thirst for righteousness, and how can we grow a stronger appetite for God?"
+],
+[
+"Matthew 5:7",
+"\"Blessed are the merciful: for they shall obtain mercy.\" Who in your life needs mercy from you right now?"
+],
+[
+"Matthew 5:8",
+"What clutters our hearts, and what steps can we take to keep them pure before God?"
+],
+[
+"Matthew 5:9",
+"Being a peacemaker is more than avoiding conflict. Where could you help bring peace between people this week?"
+],
+[
+"Matthew 5:10–11",
+"How should a believer respond when mocked or mistreated for following Jesus?"
+],
+[
+"Matthew 5:12",
+"Jesus says to \"rejoice, and be exceeding glad\" even under persecution. How does keeping our eyes on our reward in heaven change our attitude?"
+]
+],
+"close": [
+"Matthew 5:8",
+"Blessed are the pure in heart: for they shall see God."
+],
+"quiz": [
+[
+"Matthew 5:1",
+"Where did Jesus go up to teach the Beatitudes?",
+[
+"into a ship",
+"into the temple",
+"into a mountain",
+"into a synagogue"
+],
+2
+],
+[
+"Matthew 5:3",
+"The poor in spirit are blessed, for theirs is...",
+[
+"the kingdom of heaven",
+"the earth",
+"a great reward",
+"mercy"
+],
+0
+],
+[
+"Matthew 5:4",
+"Those who mourn are promised that they shall be...",
+[
+"filled",
+"comforted",
+"called the children of God",
+"rewarded"
+],
+1
+],
+[
+"Matthew 5:5",
+"Who shall inherit the earth?",
+[
+"the merciful",
+"the peacemakers",
+"the pure in heart",
+"the meek"
+],
+3
+],
+[
+"Matthew 5:6",
+"Those who hunger and thirst after righteousness shall be...",
+[
+"comforted",
+"exalted",
+"filled",
+"healed"
+],
+2
+],
+[
+"Matthew 5:7",
+"The merciful are promised that they shall...",
+[
+"obtain mercy",
+"see God",
+"be filled",
+"be comforted"
+],
+0
+],
+[
+"Matthew 5:8",
+"Who shall see God?",
+[
+"the meek",
+"the pure in heart",
+"the poor in spirit",
+"the peacemakers"
+],
+1
+],
+[
+"Matthew 5:9",
+"The peacemakers shall be called...",
+[
+"the light of the world",
+"the salt of the earth",
+"the friends of God",
+"the children of God"
+],
+3
+],
+[
+"Matthew 5:10",
+"Those persecuted for righteousness' sake are promised...",
+[
+"the earth",
+"the kingdom of heaven",
+"mercy",
+"comfort"
+],
+1
+],
+[
+"Matthew 5:12",
+"When we are reviled for Jesus' sake, great is our reward...",
+[
+"on earth",
+"in this life",
+"in heaven",
+"among men"
+],
+2
+]
+]
+},
+{
+"title": "The Parables of Jesus",
+"intro": "Explore the earthly stories Jesus told to reveal heavenly truths about God's kingdom, His mercy, and our hearts.",
+"q": [
+[
+"Matthew 13:18–23",
+"In the parable of the sower, the seed falls on four kinds of ground. Which ground best describes your heart right now, and what would help it become good ground?"
+],
+[
+"Matthew 13:22",
+"\"The care of this world, and the deceitfulness of riches, choke the word.\" What thorns are competing for room in your life?"
+],
+[
+"Matthew 13:31–32",
+"The kingdom is like a tiny mustard seed that becomes a tree. How have you seen God grow something great from a small beginning?"
+],
+[
+"Matthew 13:45–46",
+"The merchant sold all that he had to buy one pearl of great price. What does it mean to value God's kingdom above everything else?"
+],
+[
+"Luke 10:36–37",
+"After the good Samaritan, Jesus said, \"Go, and do thou likewise.\" Who is the neighbor God may be placing in your path right now?"
+],
+[
+"Luke 15:4–7",
+"There is joy in heaven over one sinner that repenteth. How should that shape the way we see people who are far from God?"
+],
+[
+"Luke 15:20",
+"The father saw his son \"a great way off,\" had compassion, and ran to him. What does this teach us about how God receives us when we return?"
+],
+[
+"Luke 15:28–30",
+"The older brother was angry and would not go in. How can faithful people guard against the older brother's attitude?"
+],
+[
+"Matthew 25:21",
+"\"Well done, thou good and faithful servant.\" What gifts has God entrusted to you, and how are you putting them to work?"
+],
+[
+"Matthew 7:24–27",
+"The wise man built his house upon a rock by hearing and doing Jesus' sayings. What storm has tested your foundation, and what held you up?"
+]
+],
+"close": [
+"Matthew 13:9",
+"Who hath ears to hear, let him hear."
+],
+"quiz": [
+[
+"Matthew 13:4",
+"What devoured the seeds that fell by the way side?",
+[
+"the fowls",
+"the wind",
+"the sun",
+"the thorns"
+],
+0
+],
+[
+"Luke 8:11",
+"In the parable of the sower, the seed is...",
+[
+"faith",
+"the word of God",
+"the kingdom",
+"good works"
+],
+1
+],
+[
+"Matthew 13:31",
+"The kingdom of heaven is like to a grain of...",
+[
+"wheat",
+"barley",
+"mustard seed",
+"corn"
+],
+2
+],
+[
+"Matthew 13:46",
+"What did the merchant do when he found the pearl of great price?",
+[
+"Hid it in a field",
+"Sold it for profit",
+"Gave it to the king",
+"Sold all that he had and bought it"
+],
+3
+],
+[
+"Luke 10:33",
+"Who had compassion on the wounded man?",
+[
+"a certain Samaritan",
+"a priest",
+"a Levite",
+"the innkeeper"
+],
+0
+],
+[
+"Luke 10:35",
+"How much did the Samaritan give the host to care for the man?",
+[
+"one talent",
+"two pence",
+"ten pieces of silver",
+"a gold ring"
+],
+1
+],
+[
+"Luke 15:4",
+"How many sheep did the man have before one was lost?",
+[
+"twelve",
+"fifty",
+"an hundred",
+"a thousand"
+],
+2
+],
+[
+"Luke 15:8",
+"How many pieces of silver did the woman have before she lost one?",
+[
+"seven",
+"twelve",
+"thirty",
+"ten"
+],
+3
+],
+[
+"Luke 15:15",
+"What was the prodigal son sent into the fields to feed?",
+[
+"swine",
+"sheep",
+"goats",
+"camels"
+],
+0
+],
+[
+"Matthew 7:24",
+"Where did the wise man build his house?",
+[
+"upon the sand",
+"by the river",
+"in the valley",
+"upon a rock"
+],
+3
+]
+]
+},
+{
+"title": "Tithes and Offerings",
+"intro": "Learn what Scripture teaches about tithes and offerings, and how cheerful, faithful giving honors God and blesses His work.",
+"q": [
+[
+"Psalm 24:1",
+"\"The earth is the LORD'S, and the fulness thereof.\" How does knowing that everything belongs to God change the way we think about our money?"
+],
+[
+"Genesis 14:18–20",
+"Abram gave Melchizedek tithes of all after God gave him victory. What does Abram's example teach us about honoring God after He has blessed us?"
+],
+[
+"Genesis 28:20–22",
+"Jacob vowed, \"of all that thou shalt give me I will surely give the tenth unto thee.\" What does it mean to see our giving as a response to what God first gives us?"
+],
+[
+"Proverbs 3:9–10",
+"We are told to \"Honour the LORD with thy substance, and with the firstfruits of all thine increase.\" Why does God ask for the first and not the leftovers?"
+],
+[
+"Malachi 3:8–10",
+"God invited His people to bring the tithes into the storehouse and \"prove me now herewith.\" What fears or doubts keep people from trusting God with their finances?"
+],
+[
+"2 Corinthians 9:6–7",
+"\"God loveth a cheerful giver.\" What helps us give from a willing heart rather than grudgingly or out of pressure?"
+],
+[
+"Mark 12:41–44",
+"Jesus said the poor widow's two mites were more than all the others cast in. How does God measure a gift differently than people do?"
+],
+[
+"Matthew 23:23",
+"Jesus told the scribes and Pharisees they tithed carefully but left undone judgment, mercy, and faith. How can we keep our giving from becoming a substitute for a right heart?"
+],
+[
+"Acts 20:35",
+"Paul reminded us of the words of the Lord Jesus, \"It is more blessed to give than to receive.\" When have you experienced the blessing of giving?"
+],
+[
+"Philippians 4:18–19",
+"Paul called the Philippians' gift \"an odour of a sweet smell, a sacrifice acceptable, wellpleasing to God.\" How does it encourage you to know your offerings are worship, and that God promises to supply your needs?"
+]
+],
+"close": [
+"2 Corinthians 9:7",
+"Every man according as he purposeth in his heart, so let him give; not grudgingly, or of necessity: for God loveth a cheerful giver."
+],
+"quiz": [
+[
+"Genesis 14:20",
+"Abram gave Melchizedek tithes of...",
+[
+"half",
+"all",
+"his cattle only",
+"his gold only"
+],
+1
+],
+[
+"Genesis 14:18",
+"Melchizedek was king of Salem and the priest of...",
+[
+"Baal",
+"Egypt",
+"the most high God",
+"Midian"
+],
+2
+],
+[
+"Genesis 28:22",
+"Jacob vowed to give God what portion of all God gave him?",
+[
+"A fifth",
+"A tenth",
+"A third",
+"Half"
+],
+1
+],
+[
+"Leviticus 27:30",
+"According to Leviticus, all the tithe of the land is...",
+[
+"the king's",
+"the landowner's",
+"the stranger's",
+"the LORD'S"
+],
+3
+],
+[
+"Proverbs 3:9",
+"We are to honour the LORD with our substance and with the...",
+[
+"firstfruits of all thine increase",
+"leftovers of thy harvest",
+"tithe of thy neighbour",
+"silver of thy fathers"
+],
+0
+],
+[
+"Malachi 3:10",
+"Where did God tell His people to bring all the tithes?",
+[
+"To the king's palace",
+"To the city gate",
+"Into the storehouse",
+"To the river"
+],
+2
+],
+[
+"Malachi 3:10",
+"God promised to open the windows of...",
+[
+"the temple",
+"heaven",
+"the storehouse",
+"the city"
+],
+1
+],
+[
+"Mark 12:42",
+"How much did the poor widow throw into the treasury?",
+[
+"Two mites",
+"One talent",
+"Ten pieces of silver",
+"A shekel"
+],
+0
+],
+[
+"2 Corinthians 9:7",
+"Paul wrote that God loveth a ... giver.",
+[
+"wealthy",
+"generous",
+"faithful",
+"cheerful"
+],
+3
+],
+[
+"Acts 20:35",
+"The Lord Jesus said it is more blessed to...",
+[
+"receive than to give",
+"save than to spend",
+"give than to receive",
+"pray than to give"
+],
+2
+]
+]
+},
+{
+"title": "The Peace of God",
+"intro": "Discovering the peace that comes from Jesus, how to guard it through prayer, and how to share it with others.",
+"q": [
+[
+"Philippians 4:6–7",
+"Paul tells us to be careful for nothing, but in every thing \"by prayer and supplication with thanksgiving\" to let our requests be made known unto God. What worry do you need to turn into a prayer today?"
+],
+[
+"John 14:27",
+"Jesus said, \"Peace I leave with you, my peace I give unto you: not as the world giveth.\" How is the peace Jesus gives different from the peace the world offers?"
+],
+[
+"Isaiah 26:3",
+"God keeps in \"perfect peace\" the one whose mind is stayed on Him. What helps you keep your mind on God when life gets busy or stressful?"
+],
+[
+"Romans 5:1",
+"\"Being justified by faith, we have peace with God through our Lord Jesus Christ.\" Why must we have peace with God before we can have the peace of God?"
+],
+[
+"Mark 4:37–39",
+"Jesus said \"Peace, be still\" to the storm while the disciples were afraid. What storm in your life do you need to bring to Jesus?"
+],
+[
+"John 16:33",
+"Jesus said, \"In the world ye shall have tribulation: but be of good cheer; I have overcome the world.\" How can we have peace even when trouble does not go away?"
+],
+[
+"Colossians 3:15",
+"\"Let the peace of God rule in your hearts.\" How can God's peace guide us like an umpire when we have decisions to make?"
+],
+[
+"Matthew 5:9",
+"\"Blessed are the peacemakers: for they shall be called the children of God.\" Where might God be calling you to be a peacemaker in your family, church, or community?"
+],
+[
+"Romans 12:18",
+"\"If it be possible, as much as lieth in you, live peaceably with all men.\" What makes living at peace with some people hard, and what part of it can you control?"
+],
+[
+"Psalm 4:8",
+"David wrote, \"I will both lay me down in peace, and sleep.\" How can trusting God help us rest at night instead of lying awake with worry?"
+]
+],
+"close": [
+"Philippians 4:7",
+"And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus."
+],
+"quiz": [
+[
+"Philippians 4:7",
+"The peace of God passeth all...",
+[
+"understanding",
+"trouble",
+"sorrow",
+"riches"
+],
+0
+],
+[
+"Isaiah 26:3",
+"God will keep him in perfect peace whose mind is...",
+[
+"full of knowledge",
+"stayed on thee",
+"at rest",
+"free from care"
+],
+1
+],
+[
+"John 14:27",
+"Jesus said, \"Let not your heart be troubled, neither let it be...\"",
+[
+"weary",
+"sad",
+"afraid",
+"proud"
+],
+2
+],
+[
+"Mark 4:39",
+"What did Jesus say to the sea during the storm?",
+[
+"Be gone",
+"Be calm",
+"Hear me",
+"Peace, be still"
+],
+3
+],
+[
+"Romans 5:1",
+"Being justified by faith, we have peace with God through...",
+[
+"our Lord Jesus Christ",
+"the law",
+"our good works",
+"the prophets"
+],
+0
+],
+[
+"Galatians 5:22",
+"In the fruit of the Spirit, which word comes right after \"love, joy\"?",
+[
+"patience",
+"peace",
+"faith",
+"hope"
+],
+1
+],
+[
+"Matthew 5:9",
+"Blessed are the peacemakers: for they shall be called...",
+[
+"the light of the world",
+"the salt of the earth",
+"the children of God",
+"kings and priests"
+],
+2
+],
+[
+"John 16:33",
+"Jesus said, \"Be of good cheer; I have...\"",
+[
+"risen from the dead",
+"sent the Comforter",
+"prepared a place",
+"overcome the world"
+],
+3
+],
+[
+"Isaiah 9:6",
+"Which of these is one of the names given to the Child in this verse?",
+[
+"The Prince of Peace",
+"The King of Glory",
+"The Lion of Judah",
+"The Morning Star"
+],
+0
+],
+[
+"Philippians 4:6",
+"Our requests are to be made known unto God by prayer and supplication with...",
+[
+"fasting",
+"thanksgiving",
+"tears",
+"boldness"
+],
+1
+]
+]
+},
+{
+"title": "Obedience to God",
+"intro": "Discovering why God values a willing, obedient heart and how our love for Him shows up in what we do.",
+"q": [
+[
+"1 Samuel 15:22",
+"\"To obey is better than sacrifice.\" Why might it be easier to give God religious activity than simple obedience?"
+],
+[
+"John 14:15",
+"Jesus links love and obedience. How does keeping His commandments show our love for Him?"
+],
+[
+"James 1:22",
+"What is one thing you have heard from God's word recently that you need to start doing, not just hearing?"
+],
+[
+"Luke 6:46",
+"\"Why call ye me, Lord, Lord, and do not the things which I say?\" Where is there a gap between what we say and what we do?"
+],
+[
+"Genesis 6:22",
+"Noah did all that God commanded him, long before the rain came. How do we stay obedient when others don't understand?"
+],
+[
+"Jonah 1:1–3",
+"Jonah ran the other way when God called him. What are some ways people run from what God tells them to do?"
+],
+[
+"Acts 5:29",
+"\"We ought to obey God rather than men.\" When might obeying God put us at odds with the people around us?"
+],
+[
+"Matthew 7:24–25",
+"How does obeying Jesus' words make our lives like a house built on a rock?"
+],
+[
+"Philippians 2:8",
+"Jesus was obedient unto death, even the death of the cross. How does His example encourage us when obedience is costly?"
+],
+[
+"1 John 5:3",
+"John says God's commandments \"are not grievous.\" How can obedience become a joy instead of a burden?"
+]
+],
+"close": [
+"Ecclesiastes 12:13",
+"Let us hear the conclusion of the whole matter: Fear God, and keep his commandments: for this is the whole duty of man."
+],
+"quiz": [
+[
+"1 Samuel 15:22",
+"Samuel told Saul that to obey is better than...",
+[
+"sacrifice",
+"prayer",
+"fasting",
+"praise"
+],
+0
+],
+[
+"1 Samuel 15:22",
+"To hearken is better than the fat of...",
+[
+"lambs",
+"rams",
+"bullocks",
+"goats"
+],
+1
+],
+[
+"John 14:15",
+"Jesus said, \"If ye love me,\"...",
+[
+"follow me",
+"feed my sheep",
+"keep my commandments",
+"pray without ceasing"
+],
+2
+],
+[
+"James 1:22",
+"James tells us to be doers of the word, and not...",
+[
+"teachers only",
+"servants only",
+"believers only",
+"hearers only"
+],
+3
+],
+[
+"Acts 5:29",
+"Peter and the apostles said we ought to obey God rather than...",
+[
+"men",
+"kings",
+"priests",
+"angels"
+],
+0
+],
+[
+"Genesis 6:22",
+"How much of what God commanded did Noah do?",
+[
+"most of it",
+"all of it",
+"half of it",
+"only the ark"
+],
+1
+],
+[
+"Jonah 1:3",
+"Jonah tried to flee from the presence of the LORD unto...",
+[
+"Nineveh",
+"Egypt",
+"Tarshish",
+"Babylon"
+],
+2
+],
+[
+"Matthew 7:24",
+"The one who hears Jesus' sayings and does them is like a wise man who built his house upon...",
+[
+"a hill",
+"the sand",
+"the shore",
+"a rock"
+],
+3
+],
+[
+"Joshua 6:15",
+"On the seventh day, how many times did Israel compass the city of Jericho?",
+[
+"once",
+"three times",
+"seven times",
+"twelve times"
+],
+2
+],
+[
+"Ecclesiastes 12:13",
+"Fearing God and keeping His commandments is the whole...",
+[
+"wisdom of man",
+"law of Moses",
+"life of faith",
+"duty of man"
+],
+3
+]
+]
+},
+{
+"title": "Worship and Praise",
+"intro": "Discover what it means to worship God in spirit and in truth, and to make praise a daily way of life.",
+"q": [
+[
+"John 4:23–24",
+"God seeks those who worship Him \"in spirit and in truth.\" What does that look like for an online church family worshiping from our own homes?"
+],
+[
+"Psalm 100:4",
+"\"Enter into his gates with thanksgiving, and into his courts with praise.\" How does starting with thanksgiving change the way we come to God?"
+],
+[
+"Psalm 34:1",
+"\"I will bless the LORD at all times.\" How can we keep praising God when life is hard?"
+],
+[
+"Romans 12:1",
+"Paul calls us to present our bodies \"a living sacrifice.\" How can work, family, and daily routines become acts of worship?"
+],
+[
+"Acts 16:25",
+"Paul and Silas prayed and sang praises to God at midnight in prison. What \"midnight\" situations in your life call for praise?"
+],
+[
+"2 Samuel 6:14",
+"David danced before the LORD with all his might. What holds us back from wholehearted worship?"
+],
+[
+"2 Samuel 24:24",
+"David refused to offer the LORD that which cost him nothing. What does your worship cost you, and why does that matter?"
+],
+[
+"Hebrews 13:15",
+"We are to offer \"the sacrifice of praise to God continually.\" Why is praise sometimes a sacrifice?"
+],
+[
+"Isaiah 29:13",
+"God spoke of people who honored Him with their lips while their hearts were far from Him. How can we keep worship from becoming empty routine?"
+],
+[
+"Psalm 150:6",
+"\"Let every thing that hath breath praise the LORD.\" What is one way your household can make praise part of every day?"
+]
+],
+"close": [
+"Psalm 95:6",
+"O come, let us worship and bow down: let us kneel before the LORD our maker."
+],
+"quiz": [
+[
+"John 4:24",
+"They that worship God must worship Him in spirit and in...",
+[
+"truth",
+"silence",
+"the temple",
+"Jerusalem"
+],
+0
+],
+[
+"Psalm 100:4",
+"Enter into his gates with...",
+[
+"singing",
+"thanksgiving",
+"offerings",
+"trumpets"
+],
+1
+],
+[
+"Psalm 34:1",
+"\"I will bless the LORD at...\"",
+[
+"the morning",
+"the feast",
+"all times",
+"the evening"
+],
+2
+],
+[
+"Acts 16:25",
+"At what hour did Paul and Silas pray and sing praises in prison?",
+[
+"the third hour",
+"dawn",
+"noon",
+"midnight"
+],
+3
+],
+[
+"Romans 12:1",
+"We are to present our bodies a living...",
+[
+"sacrifice",
+"testimony",
+"example",
+"garden"
+],
+0
+],
+[
+"2 Samuel 6:14",
+"David danced before the LORD with all his...",
+[
+"heart",
+"might",
+"soul",
+"house"
+],
+1
+],
+[
+"Hebrews 13:15",
+"The sacrifice of praise is the fruit of our...",
+[
+"hands",
+"labour",
+"lips",
+"hearts"
+],
+2
+],
+[
+"Psalm 150:6",
+"Let every thing that hath breath...",
+[
+"rejoice",
+"give thanks",
+"sing aloud",
+"praise the LORD"
+],
+3
+],
+[
+"2 Chronicles 20:22",
+"When Judah began to sing and to praise, what happened?",
+[
+"The LORD set ambushments against the enemy",
+"The walls of the city fell",
+"Fire fell from heaven",
+"The sea parted"
+],
+0
+],
+[
+"Psalm 22:3",
+"God is holy, O thou that inhabitest the...",
+[
+"tents of Jacob",
+"praises of Israel",
+"high mountains",
+"holy temple"
+],
+1
+]
+]
+},
+{
+"title": "Daniel: Faithful in Babylon",
+"intro": "See how Daniel stayed true to God in a foreign land, and learn how we can remain faithful in a culture that does not know the LORD.",
+"q": [
+[
+"Daniel 1:8",
+"\"Daniel purposed in his heart that he would not defile himself.\" Why is it important to decide ahead of time where we stand, before the pressure comes?"
+],
+[
+"Daniel 1:11–16",
+"Daniel respectfully asked for a ten-day test instead of simply refusing. What can we learn from his wise and gracious way of standing for his convictions?"
+],
+[
+"Daniel 1:17",
+"God gave these four young men knowledge and skill in all learning and wisdom. How can we use our education and our work to honor God in the places He puts us?"
+],
+[
+"Daniel 2:17–18",
+"Facing a death sentence, Daniel gathered his companions to seek mercies of the God of heaven. Why is it important to have faithful friends to pray with in a crisis?"
+],
+[
+"Daniel 2:27–28",
+"Daniel told the king, \"there is a God in heaven that revealeth secrets.\" How can we give God the credit when people praise us for our gifts?"
+],
+[
+"Daniel 3:17–18",
+"Shadrach, Meshach, and Abednego said God was able to deliver them, \"But if not,\" they still would not bow. What does \"but if not\" faith look like in our lives today?"
+],
+[
+"Daniel 3:25",
+"The king saw \"four men loose, walking in the midst of the fire.\" How has God been with you in your own fiery trials?"
+],
+[
+"Daniel 6:4–5",
+"Daniel's enemies could find no fault in him except concerning the law of his God. What would it take for our lives to have that kind of integrity at work and at home?"
+],
+[
+"Daniel 6:10",
+"Knowing the decree was signed, Daniel still prayed three times a day \"as he did aforetime.\" Why do steady, daily habits of prayer matter so much when trouble comes?"
+],
+[
+"Daniel 9:3–5",
+"Daniel confessed the sins of his people, praying, \"We have sinned.\" What can we learn from Daniel about praying humbly for our nation and community?"
+]
+],
+"close": [
+"Daniel 2:20",
+"Daniel answered and said, Blessed be the name of God for ever and ever: for wisdom and might are his:"
+],
+"quiz": [
+[
+"Daniel 1:7",
+"What name did the prince of the eunuchs give to Daniel?",
+[
+"Shadrach",
+"Belteshazzar",
+"Abednego",
+"Belshazzar"
+],
+1
+],
+[
+"Daniel 1:12",
+"Daniel asked that he and his friends be given what for ten days?",
+[
+"Bread and fish",
+"The king's meat",
+"Pulse to eat and water to drink",
+"Honey and milk"
+],
+2
+],
+[
+"Daniel 1:15",
+"At the end of ten days, how did Daniel and his friends look?",
+[
+"Fairer and fatter than the others",
+"Weak and pale",
+"The same as the others",
+"Too thin to serve"
+],
+0
+],
+[
+"Daniel 2:32",
+"In Nebuchadnezzar's dream, the head of the great image was made of...",
+[
+"silver",
+"brass",
+"iron",
+"fine gold"
+],
+3
+],
+[
+"Daniel 3:1",
+"Nebuchadnezzar set up his golden image in the plain of...",
+[
+"Dura",
+"Shinar",
+"Jordan",
+"Sharon"
+],
+0
+],
+[
+"Daniel 3:19",
+"The king ordered the furnace heated how many times more than usual?",
+[
+"Three",
+"Seven",
+"Ten",
+"Twelve"
+],
+1
+],
+[
+"Daniel 3:27",
+"When the three men came out of the furnace, what was true?",
+[
+"Their hair was singed",
+"Their coats were burned",
+"The smell of fire had not passed on them",
+"They were badly hurt"
+],
+2
+],
+[
+"Daniel 5:25",
+"What words were written on the wall at Belshazzar's feast?",
+[
+"Holy, holy, holy",
+"Mene, Mene, Tekel, Upharsin",
+"Peace be unto you",
+"Babylon is fallen"
+],
+1
+],
+[
+"Daniel 6:10",
+"How many times a day did Daniel kneel and pray?",
+[
+"Once",
+"Twice",
+"Seven times",
+"Three times"
+],
+3
+],
+[
+"Daniel 6:22",
+"Daniel said, \"My God hath sent his angel, and hath shut the...\"",
+[
+"gates of the city",
+"door of the den",
+"lions' mouths",
+"king's mouth"
+],
+2
+]
+]
+},
+{
+"title": "Good Stewardship",
+"intro": "Everything we have belongs to God; this study looks at faithfully managing our time, our bodies, our money, and our gifts.",
+"q": [
+[
+"Psalm 24:1",
+"\"The earth is the LORD'S, and the fulness thereof.\" How does remembering that everything belongs to God change the way we think about what we own?"
+],
+[
+"1 Corinthians 4:2",
+"\"It is required in stewards, that a man be found faithful.\" What does faithfulness look like in the small, everyday things God has given you?"
+],
+[
+"Ephesians 5:15–16",
+"Paul tells us to walk circumspectly, \"redeeming the time, because the days are evil.\" What steals your time, and how could you give more of it to God?"
+],
+[
+"Psalm 90:12",
+"\"So teach us to number our days, that we may apply our hearts unto wisdom.\" How might counting our days help us live more wisely?"
+],
+[
+"1 Corinthians 6:19–20",
+"Our body is the temple of the Holy Ghost, and we are \"bought with a price.\" What is one way you could better care for the body God gave you?"
+],
+[
+"Malachi 3:10",
+"God invited His people to bring all the tithes into the storehouse and prove Him. How have you seen God provide when you were faithful in your giving?"
+],
+[
+"2 Corinthians 9:7",
+"\"God loveth a cheerful giver.\" Why do you think God cares about our attitude in giving and not only the amount?"
+],
+[
+"1 Timothy 6:10",
+"\"For the love of money is the root of all evil.\" How can we use money without letting money take hold of our hearts?"
+],
+[
+"1 Peter 4:10",
+"We are to minister our gifts to one another \"as good stewards of the manifold grace of God.\" What gift has God given you, and how could you use it to serve others?"
+],
+[
+"Matthew 25:21",
+"\"Well done, thou good and faithful servant: thou hast been faithful over a few things.\" What few things is God asking you to be faithful with right now?"
+]
+],
+"close": [
+"Colossians 3:23",
+"And whatsoever ye do, do it heartily, as to the Lord, and not unto men."
+],
+"quiz": [
+[
+"Psalm 24:1",
+"The earth is the LORD'S, and the...",
+[
+"fulness thereof",
+"heavens above",
+"seas beneath",
+"kingdoms thereof"
+],
+0
+],
+[
+"1 Corinthians 4:2",
+"It is required in stewards, that a man be found...",
+[
+"wealthy",
+"faithful",
+"wise",
+"strong"
+],
+1
+],
+[
+"1 Corinthians 6:19",
+"Your body is the temple of the...",
+[
+"law",
+"prophets",
+"Holy Ghost",
+"priests"
+],
+2
+],
+[
+"Matthew 25:15",
+"In the parable of the talents, how many talents did the first servant receive?",
+[
+"one",
+"two",
+"three",
+"five"
+],
+3
+],
+[
+"Malachi 3:10",
+"God said, \"Bring ye all the tithes into the...\"",
+[
+"storehouse",
+"temple gate",
+"king's treasury",
+"high place"
+],
+0
+],
+[
+"2 Corinthians 9:7",
+"God loveth a...",
+[
+"generous giver",
+"cheerful giver",
+"rich giver",
+"secret giver"
+],
+1
+],
+[
+"Psalm 90:12",
+"Teach us to number our days, that we may apply our hearts unto...",
+[
+"riches",
+"service",
+"wisdom",
+"prayer"
+],
+2
+],
+[
+"Ephesians 5:16",
+"Redeeming the time, because...",
+[
+"time is short",
+"the Lord is near",
+"the night cometh",
+"the days are evil"
+],
+3
+],
+[
+"1 Timothy 6:10",
+"The love of money is the root of...",
+[
+"all evil",
+"all sorrow",
+"pride",
+"greed"
+],
+0
+],
+[
+"1 Peter 4:10",
+"We are to minister our gifts as good stewards of the manifold...",
+[
+"blessings of heaven",
+"grace of God",
+"riches of Christ",
+"mercies of the Lord"
+],
+1
+]
+]
+},
+{
+"title": "Joseph: From the Pit to the Palace",
+"intro": "Tracing Joseph's road from betrayal and prison to Pharaoh's palace, and how God was at work the whole way.",
+"q": [
+[
+"Genesis 37:3–4",
+"Jacob's favoritism stirred up hatred among his sons. How can families guard against jealousy and division at home?"
+],
+[
+"Genesis 37:5–8",
+"Joseph shared his dreams, and his brothers hated him even more. What can we learn about humility and wisdom in how we share what God shows us?"
+],
+[
+"Genesis 37:23–28",
+"Joseph was stripped, cast into a pit, and sold by his own brothers. How do we hold on to God when people close to us hurt us?"
+],
+[
+"Genesis 39:2–3",
+"Even as a servant in Egypt, \"the LORD was with Joseph.\" How can we recognize God's presence in places we never wanted to be?"
+],
+[
+"Genesis 39:9",
+"Joseph asked, \"How then can I do this great wickedness, and sin against God?\" What helps us say no to temptation when no one else is watching?"
+],
+[
+"Genesis 39:20–23",
+"Joseph did right and still ended up in prison. How do we keep serving faithfully when doing right doesn't seem to pay off?"
+],
+[
+"Genesis 40:23",
+"The chief butler forgot Joseph. How do we handle seasons when it feels like we have been forgotten?"
+],
+[
+"Genesis 41:16",
+"Joseph told Pharaoh, \"It is not in me.\" Why is it important to give God the credit for our gifts and successes?"
+],
+[
+"Genesis 45:4–5",
+"Joseph forgave his brothers and saw God's hand in his story. What makes this kind of forgiveness possible?"
+],
+[
+"Genesis 50:20",
+"\"Ye thought evil against me; but God meant it unto good.\" Where have you seen God bring good out of something painful?"
+]
+],
+"close": [
+"Genesis 50:20",
+"But as for you, ye thought evil against me; but God meant it unto good, to bring to pass, as it is this day, to save much people alive."
+],
+"quiz": [
+[
+"Genesis 37:2",
+"How old was Joseph when he was feeding the flock with his brethren?",
+[
+"twelve",
+"seventeen",
+"twenty",
+"thirty"
+],
+1
+],
+[
+"Genesis 37:3",
+"Israel made Joseph a coat of...",
+[
+"many colours",
+"fine linen",
+"camel's hair",
+"purple and gold"
+],
+0
+],
+[
+"Genesis 37:9",
+"In Joseph's second dream, the sun, the moon, and how many stars made obeisance to him?",
+[
+"seven",
+"ten",
+"eleven",
+"twelve"
+],
+2
+],
+[
+"Genesis 37:28",
+"For how many pieces of silver was Joseph sold?",
+[
+"ten",
+"thirty",
+"fifty",
+"twenty"
+],
+3
+],
+[
+"Genesis 37:36",
+"Potiphar, who bought Joseph in Egypt, was an officer of Pharaoh's and captain of...",
+[
+"the guard",
+"the army",
+"the chariots",
+"the king's house"
+],
+0
+],
+[
+"Genesis 39:2",
+"Why did Joseph prosper in his Egyptian master's house?",
+[
+"his father's wealth",
+"the LORD was with him",
+"Pharaoh's favor",
+"his brothers' help"
+],
+1
+],
+[
+"Genesis 40:1–3",
+"Which two officers of Pharaoh were put in the prison where Joseph was?",
+[
+"the captain and the scribe",
+"the priest and the magician",
+"the butler and the baker",
+"the steward and the cook"
+],
+2
+],
+[
+"Genesis 41:29–30",
+"Pharaoh's dreams meant seven years of plenty followed by seven years of...",
+[
+"war",
+"famine",
+"plague",
+"flood"
+],
+1
+],
+[
+"Genesis 41:46",
+"How old was Joseph when he stood before Pharaoh king of Egypt?",
+[
+"twenty",
+"twenty-five",
+"forty",
+"thirty"
+],
+3
+],
+[
+"Genesis 50:20",
+"Joseph told his brothers they thought evil against him, but God meant it unto...",
+[
+"judgment",
+"a lesson",
+"glory",
+"good"
+],
+3
+]
+]
+},
+{
+"title": "Ruth and Esther: Women of Courage",
+"intro": "Learn from two women whose loyalty and courage God used to preserve His people and carry out His plan.",
+"q": [
+[
+"Ruth 1:16",
+"\"Thy people shall be my people, and thy God my God.\" What does Ruth's loyalty to Naomi teach us about commitment?"
+],
+[
+"Ruth 1:20–21",
+"Naomi said, \"Call me Mara,\" because she felt the Almighty had dealt bitterly with her. How can we care for people who feel bitter after a loss?"
+],
+[
+"Ruth 2:3",
+"Ruth just happened to glean in the field of Boaz. How have you seen God at work in what looked like coincidence?"
+],
+[
+"Ruth 2:12",
+"Boaz spoke of the LORD God of Israel, \"under whose wings thou art come to trust.\" What does it mean to take refuge under God's wings?"
+],
+[
+"Ruth 4:13–17",
+"Ruth became the great-grandmother of King David. How does God use faithful, ordinary people in His bigger story?"
+],
+[
+"Esther 3:2",
+"Mordecai would not bow to Haman. Where do believers feel pressure to bow today, and how can we stand firm with grace?"
+],
+[
+"Esther 4:14",
+"\"Who knoweth whether thou art come to the kingdom for such a time as this?\" Where might God have placed you for such a time as this?"
+],
+[
+"Esther 4:15–16",
+"Before acting, Esther asked her people to fast with her. Why is it important not to face big challenges alone?"
+],
+[
+"Esther 4:16",
+"\"If I perish, I perish.\" What gives a believer the courage to do what is right when it is risky?"
+],
+[
+"Esther 9:22",
+"The month was \"turned unto them from sorrow to joy.\" How has God turned sorrow into joy in your life?"
+]
+],
+"close": [
+"Ruth 2:12",
+"The LORD recompense thy work, and a full reward be given thee of the LORD God of Israel, under whose wings thou art come to trust."
+],
+"quiz": [
+[
+"Ruth 1:4",
+"Ruth was one of the women of...",
+[
+"Moab",
+"Egypt",
+"Edom",
+"Philistia"
+],
+0
+],
+[
+"Ruth 1:14",
+"Which daughter in law kissed Naomi and went back to her people?",
+[
+"Ruth",
+"Orpah",
+"Rachel",
+"Leah"
+],
+1
+],
+[
+"Ruth 1:22",
+"To what town did Naomi and Ruth return?",
+[
+"Jericho",
+"Hebron",
+"Bethlehem",
+"Shiloh"
+],
+2
+],
+[
+"Ruth 2:3",
+"In whose field did Ruth glean?",
+[
+"Elimelech",
+"Mahlon",
+"Jesse",
+"Boaz"
+],
+3
+],
+[
+"Ruth 4:17",
+"What was the name of Ruth's son?",
+[
+"Obed",
+"Jesse",
+"Perez",
+"Salmon"
+],
+0
+],
+[
+"Esther 2:7",
+"Who brought up Esther as his own daughter?",
+[
+"Haman",
+"Mordecai",
+"Hegai",
+"the king"
+],
+1
+],
+[
+"Esther 2:7",
+"What was Esther's other name?",
+[
+"Vashti",
+"Zeresh",
+"Hadassah",
+"Naomi"
+],
+2
+],
+[
+"Esther 3:6",
+"Who sought to destroy all the Jews?",
+[
+"Mordecai",
+"Ahasuerus",
+"Bigthan",
+"Haman"
+],
+3
+],
+[
+"Esther 4:16",
+"How long did Esther ask the Jews in Shushan to fast?",
+[
+"three days",
+"seven days",
+"forty days",
+"one day"
+],
+0
+],
+[
+"Esther 7:10",
+"What happened to Haman?",
+[
+"He was sent into exile",
+"He was hanged on the gallows he prepared for Mordecai",
+"He became Mordecai's servant",
+"He fled to Persia"
+],
+1
+]
+]
+},
+{
+"title": "Fear Not",
+"intro": "God says \"Fear not\" again and again in His Word; this study explores why we can trust Him and live with courage instead of fear.",
+"q": [
+[
+"Isaiah 41:10",
+"\"Fear thou not; for I am with thee.\" Why is God's presence the answer to our fears, more than just a change in our circumstances?"
+],
+[
+"Joshua 1:9",
+"God told Joshua to be strong and of a good courage, \"for the LORD thy God is with thee whithersoever thou goest.\" What new or uncertain situation do you need this promise for right now?"
+],
+[
+"Psalm 56:3",
+"\"What time I am afraid, I will trust in thee.\" David admits that he gets afraid. What does it look like to choose trust in the middle of fear?"
+],
+[
+"Psalm 23:4",
+"David said he would fear no evil in the valley of the shadow of death, \"for thou art with me.\" How has God comforted you in a dark valley?"
+],
+[
+"2 Timothy 1:7",
+"\"God hath not given us the spirit of fear; but of power, and of love, and of a sound mind.\" Which of these three do you most need God to strengthen in you?"
+],
+[
+"Matthew 10:29–31",
+"Jesus pointed to the sparrows and said, \"Fear ye not therefore, ye are of more value than many sparrows.\" How does knowing your worth to God ease your worries?"
+],
+[
+"Mark 4:38–40",
+"During the storm, Jesus asked His disciples, \"Why are ye so fearful? how is it that ye have no faith?\" What storms make us forget Who is in the boat with us?"
+],
+[
+"Luke 12:32",
+"\"Fear not, little flock; for it is your Father's good pleasure to give you the kingdom.\" How does God's generous heart toward us push out fear about the future?"
+],
+[
+"Proverbs 29:25",
+"\"The fear of man bringeth a snare.\" In what ways can worrying about what people think keep us from obeying God?"
+],
+[
+"1 John 4:18",
+"\"There is no fear in love; but perfect love casteth out fear.\" How does growing in God's love help us overcome fear?"
+]
+],
+"close": [
+"Psalm 27:1",
+"The LORD is my light and my salvation; whom shall I fear? the LORD is the strength of my life; of whom shall I be afraid?"
+],
+"quiz": [
+[
+"Isaiah 41:10",
+"God said, \"Fear thou not; for I am...\"",
+[
+"with thee",
+"far from thee",
+"angry with thee",
+"testing thee"
+],
+0
+],
+[
+"2 Timothy 1:7",
+"God hath not given us the spirit of fear, but of power, and of love, and of...",
+[
+"great riches",
+"a sound mind",
+"much learning",
+"a quiet tongue"
+],
+1
+],
+[
+"Psalm 23:4",
+"In the valley of the shadow of death, David said he would fear no...",
+[
+"man",
+"storm",
+"evil",
+"enemy"
+],
+2
+],
+[
+"Psalm 56:3",
+"David said, \"What time I am afraid, I will...\"",
+[
+"run away",
+"hide myself",
+"call my friends",
+"trust in thee"
+],
+3
+],
+[
+"Joshua 1:9",
+"God told Joshua to be strong and of a good courage because...",
+[
+"Joshua's army was large",
+"the LORD was with him wherever he went",
+"the enemy was weak",
+"Moses would return"
+],
+1
+],
+[
+"Matthew 10:31",
+"Jesus said we are of more value than many...",
+[
+"sparrows",
+"lilies",
+"talents",
+"lambs"
+],
+0
+],
+[
+"Mark 4:39",
+"What did Jesus say to the sea during the storm?",
+[
+"Depart from us",
+"Be still and know",
+"Peace, be still",
+"Return to thy place"
+],
+2
+],
+[
+"Luke 2:10",
+"The angel told the shepherds, \"Fear not: for, behold, I bring you good tidings of...\"",
+[
+"peace on earth",
+"a new king",
+"great riches",
+"great joy"
+],
+3
+],
+[
+"Matthew 14:27",
+"Walking on the water toward His frightened disciples, Jesus said, \"Be of good cheer; it is I; be not...\"",
+[
+"afraid",
+"silent",
+"troubled",
+"doubting"
+],
+0
+],
+[
+"1 John 4:18",
+"Perfect love casteth out...",
+[
+"sin",
+"doubt",
+"fear",
+"pride"
+],
+2
+]
+]
+},
+{
+"title": "Gideon: God Uses the Weak",
+"intro": "Gideon's story shows how God takes ordinary, fearful people and uses them for His glory when they trust and obey Him.",
+"q": [
+[
+"Judges 6:11–12",
+"The angel found Gideon threshing wheat by the winepress to hide it from the Midianites, yet called him a \"mighty man of valour.\" How does God see us differently than we see ourselves?"
+],
+[
+"Judges 6:13",
+"Gideon asked why, if the LORD was with them, all this trouble had come upon Israel. What do you do with your honest questions when life is hard?"
+],
+[
+"Judges 6:15",
+"Gideon said his family was poor and that he was \"the least in my father's house.\" Have you ever felt too small or unqualified for what God asked of you?"
+],
+[
+"Judges 6:16",
+"God answered Gideon's weakness with a promise: \"Surely I will be with thee.\" Why is God's presence more important than our own ability?"
+],
+[
+"Judges 6:25–27",
+"Before going to battle, Gideon had to tear down his father's altar of Baal. What idols might God want us to remove at home before He uses us in bigger ways?"
+],
+[
+"Judges 6:36–40",
+"Gideon asked God for a sign with the fleece, and God patiently answered him twice. What does this show about God's patience with our doubts?"
+],
+[
+"Judges 7:2",
+"God said the army was too many, lest Israel say, \"Mine own hand hath saved me.\" Why does God sometimes reduce our resources before He gives the victory?"
+],
+[
+"Judges 7:9–11",
+"God let Gideon go down to the enemy camp to hear something that would strengthen his hands. How has God encouraged you right when you were afraid?"
+],
+[
+"Judges 7:20",
+"The men cried, \"The sword of the LORD, and of Gideon.\" Why is it important that the LORD's name came first in that battle cry?"
+],
+[
+"Judges 8:22–23",
+"When Israel wanted Gideon to rule over them, he answered, \"the LORD shall rule over you.\" How can we give God the glory when He gives us success?"
+]
+],
+"close": [
+"2 Corinthians 12:9",
+"And he said unto me, My grace is sufficient for thee: for my strength is made perfect in weakness. Most gladly therefore will I rather glory in my infirmities, that the power of Christ may rest upon me."
+],
+"quiz": [
+[
+"Judges 6:1",
+"Into whose hand did the LORD deliver Israel for seven years?",
+[
+"Midian",
+"the Philistines",
+"Egypt",
+"Moab"
+],
+0
+],
+[
+"Judges 6:11",
+"Where was Gideon threshing wheat when the angel came?",
+[
+"in the open field",
+"by the winepress",
+"at the city gate",
+"in the temple"
+],
+1
+],
+[
+"Judges 6:12",
+"The angel of the LORD called Gideon a...",
+[
+"faithful servant",
+"man of God",
+"mighty man of valour",
+"prophet of the LORD"
+],
+2
+],
+[
+"Judges 6:24",
+"Gideon built an altar unto the LORD and called it...",
+[
+"Jehovahjireh",
+"Jehovahnissi",
+"Ebenezer",
+"Jehovahshalom"
+],
+3
+],
+[
+"Judges 6:37",
+"What did Gideon put on the floor as a sign?",
+[
+"a fleece of wool",
+"a stone",
+"a cloak",
+"a sword"
+],
+0
+],
+[
+"Judges 7:7",
+"By how many men did God say He would save Israel?",
+[
+"three thousand",
+"three hundred",
+"ten thousand",
+"thirty-two"
+],
+1
+],
+[
+"Judges 7:3",
+"How many people returned home when the fearful were told to go back?",
+[
+"three hundred",
+"ten thousand",
+"twenty-two thousand",
+"thirty thousand"
+],
+2
+],
+[
+"Judges 7:16",
+"Gideon gave each man a trumpet and an empty pitcher with what inside?",
+[
+"water",
+"bread",
+"oil",
+"a lamp"
+],
+3
+],
+[
+"Judges 7:5–7",
+"The three hundred men were chosen by the way they...",
+[
+"drank water",
+"held a sword",
+"marched",
+"prayed"
+],
+0
+],
+[
+"Judges 6:11",
+"Gideon was the son of...",
+[
+"Jesse",
+"Joash the Abiezrite",
+"Manoah",
+"Nun"
+],
+1
+]
+]
+},
+{
+"title": "The LORD Is My Shepherd",
+"intro": "Resting in the care of the Good Shepherd through every season of life, as David describes in Psalm 23.",
+"q": [
+[
+"Psalm 23:1",
+"\"The LORD is my shepherd; I shall not want.\" What does it mean to you personally to call the LORD \"my\" shepherd?"
+],
+[
+"Psalm 23:2",
+"Sometimes the Shepherd \"maketh me to lie down.\" Why do we sometimes need God to slow us down, and how do we find rest in Him?"
+],
+[
+"Psalm 23:3",
+"\"He restoreth my soul.\" What drains your soul, and how has God restored you in the past?"
+],
+[
+"Psalm 23:3",
+"He leads us in the paths of righteousness \"for his name's sake.\" How does the way we walk reflect on God's name to others?"
+],
+[
+"Psalm 23:4",
+"David walks \"through\" the valley; he does not stay there. How does that word give hope to someone going through a dark time?"
+],
+[
+"Psalm 23:4",
+"A shepherd's rod and staff guide and protect the sheep. How has God's correction or guidance brought you comfort?"
+],
+[
+"Psalm 23:5",
+"God prepares a table \"in the presence of mine enemies.\" How can we find peace and provision even when opposition is all around?"
+],
+[
+"Psalm 23:5",
+"\"My cup runneth over.\" How has God blessed you beyond what you needed, and how can you share that overflow?"
+],
+[
+"Psalm 23:6",
+"Goodness and mercy \"shall follow me all the days of my life.\" How would living with that confidence change your outlook this week?"
+],
+[
+"John 10:11",
+"Jesus called Himself the good shepherd who gives His life for the sheep. How does knowing what He gave for you deepen your trust in Him?"
+]
+],
+"close": [
+"Psalm 23:1",
+"The LORD is my shepherd; I shall not want."
+],
+"quiz": [
+[
+"Psalm 23:1",
+"Because the LORD is my shepherd, I shall not...",
+[
+"fear",
+"want",
+"fall",
+"stray"
+],
+1
+],
+[
+"Psalm 23:2",
+"He maketh me to lie down in...",
+[
+"green pastures",
+"quiet valleys",
+"safe folds",
+"cool shade"
+],
+0
+],
+[
+"Psalm 23:2",
+"He leadeth me beside the...",
+[
+"rushing rivers",
+"deep wells",
+"still waters",
+"living fountains"
+],
+2
+],
+[
+"Psalm 23:3",
+"He leadeth me in the paths of righteousness for...",
+[
+"my own good",
+"his name's sake",
+"his people's sake",
+"his glory's sake"
+],
+1
+],
+[
+"Psalm 23:4",
+"Though I walk through the valley of the shadow of death, I will fear...",
+[
+"no man",
+"no storm",
+"no enemy",
+"no evil"
+],
+3
+],
+[
+"Psalm 23:4",
+"Which two things of the Shepherd comfort me?",
+[
+"thy rod and thy staff",
+"thy voice and thy hand",
+"thy fold and thy gate",
+"thy bread and thy cup"
+],
+0
+],
+[
+"Psalm 23:5",
+"Thou preparest a table before me in the presence of...",
+[
+"my friends",
+"the angels",
+"mine enemies",
+"the king"
+],
+2
+],
+[
+"Psalm 23:5",
+"Thou anointest my head with...",
+[
+"water",
+"wine",
+"dew",
+"oil"
+],
+3
+],
+[
+"Psalm 23:6",
+"What two things shall follow me all the days of my life?",
+[
+"peace and joy",
+"goodness and mercy",
+"grace and truth",
+"love and kindness"
+],
+1
+],
+[
+"Psalm 23:6",
+"How long will I dwell in the house of the LORD?",
+[
+"for ever",
+"for seven years",
+"for a thousand years",
+"until the evening"
+],
+0
+]
+]
+},
+{
+"title": "Fasting and Seeking God",
+"intro": "Explore what the Bible teaches about fasting and seeking the LORD with all our hearts.",
+"q": [
+[
+"Matthew 6:16–18",
+"Jesus said \"when ye fast,\" not if. Why does Jesus expect His followers to fast, and why should it be done in secret?"
+],
+[
+"Isaiah 58:6–7",
+"The fast God has chosen includes feeding the hungry and freeing the oppressed. How should fasting change the way we treat others?"
+],
+[
+"Isaiah 58:3–4",
+"God's people fasted while still pursuing strife and debate. How can fasting turn into empty religion, and how do we avoid that?"
+],
+[
+"Joel 2:12–13",
+"\"Rend your heart, and not your garments.\" What is the difference between an outward show and true repentance?"
+],
+[
+"Matthew 4:4",
+"\"Man shall not live by bread alone, but by every word that proceedeth out of the mouth of God.\" How does fasting remind us what truly sustains us?"
+],
+[
+"Ezra 8:21–23",
+"Ezra proclaimed a fast to seek of God \"a right way\" for the journey. What decisions or journeys in your life need God's direction?"
+],
+[
+"Acts 13:2–3",
+"As the church ministered to the Lord and fasted, the Holy Ghost spoke. How can fasting help us hear God more clearly?"
+],
+[
+"Jeremiah 29:13",
+"\"Ye shall seek me, and find me, when ye shall search for me with all your heart.\" What does seeking God with all your heart look like in practice?"
+],
+[
+"Daniel 9:3",
+"Daniel sought the Lord \"by prayer and supplications, with fasting.\" Why do prayer and fasting belong together?"
+],
+[
+"Daniel 10:2–3",
+"Daniel ate no pleasant bread, neither came flesh nor wine in his mouth, till three whole weeks were fulfilled. What does his example teach us about setting things aside to seek God?"
+]
+],
+"close": [
+"Matthew 6:33",
+"But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you."
+],
+"quiz": [
+[
+"Matthew 6:17–18",
+"When you fast, what did Jesus say to do?",
+[
+"Anoint your head and wash your face",
+"Wear sackcloth",
+"Tell the elders",
+"Stand in the synagogue"
+],
+0
+],
+[
+"Matthew 4:2",
+"How long did Jesus fast in the wilderness?",
+[
+"seven days",
+"forty days and forty nights",
+"three days",
+"twenty-one days"
+],
+1
+],
+[
+"Jonah 3:5",
+"Which city proclaimed a fast after Jonah preached?",
+[
+"Babylon",
+"Tyre",
+"Nineveh",
+"Damascus"
+],
+2
+],
+[
+"Daniel 10:2–3",
+"How long did Daniel mourn and eat no pleasant bread?",
+[
+"seven days",
+"forty days",
+"one month",
+"three full weeks"
+],
+3
+],
+[
+"Joel 2:13",
+"\"Rend your ___, and not your garments.\"",
+[
+"heart",
+"robes",
+"tents",
+"offerings"
+],
+0
+],
+[
+"Isaiah 58:7",
+"Part of the fast God has chosen is...",
+[
+"to build an altar",
+"to deal thy bread to the hungry",
+"to offer a lamb",
+"to shave the head"
+],
+1
+],
+[
+"Ezra 8:21",
+"At what river did Ezra proclaim a fast?",
+[
+"Jordan",
+"Euphrates",
+"Ahava",
+"Chebar"
+],
+2
+],
+[
+"Acts 13:2–3",
+"After fasting and prayer, which two men were sent out by the church?",
+[
+"Peter and John",
+"Paul and Silas",
+"Timothy and Titus",
+"Barnabas and Saul"
+],
+3
+],
+[
+"Jeremiah 29:13",
+"You will find God when you search for Him with all your...",
+[
+"heart",
+"strength",
+"house",
+"goods"
+],
+0
+],
+[
+"Matthew 6:16",
+"How did the hypocrites appear when they fasted?",
+[
+"joyful and singing",
+"of a sad countenance",
+"dressed in fine linen",
+"standing in the temple"
+],
+1
+]
+]
+},
+{
+"title": "The Resurrection of Jesus",
+"intro": "Explore the empty tomb, the eyewitnesses who saw the risen Lord, and the living hope His resurrection gives every believer.",
+"q": [
+[
+"Matthew 28:5–6",
+"The angel said, \"He is not here: for he is risen, as he said.\" Why does it matter that Jesus rose exactly as He said He would?"
+],
+[
+"Luke 24:5–6",
+"The angels asked the women, \"Why seek ye the living among the dead?\" In what ways do people still look for life in places where it cannot be found?"
+],
+[
+"John 11:25–26",
+"Jesus said, \"I am the resurrection, and the life.\" How does this promise change the way we face sickness, loss, and death?"
+],
+[
+"John 20:15–16",
+"Mary Magdalene did not recognize Jesus until He called her by name. What does this tell us about how personally the risen Lord knows each of us?"
+],
+[
+"Luke 24:32",
+"The two disciples on the road to Emmaus said, \"Did not our heart burn within us\" while He opened the scriptures to them. When has God's Word set your heart on fire?"
+],
+[
+"John 20:27–28",
+"Jesus invited doubting Thomas to see and touch His wounds, and Thomas answered, \"My Lord and my God.\" How does Jesus meet us in our honest doubts?"
+],
+[
+"1 Corinthians 15:3–8",
+"Paul lists many eyewitnesses who saw the risen Christ, including above five hundred brethren at once. Why is the testimony of eyewitnesses so important to our faith?"
+],
+[
+"1 Corinthians 15:14, 17",
+"Paul says that if Christ is not raised, our faith is vain. Why is the resurrection the foundation of the whole gospel?"
+],
+[
+"Romans 6:4",
+"As Christ was raised from the dead, so we also should \"walk in newness of life.\" What does newness of life look like in your daily walk?"
+],
+[
+"1 Peter 1:3",
+"God has begotten us again \"unto a lively hope by the resurrection of Jesus Christ from the dead.\" How can this living hope steady us when life is hard?"
+]
+],
+"close": [
+"1 Corinthians 15:57",
+"But thanks be to God, which giveth us the victory through our Lord Jesus Christ."
+],
+"quiz": [
+[
+"Matthew 28:2",
+"Who rolled back the stone from the door of the tomb?",
+[
+"The disciples",
+"The angel of the Lord",
+"Joseph of Arimathaea",
+"The Roman soldiers"
+],
+1
+],
+[
+"Matthew 28:4",
+"When the keepers saw the angel, they did shake, and became as...",
+[
+"dead men",
+"little children",
+"statues",
+"madmen"
+],
+0
+],
+[
+"Matthew 28:6",
+"The angel told the women, \"He is not here: for he is...\"",
+[
+"hidden away",
+"taken away",
+"risen, as he said",
+"in the temple"
+],
+2
+],
+[
+"John 20:1",
+"In John's account, who came to the sepulchre early, when it was yet dark, and saw the stone taken away?",
+[
+"Martha",
+"Lydia",
+"Mary the mother of Jesus",
+"Mary Magdalene"
+],
+3
+],
+[
+"John 20:7",
+"What did the disciples see in the tomb, wrapped together in a place by itself?",
+[
+"The stone",
+"The napkin that was about His head",
+"A Roman spear",
+"A jar of spices"
+],
+1
+],
+[
+"Luke 24:13",
+"The two disciples were walking to which village when Jesus drew near to them?",
+[
+"Bethany",
+"Nazareth",
+"Emmaus",
+"Capernaum"
+],
+2
+],
+[
+"Luke 24:30–31",
+"The Emmaus disciples' eyes were opened after Jesus...",
+[
+"took bread, blessed it, and brake it",
+"showed them His feet",
+"called them by name",
+"walked on the water"
+],
+0
+],
+[
+"John 20:25",
+"Thomas said he would not believe unless he saw in Jesus' hands...",
+[
+"an angel's mark",
+"a sign from heaven",
+"the print of the nails",
+"a crown of thorns"
+],
+2
+],
+[
+"1 Corinthians 15:6",
+"Paul wrote that the risen Christ was seen of above how many brethren at once?",
+[
+"Twelve",
+"Seventy",
+"Three thousand",
+"Five hundred"
+],
+3
+],
+[
+"Acts 1:3",
+"For how many days was the risen Jesus seen by the apostles?",
+[
+"Seven",
+"Forty",
+"Twelve",
+"Fifty"
+],
+1
+]
+]
+},
+{
+"title": "Be Ye Holy",
+"intro": "God calls His people to be holy because He is holy; this study looks at what holiness means and how to walk it out every day.",
+"q": [
+[
+"1 Peter 1:15–16",
+"\"Be ye holy; for I am holy.\" What does it mean to you that God's call to holiness is based on His own character?"
+],
+[
+"Leviticus 20:26",
+"God said He had set His people apart from other people, \"that ye should be mine.\" How does belonging to God set us apart from the world around us?"
+],
+[
+"Isaiah 6:3–5",
+"When Isaiah heard the seraphims cry \"Holy, holy, holy,\" he said, \"Woe is me!\" How does seeing God's holiness help us see our own need?"
+],
+[
+"Romans 12:1",
+"Paul urges us to present our bodies \"a living sacrifice, holy, acceptable unto God.\" What does it look like to offer your everyday life to God?"
+],
+[
+"Romans 12:2",
+"\"Be not conformed to this world: but be ye transformed by the renewing of your mind.\" Where do you feel the most pressure to conform, and how can God renew your thinking?"
+],
+[
+"Psalm 119:9, 11",
+"\"Thy word have I hid in mine heart, that I might not sin against thee.\" How can memorizing scripture help us live holy lives?"
+],
+[
+"Hebrews 12:14",
+"We are told to follow \"holiness, without which no man shall see the Lord.\" Why is holiness something we must pursue, not just something we talk about?"
+],
+[
+"2 Corinthians 7:1",
+"Paul says to cleanse ourselves \"from all filthiness of the flesh and spirit, perfecting holiness in the fear of God.\" What habits or influences might God want you to clean out?"
+],
+[
+"1 Thessalonians 4:3–4",
+"\"For this is the will of God, even your sanctification.\" How does holiness show up in how we treat our bodies and our relationships?"
+],
+[
+"1 John 1:9",
+"When we confess our sins, God is faithful to forgive us and \"to cleanse us from all unrighteousness.\" How does this promise keep us from giving up when we fall short?"
+]
+],
+"close": [
+"1 Peter 1:16",
+"Because it is written, Be ye holy; for I am holy."
+],
+"quiz": [
+[
+"1 Peter 1:16",
+"It is written, \"Be ye holy; for...\"",
+[
+"I am holy",
+"the day is near",
+"ye are mine",
+"the law is holy"
+],
+0
+],
+[
+"Isaiah 6:3",
+"The seraphims cried, \"Holy, holy, holy, is the...\"",
+[
+"Lamb that was slain",
+"LORD of hosts",
+"God of Israel",
+"King of glory"
+],
+1
+],
+[
+"Isaiah 6:6–7",
+"What did the seraphim lay upon Isaiah's mouth?",
+[
+"oil",
+"a scroll",
+"a live coal",
+"water"
+],
+2
+],
+[
+"Hebrews 12:14",
+"Follow holiness, without which no man shall...",
+[
+"enter the temple",
+"find rest",
+"be at peace",
+"see the Lord"
+],
+3
+],
+[
+"Romans 12:1",
+"Present your bodies a living...",
+[
+"sacrifice",
+"temple",
+"witness",
+"offering of praise"
+],
+0
+],
+[
+"Romans 12:2",
+"Be ye transformed by the renewing of your...",
+[
+"strength",
+"mind",
+"spirit",
+"heart"
+],
+1
+],
+[
+"Psalm 119:11",
+"Thy word have I hid in mine heart, that I might...",
+[
+"prosper",
+"be wise",
+"not sin against thee",
+"teach others"
+],
+2
+],
+[
+"Psalm 119:9",
+"A young man cleanses his way by taking heed thereto according to...",
+[
+"his father",
+"the elders",
+"his conscience",
+"thy word"
+],
+3
+],
+[
+"1 Thessalonians 4:3",
+"This is the will of God, even your...",
+[
+"sanctification",
+"prosperity",
+"happiness",
+"rest"
+],
+0
+],
+[
+"Leviticus 20:26",
+"God said, \"I the LORD am holy, and have severed you from other people, that ye should be...\"",
+[
+"great",
+"mine",
+"free",
+"many"
+],
+1
+]
+]
+},
+{
+"title": "Humility",
+"intro": "Learning to walk humbly with God and to value others the way Jesus did.",
+"q": [
+[
+"Micah 6:8",
+"God requires us \"to walk humbly with thy God.\" What does a humble walk with God look like from day to day?"
+],
+[
+"Proverbs 16:18",
+"\"Pride goeth before destruction.\" Where have you seen pride lead to a fall, and what warning signs can we watch for?"
+],
+[
+"James 4:6",
+"God resists the proud but gives grace to the humble. Why do you think pride shuts us off from God's grace?"
+],
+[
+"Philippians 2:3",
+"What would change in our homes and in our church if each of us esteemed others better than ourselves?"
+],
+[
+"Philippians 2:5–8",
+"Jesus humbled Himself and became obedient unto death. How does His example challenge the way we think about status and position?"
+],
+[
+"John 13:4–5",
+"Jesus washed His disciples' feet. What is a humble act of service you could do for someone this week?"
+],
+[
+"Luke 18:13–14",
+"The publican simply prayed, \"God be merciful to me a sinner.\" What can his prayer teach us about how to come to God?"
+],
+[
+"Luke 14:10–11",
+"Jesus told guests to take the lowest seat. Where are we tempted to seek the best seat or the most recognition?"
+],
+[
+"Matthew 18:3–4",
+"What qualities of a little child does Jesus want us to have?"
+],
+[
+"1 Peter 5:6",
+"God promises to exalt the humble \"in due time.\" How does trusting God's timing help us stop promoting ourselves?"
+]
+],
+"close": [
+"James 4:10",
+"Humble yourselves in the sight of the Lord, and he shall lift you up."
+],
+"quiz": [
+[
+"Micah 6:8",
+"The LORD requires us to do justly, to love mercy, and to...",
+[
+"walk humbly with thy God",
+"keep the law",
+"give to the poor",
+"sing his praises"
+],
+0
+],
+[
+"Proverbs 16:18",
+"Pride goeth before...",
+[
+"shame",
+"destruction",
+"poverty",
+"sorrow"
+],
+1
+],
+[
+"James 4:6",
+"God resisteth the proud, but giveth grace unto the...",
+[
+"faithful",
+"righteous",
+"humble",
+"wise"
+],
+2
+],
+[
+"James 4:10",
+"If we humble ourselves in the sight of the Lord, he shall...",
+[
+"test us",
+"reward us",
+"forgive us",
+"lift us up"
+],
+3
+],
+[
+"Philippians 2:3",
+"In lowliness of mind, we should esteem others...",
+[
+"better than ourselves",
+"as our equals",
+"as our servants",
+"as our teachers"
+],
+0
+],
+[
+"John 13:5",
+"What did Jesus do for His disciples with a basin of water?",
+[
+"baptized them",
+"washed their feet",
+"washed their hands",
+"healed them"
+],
+1
+],
+[
+"Luke 18:13",
+"The publican prayed, \"God be merciful to me...\"",
+[
+"thy servant",
+"a poor man",
+"and my house",
+"a sinner"
+],
+3
+],
+[
+"Luke 18:14",
+"Jesus said that he that humbleth himself shall be...",
+[
+"forgotten",
+"blessed",
+"exalted",
+"rewarded"
+],
+2
+],
+[
+"Numbers 12:3",
+"Who was very meek, above all the men upon the face of the earth?",
+[
+"Abraham",
+"Moses",
+"David",
+"Samuel"
+],
+1
+],
+[
+"Matthew 11:29",
+"Jesus said He is meek and lowly in...",
+[
+"spirit",
+"mind",
+"heart",
+"soul"
+],
+2
+]
+]
+},
+{
+"title": "The Fruit of the Spirit, One by One",
+"intro": "Take a closer look at each of the nine fruits of the Spirit in Galatians 5:22–23 and how they grow in a believer's life.",
+"q": [
+[
+"John 15:5",
+"\"I am the vine, ye are the branches.\" Why does spiritual fruit come from abiding in Christ rather than simply trying harder?"
+],
+[
+"1 John 4:19",
+"Love: \"We love him, because he first loved us.\" How does receiving God's love help us love people who are hard to love?"
+],
+[
+"Nehemiah 8:10",
+"Joy: \"The joy of the LORD is your strength.\" How is the joy God gives different from happiness that depends on circumstances?"
+],
+[
+"Philippians 4:6–7",
+"Peace: God's peace \"passeth all understanding.\" What worry can you hand over to God in prayer this week?"
+],
+[
+"Ephesians 4:2",
+"Longsuffering: we are to forbear one another in love. Who in your life needs your patience right now, and how can you show it?"
+],
+[
+"2 Timothy 2:24",
+"Gentleness: the servant of the Lord must not strive, \"but be gentle unto all men.\" Where would a gentler approach make a difference in your home or work?"
+],
+[
+"Galatians 6:10",
+"Goodness: \"Let us do good unto all men.\" What specific good can you do for someone this week?"
+],
+[
+"Luke 16:10",
+"Faith: \"He that is faithful in that which is least is faithful also in much.\" Where is God asking you to be faithful in small things?"
+],
+[
+"Matthew 11:29",
+"Meekness: Jesus said, \"I am meek and lowly in heart.\" How does Jesus show that meekness is strength under God's control, not weakness?"
+],
+[
+"1 Corinthians 9:25",
+"Temperance: \"Every man that striveth for the mastery is temperate in all things.\" Which area of your life most needs self-control, and what step can you take?"
+]
+],
+"close": [
+"Galatians 5:25",
+"If we live in the Spirit, let us also walk in the Spirit."
+],
+"quiz": [
+[
+"Galatians 5:22",
+"Which fruit of the Spirit is listed first?",
+[
+"love",
+"joy",
+"peace",
+"faith"
+],
+0
+],
+[
+"Galatians 5:23",
+"Which fruit of the Spirit is listed last?",
+[
+"meekness",
+"temperance",
+"faith",
+"goodness"
+],
+1
+],
+[
+"Galatians 5:23",
+"Against such there is no...",
+[
+"end",
+"measure",
+"law",
+"fear"
+],
+2
+],
+[
+"Nehemiah 8:10",
+"The joy of the LORD is your...",
+[
+"song",
+"portion",
+"reward",
+"strength"
+],
+3
+],
+[
+"Philippians 4:7",
+"The peace of God passeth all...",
+[
+"understanding",
+"riches",
+"trouble",
+"sorrow"
+],
+0
+],
+[
+"John 15:5",
+"Jesus said, I am the vine, ye are the...",
+[
+"fruit",
+"branches",
+"root",
+"leaves"
+],
+1
+],
+[
+"Matthew 11:29",
+"Jesus said, I am meek and lowly in...",
+[
+"spirit",
+"mind",
+"heart",
+"word"
+],
+2
+],
+[
+"Luke 16:10",
+"He that is faithful in that which is least is faithful also in...",
+[
+"heaven",
+"the kingdom",
+"the temple",
+"much"
+],
+3
+],
+[
+"1 Corinthians 9:25",
+"Every man that striveth for the mastery is ___ in all things.",
+[
+"temperate",
+"first",
+"rewarded",
+"wise"
+],
+0
+],
+[
+"Galatians 5:16",
+"Walk in the Spirit, and ye shall not fulfil the...",
+[
+"law of Moses",
+"lust of the flesh",
+"will of men",
+"days of thy youth"
+],
+1
+]
+]
+},
+{
+"title": "Paul: Saved by Grace, Sent with a Mission",
+"intro": "Trace Paul's journey from persecutor to apostle and discover how God's grace saves the unlikely and sends them out with a purpose.",
+"q": [
+[
+"Acts 9:1–2",
+"Saul was breathing out threatenings and slaughter against the disciples of the Lord. Why is it encouraging that God chose someone like Saul?"
+],
+[
+"Acts 9:4–5",
+"Jesus asked, \"Saul, Saul, why persecutest thou me?\" What does it tell us that Jesus takes the mistreatment of His people personally?"
+],
+[
+"Acts 9:6",
+"Trembling and astonished, Saul asked, \"Lord, what wilt thou have me to do?\" How would our lives change if we asked that question every day?"
+],
+[
+"Acts 9:13–17",
+"Ananias was afraid of Saul, but he obeyed and greeted him as \"Brother Saul.\" Who might God be asking you to welcome or reach out to, even if it feels uncomfortable?"
+],
+[
+"Acts 9:26–27",
+"The disciples were afraid of Saul, but Barnabas took him and brought him to the apostles. How can we be a Barnabas to new believers?"
+],
+[
+"Ephesians 2:8–9",
+"\"For by grace are ye saved through faith; and that not of yourselves: it is the gift of God.\" Why is it freeing to know salvation is a gift and not a wage?"
+],
+[
+"1 Timothy 1:15",
+"Paul called himself the chief of sinners whom Christ Jesus came into the world to save. How can remembering where God brought us from keep us humble and grateful?"
+],
+[
+"1 Corinthians 15:10",
+"\"By the grace of God I am what I am.\" Paul says grace moved him to labor more abundantly. How should grace move us to work for God rather than make us careless?"
+],
+[
+"2 Corinthians 12:9",
+"The Lord told Paul, \"My grace is sufficient for thee: for my strength is made perfect in weakness.\" Where do you need God's strength in your weakness right now?"
+],
+[
+"Philippians 3:13–14",
+"Paul spoke of \"forgetting those things which are behind\" and pressing toward the mark. What from your past do you need to leave behind to press forward in God's calling?"
+]
+],
+"close": [
+"2 Timothy 4:7",
+"I have fought a good fight, I have finished my course, I have kept the faith:"
+],
+"quiz": [
+[
+"Acts 7:58",
+"At Stephen's stoning, the witnesses laid down their clothes at the feet of a young man named...",
+[
+"Barnabas",
+"Saul",
+"Silas",
+"Timothy"
+],
+1
+],
+[
+"Acts 9:3",
+"Saul was near which city when a light from heaven shined round about him?",
+[
+"Jerusalem",
+"Antioch",
+"Damascus",
+"Tarsus"
+],
+2
+],
+[
+"Acts 9:9",
+"How many days was Saul without sight, neither eating nor drinking?",
+[
+"Three",
+"Seven",
+"Ten",
+"Forty"
+],
+0
+],
+[
+"Acts 9:11",
+"The Lord sent Ananias to the street called Straight, to the house of...",
+[
+"Cornelius",
+"Simon the tanner",
+"Lydia",
+"Judas"
+],
+3
+],
+[
+"Acts 9:15",
+"The Lord said Saul was a chosen vessel to bear His name before...",
+[
+"the Gentiles, and kings, and the children of Israel",
+"the priests only",
+"the Romans only",
+"his own family only"
+],
+0
+],
+[
+"Acts 9:18",
+"When Ananias put his hands on Saul, what fell from his eyes?",
+[
+"Tears",
+"Dust",
+"As it had been scales",
+"Drops of blood"
+],
+2
+],
+[
+"Acts 13:2",
+"The Holy Ghost said, \"Separate me ... for the work whereunto I have called them.\" Whom?",
+[
+"Peter and John",
+"Barnabas and Saul",
+"Paul and Silas",
+"James and John"
+],
+1
+],
+[
+"Acts 16:25",
+"At midnight in the prison at Philippi, Paul and Silas...",
+[
+"escaped through a window",
+"prayed, and sang praises unto God",
+"slept soundly",
+"argued with the jailer"
+],
+1
+],
+[
+"Ephesians 2:8",
+"For by grace are ye saved through...",
+[
+"works",
+"the law",
+"faith",
+"sacrifice"
+],
+2
+],
+[
+"2 Corinthians 12:9",
+"The Lord told Paul, \"my strength is made perfect in...\"",
+[
+"power",
+"wisdom",
+"obedience",
+"weakness"
+],
+3
+]
+]
+},
+{
+"title": "The Return of Christ",
+"intro": "What the scriptures plainly promise about Jesus coming again, and how that blessed hope should shape the way we live now.",
+"q": [
+[
+"John 14:2–3",
+"Jesus promised, \"I will come again, and receive you unto myself.\" How does this personal promise from Jesus comfort you?"
+],
+[
+"Acts 1:9–11",
+"The two men in white said Jesus would come \"in like manner as ye have seen him go into heaven.\" Why do you think God gave the disciples this reassurance right as Jesus left?"
+],
+[
+"Matthew 24:36",
+"\"But of that day and hour knoweth no man.\" Why is it wiser to be ready than to try to figure out dates?"
+],
+[
+"Matthew 24:42, 44",
+"Jesus said, \"Watch therefore\" and \"be ye also ready.\" What does being ready look like in daily life?"
+],
+[
+"1 Thessalonians 4:16–18",
+"Paul ends his words about the Lord's coming by saying, \"comfort one another with these words.\" How can the hope of Christ's return comfort someone who is grieving?"
+],
+[
+"Titus 2:12–13",
+"We are to live soberly, righteously, and godly while \"looking for that blessed hope.\" How does looking forward to Jesus' return help us live right today?"
+],
+[
+"1 John 3:2–3",
+"Every man that has this hope in Him \"purifieth himself, even as he is pure.\" How should the hope of seeing Jesus affect the choices we make?"
+],
+[
+"Matthew 25:1–13",
+"In the parable of the ten virgins, five were wise and five were foolish. What does it mean for us to keep our lamps ready while we wait for the Lord?"
+],
+[
+"2 Peter 3:9",
+"The Lord is \"longsuffering to us-ward, not willing that any should perish.\" Who in your life do you want to see come to repentance, and how can you pray for them?"
+],
+[
+"Revelation 22:20",
+"John answered Jesus' promise with, \"Even so, come, Lord Jesus.\" Can you pray that prayer with joy today? Why or why not?"
+]
+],
+"close": [
+"Revelation 22:20",
+"He which testifieth these things saith, Surely I come quickly. Amen. Even so, come, Lord Jesus."
+],
+"quiz": [
+[
+"John 14:2",
+"Jesus said, \"In my Father's house are many...\"",
+[
+"mansions",
+"rooms",
+"servants",
+"treasures"
+],
+0
+],
+[
+"Acts 1:10–11",
+"Who told the disciples that Jesus would come again in like manner?",
+[
+"Peter",
+"two men in white apparel",
+"Mary Magdalene",
+"a voice from heaven"
+],
+1
+],
+[
+"Acts 1:9",
+"As Jesus was taken up, what received Him out of their sight?",
+[
+"a whirlwind",
+"a chariot of fire",
+"a cloud",
+"a great light"
+],
+2
+],
+[
+"Matthew 24:36",
+"Who knows the day and hour of the Lord's coming?",
+[
+"the angels of heaven",
+"the prophets",
+"the apostles",
+"my Father only"
+],
+3
+],
+[
+"1 Thessalonians 4:16",
+"The Lord shall descend from heaven with a shout, with the voice of the archangel, and with the...",
+[
+"trump of God",
+"sound of many waters",
+"host of heaven",
+"clouds of glory"
+],
+0
+],
+[
+"1 Thessalonians 4:16",
+"Who shall rise first?",
+[
+"the living saints",
+"the dead in Christ",
+"the twelve apostles",
+"the prophets"
+],
+1
+],
+[
+"Titus 2:13",
+"Christ's glorious appearing is called \"that blessed...\"",
+[
+"day",
+"morning",
+"hope",
+"rest"
+],
+2
+],
+[
+"Matthew 25:2",
+"In the parable of the ten virgins, how many were wise?",
+[
+"two",
+"three",
+"seven",
+"five"
+],
+3
+],
+[
+"1 John 3:2",
+"When he shall appear, we shall be like him; for we shall...",
+[
+"see him as he is",
+"hear his voice",
+"sit with him",
+"know all things"
+],
+0
+],
+[
+"Revelation 22:20",
+"Jesus said, \"Surely I come...\"",
+[
+"soon",
+"quickly",
+"in glory",
+"at midnight"
+],
+1
+]
+]
+},
+{
+"title": "The Ten Commandments",
+"intro": "Studying the Ten Commandments God spoke at Sinai and how they show us how to love God and our neighbor.",
+"q": [
+[
+"Exodus 20:2",
+"God reminded Israel that He had brought them out of bondage before He gave the commandments. Why does it matter that the law begins with what God has already done for us?"
+],
+[
+"Exodus 20:3",
+"What are some \"other gods\" that can creep in and take first place in people's lives today?"
+],
+[
+"Exodus 20:4–6",
+"God shows mercy unto thousands of them that love Him and keep His commandments. How do our choices affect the generations after us?"
+],
+[
+"Exodus 20:7",
+"Taking God's name in vain is about more than our words. How can we honor His name in the way we live?"
+],
+[
+"Exodus 20:8–11",
+"God tells us to \"remember\" the sabbath day. What helps you prepare for the Sabbath and keep it holy each week?"
+],
+[
+"Exodus 20:12",
+"What does it look like to honor our father and mother at every stage of life, including when they grow older?"
+],
+[
+"Exodus 20:13–15",
+"Jesus taught that murder and adultery begin with anger and lust in the heart (Matthew 5:21–28). How does that deepen our understanding of these commandments?"
+],
+[
+"Exodus 20:16",
+"How can we guard our tongues so we never bear false witness, even through gossip or exaggeration?"
+],
+[
+"Exodus 20:17",
+"Coveting happens on the inside. How can contentment and gratitude protect us from wanting what belongs to others?"
+],
+[
+"Matthew 22:37–40",
+"Jesus summed up the law as love for God and love for neighbor. How do the Ten Commandments show us what that love looks like?"
+]
+],
+"close": [
+"Exodus 20:6",
+"And shewing mercy unto thousands of them that love me, and keep my commandments."
+],
+"quiz": [
+[
+"Exodus 19:20",
+"On which mountain did the LORD come down and call Moses up to the top?",
+[
+"Mount Carmel",
+"Mount Sinai",
+"Mount Zion",
+"the Mount of Olives"
+],
+1
+],
+[
+"Exodus 20:2",
+"God brought Israel out of the land of Egypt, out of the house of...",
+[
+"Pharaoh",
+"sorrow",
+"bondage",
+"darkness"
+],
+2
+],
+[
+"Exodus 20:3",
+"Thou shalt have no other gods...",
+[
+"before me",
+"in thy house",
+"among thy people",
+"in the land"
+],
+0
+],
+[
+"Exodus 20:8",
+"Remember the sabbath day, to...",
+[
+"rest from labour",
+"keep it holy",
+"offer sacrifices",
+"gather together"
+],
+1
+],
+[
+"Exodus 20:10",
+"Which day is the sabbath of the LORD thy God?",
+[
+"the first day",
+"the sixth day",
+"the seventh day",
+"every day"
+],
+2
+],
+[
+"Exodus 20:11",
+"In how many days did the LORD make heaven and earth?",
+[
+"six",
+"seven",
+"three",
+"forty"
+],
+0
+],
+[
+"Exodus 20:12",
+"Honour thy father and thy mother, that thy days may be...",
+[
+"blessed",
+"peaceful",
+"many",
+"long upon the land"
+],
+3
+],
+[
+"Exodus 20:16",
+"Thou shalt not bear false witness against...",
+[
+"thy brother",
+"the stranger",
+"the poor",
+"thy neighbour"
+],
+3
+],
+[
+"Exodus 31:18",
+"The two tables of testimony were written with...",
+[
+"the finger of God",
+"the hand of Moses",
+"a pen of iron",
+"fire from heaven"
+],
+0
+],
+[
+"Exodus 31:18",
+"What were the tables of testimony made of?",
+[
+"gold",
+"wood",
+"stone",
+"brass"
+],
+2
+]
+]
+},
+{
+"title": "Elijah: Fire and a Still Small Voice",
+"intro": "Walk with the prophet Elijah through drought, fire from heaven, and a still small voice, and see how God meets His servants in victory and in weariness.",
+"q": [
+[
+"1 Kings 17:1",
+"Elijah spoke boldly to King Ahab as one who stood before the LORD. What gives a believer courage to speak the truth?"
+],
+[
+"1 Kings 17:4–6",
+"God fed Elijah by ravens at the brook Cherith. How has God provided for you in unexpected ways?"
+],
+[
+"1 Kings 17:13–16",
+"The widow of Zarephath fed Elijah first, and her meal and oil did not run out. What does it look like to put God first when we have little?"
+],
+[
+"1 Kings 18:21",
+"\"How long halt ye between two opinions?\" What \"two opinions\" do people waver between today?"
+],
+[
+"1 Kings 18:36–38",
+"Elijah prayed a simple prayer that God would be known, and the fire fell. What does his prayer teach us about praying for God's glory?"
+],
+[
+"1 Kings 18:42–44",
+"Elijah sent his servant to look for rain seven times. How do we keep praying when we see no answer yet?"
+],
+[
+"1 Kings 19:3–4",
+"Right after a great victory, Elijah ran for his life and asked to die. Why can low times follow great victories, and how should we respond?"
+],
+[
+"1 Kings 19:5–7",
+"The angel told Elijah to arise and eat, \"because the journey is too great for thee.\" Why do you think God gave Elijah food and rest before sending him on?"
+],
+[
+"1 Kings 19:11–12",
+"The LORD was not in the wind, the earthquake, or the fire, but came in \"a still small voice.\" How can we quiet our lives enough to hear God?"
+],
+[
+"1 Kings 19:18",
+"Elijah thought he was alone, but God had seven thousand who had not bowed to Baal. When have you felt alone in your faith, and how does this encourage you?"
+]
+],
+"close": [
+"James 5:16",
+"Confess your faults one to another, and pray one for another, that ye may be healed. The effectual fervent prayer of a righteous man availeth much."
+],
+"quiz": [
+[
+"1 Kings 17:4",
+"What did God command to feed Elijah by the brook?",
+[
+"ravens",
+"doves",
+"eagles",
+"sparrows"
+],
+0
+],
+[
+"1 Kings 17:9",
+"In what city did the widow live who sustained Elijah?",
+[
+"Jericho",
+"Zarephath",
+"Bethel",
+"Samaria"
+],
+1
+],
+[
+"1 Kings 17:21–22",
+"What happened to the widow's son when Elijah cried unto the LORD?",
+[
+"He was healed of leprosy",
+"He became a prophet",
+"He revived",
+"He was taken to heaven"
+],
+2
+],
+[
+"1 Kings 18:19",
+"Where did Elijah gather the prophets of Baal?",
+[
+"mount Sinai",
+"mount Zion",
+"mount Nebo",
+"mount Carmel"
+],
+3
+],
+[
+"1 Kings 18:22",
+"How many prophets of Baal did Elijah face?",
+[
+"four hundred and fifty",
+"four hundred",
+"seven hundred",
+"one thousand"
+],
+0
+],
+[
+"1 Kings 18:38",
+"Besides the sacrifice, wood, stones, and dust, what did the fire of the LORD lick up?",
+[
+"the oil",
+"the water in the trench",
+"the blood",
+"the incense"
+],
+1
+],
+[
+"1 Kings 18:44",
+"The little cloud rising out of the sea was like a man's...",
+[
+"foot",
+"head",
+"hand",
+"eye"
+],
+2
+],
+[
+"1 Kings 19:2",
+"Who threatened Elijah's life after Mount Carmel?",
+[
+"Ahab",
+"Obadiah",
+"Naboth",
+"Jezebel"
+],
+3
+],
+[
+"1 Kings 19:12",
+"After the fire, the LORD spoke in...",
+[
+"a still small voice",
+"a trumpet blast",
+"a mighty wind",
+"thunder"
+],
+0
+],
+[
+"2 Kings 2:11",
+"How did Elijah leave the earth?",
+[
+"He died at mount Horeb",
+"He went up by a whirlwind into heaven",
+"He was buried by Elisha",
+"He returned to Tishbe"
+],
+1
+]
+]
+},
+{
+"title": "A Thankful Heart",
+"intro": "Learn why God calls us to give thanks in every situation, and how a grateful heart deepens our worship and our joy.",
+"q": [
+[
+"Psalm 100:4",
+"\"Enter into his gates with thanksgiving, and into his courts with praise.\" How does starting with thanksgiving change our prayer and worship?"
+],
+[
+"1 Thessalonians 5:18",
+"\"In every thing give thanks: for this is the will of God in Christ Jesus concerning you.\" How can we give thanks in a situation we would never have chosen?"
+],
+[
+"Luke 17:15–18",
+"Only one of the ten healed lepers turned back to give glory to God. Why do you think it is so easy to receive God's blessings and forget to thank Him?"
+],
+[
+"Psalm 103:1–2",
+"\"Bless the LORD, O my soul, and forget not all his benefits.\" What are some of God's benefits you may have been taking for granted?"
+],
+[
+"Philippians 4:6–7",
+"Paul tells us to make our requests known to God \"with thanksgiving.\" How does gratitude help guard our hearts and minds against worry?"
+],
+[
+"Jonah 2:1, 9",
+"From inside the fish, Jonah prayed, \"I will sacrifice unto thee with the voice of thanksgiving.\" What does it look like to thank God before the deliverance comes?"
+],
+[
+"Colossians 3:15–17",
+"Paul says, \"be ye thankful,\" and to do all in the name of the Lord Jesus, giving thanks. How can our everyday work and conversations become acts of thanksgiving?"
+],
+[
+"Numbers 11:4–6",
+"The Israelites complained about the manna and longed for the food of Egypt. How can complaining blind us to God's daily provision?"
+],
+[
+"Psalm 107:1",
+"\"O give thanks unto the LORD, for he is good: for his mercy endureth for ever.\" What story of God's goodness could you share with someone this week?"
+],
+[
+"2 Corinthians 9:15",
+"\"Thanks be unto God for his unspeakable gift.\" How does remembering the gift of Jesus put all our other blessings in perspective?"
+]
+],
+"close": [
+"Psalm 92:1",
+"It is a good thing to give thanks unto the LORD, and to sing praises unto thy name, O most High:"
+],
+"quiz": [
+[
+"Luke 17:12",
+"How many lepers met Jesus as He entered the village?",
+[
+"Three",
+"Seven",
+"Ten",
+"Twelve"
+],
+2
+],
+[
+"Luke 17:15–16",
+"How many of the healed lepers turned back to give thanks?",
+[
+"One",
+"Two",
+"Five",
+"Nine"
+],
+0
+],
+[
+"Luke 17:16",
+"The leper who returned to give thanks was a...",
+[
+"Roman",
+"Pharisee",
+"Levite",
+"Samaritan"
+],
+3
+],
+[
+"1 Thessalonians 5:18",
+"Paul wrote, \"In every thing give...\"",
+[
+"thanks",
+"alms",
+"account",
+"glory"
+],
+0
+],
+[
+"Psalm 100:4",
+"We are to enter into His gates with...",
+[
+"silence",
+"thanksgiving",
+"sacrifices",
+"trumpets"
+],
+1
+],
+[
+"Psalm 107:1",
+"O give thanks unto the LORD, for He is good: for His mercy...",
+[
+"is new every morning",
+"endureth for ever",
+"reacheth unto the heavens",
+"is great"
+],
+1
+],
+[
+"Jonah 2:1, 9",
+"Where was Jonah when he prayed, \"I will sacrifice unto thee with the voice of thanksgiving\"?",
+[
+"On the ship",
+"In the fish's belly",
+"In Nineveh",
+"Under a gourd"
+],
+1
+],
+[
+"Philippians 4:6",
+"We are to make our requests known to God by prayer and supplication with...",
+[
+"fasting",
+"tears",
+"thanksgiving",
+"offerings"
+],
+2
+],
+[
+"2 Corinthians 9:15",
+"Paul wrote, \"Thanks be unto God for his ... gift.\"",
+[
+"perfect",
+"free",
+"precious",
+"unspeakable"
+],
+3
+],
+[
+"Psalm 103:2",
+"\"Bless the LORD, O my soul, and forget not all his...\"",
+[
+"commandments",
+"promises",
+"benefits",
+"works"
+],
+2
+]
+]
+},
+{
+"title": "Hannah, Mary and Martha: Women Who Sought the Lord",
+"intro": "Hannah's prayer and Mary and Martha's friendship with Jesus show us how to bring our hearts to God and choose what matters most.",
+"q": [
+[
+"1 Samuel 1:6–7",
+"Year after year, Peninnah provoked Hannah until she wept and would not eat. How do you handle long seasons of disappointment or hurtful people?"
+],
+[
+"1 Samuel 1:10",
+"Hannah \"was in bitterness of soul, and prayed unto the LORD, and wept sore.\" Why is it okay to bring our honest emotions to God in prayer?"
+],
+[
+"1 Samuel 1:13–15",
+"Eli thought Hannah was drunk, but she said she had \"poured out my soul before the LORD.\" How should we respond when others misunderstand our walk with God?"
+],
+[
+"1 Samuel 1:18",
+"After she prayed, Hannah went her way and \"her countenance was no more sad,\" even before Samuel was born. What does this teach us about leaving our requests with God?"
+],
+[
+"1 Samuel 1:27–28",
+"Hannah gave Samuel back to the LORD as she had promised. What has God given you that you can dedicate back to Him?"
+],
+[
+"1 Samuel 2:1–2",
+"Hannah's prayer of praise says, \"There is none holy as the LORD.\" How can praise become part of our lives after God answers prayer?"
+],
+[
+"Luke 10:39–40",
+"Mary sat at Jesus' feet while Martha was \"cumbered about much serving.\" Which one are you more like, and why?"
+],
+[
+"Luke 10:41–42",
+"Jesus told Martha she was \"careful and troubled about many things,\" but \"one thing is needful.\" What distracts you from time at Jesus' feet?"
+],
+[
+"John 11:21–27",
+"While grieving her brother, Martha still said, \"I believe that thou art the Christ, the Son of God.\" How can we hold on to faith while we are hurting?"
+],
+[
+"John 12:3",
+"Mary anointed Jesus' feet with very costly ointment and wiped them with her hair. What does wholehearted love and worship toward Jesus look like for you?"
+]
+],
+"close": [
+"Luke 10:42",
+"But one thing is needful: and Mary hath chosen that good part, which shall not be taken away from her."
+],
+"quiz": [
+[
+"1 Samuel 1:1–2",
+"Hannah's husband was named...",
+[
+"Elkanah",
+"Eli",
+"Samuel",
+"Boaz"
+],
+0
+],
+[
+"1 Samuel 1:3",
+"Where did Elkanah's family go yearly to worship and sacrifice unto the LORD?",
+[
+"Bethel",
+"Shiloh",
+"Jerusalem",
+"Hebron"
+],
+1
+],
+[
+"1 Samuel 1:12–13",
+"Which priest watched Hannah pray and thought she was drunk?",
+[
+"Samuel",
+"Hophni",
+"Eli",
+"Phinehas"
+],
+2
+],
+[
+"1 Samuel 1:20",
+"Hannah named her son Samuel, saying, \"Because I have...\"",
+[
+"been blessed",
+"waited long",
+"found favour",
+"asked him of the LORD"
+],
+3
+],
+[
+"1 Samuel 1:15",
+"Hannah told Eli she had poured out her soul before...",
+[
+"the LORD",
+"the priests",
+"her husband",
+"the people"
+],
+0
+],
+[
+"Luke 10:39",
+"Where did Mary sit to hear Jesus' word?",
+[
+"at the door",
+"at Jesus' feet",
+"in the kitchen",
+"by the well"
+],
+1
+],
+[
+"Luke 10:40",
+"Martha was cumbered about much...",
+[
+"worry",
+"company",
+"serving",
+"cleaning"
+],
+2
+],
+[
+"John 11:1",
+"Mary and Martha lived in which town?",
+[
+"Nazareth",
+"Capernaum",
+"Bethlehem",
+"Bethany"
+],
+3
+],
+[
+"John 11:25",
+"Jesus told Martha, \"I am the resurrection, and the...\"",
+[
+"life",
+"way",
+"truth",
+"light"
+],
+0
+],
+[
+"John 11:1–2",
+"Who was the brother of Mary and Martha?",
+[
+"Simon",
+"Lazarus",
+"John",
+"Nicodemus"
+],
+1
+]
+]
+},
+{
+"title": "David: A Man After God's Own Heart",
+"intro": "Looking at the life of David, the shepherd king, and what made his heart so precious to God.",
+"q": [
+[
+"1 Samuel 16:7",
+"\"Man looketh on the outward appearance, but the LORD looketh on the heart.\" What does God see when He looks at our hearts?"
+],
+[
+"1 Samuel 16:11",
+"David was the youngest, out keeping the sheep, when God chose him. How does God use faithfulness in small, hidden places to prepare us?"
+],
+[
+"1 Samuel 17:34–37",
+"David remembered how God delivered him from the lion and the bear. How can remembering past victories build our faith for today's giants?"
+],
+[
+"1 Samuel 17:45",
+"David came against Goliath \"in the name of the LORD of hosts.\" What giants are you facing, and what would it mean to face them in God's name?"
+],
+[
+"1 Samuel 18:1–3",
+"David and Jonathan made a covenant of friendship. What makes a godly friendship, and how can we be that kind of friend?"
+],
+[
+"1 Samuel 24:6",
+"David refused to harm Saul, \"the LORD's anointed,\" even while Saul hunted him. How do we respond to those who mistreat us without taking revenge?"
+],
+[
+"1 Samuel 30:6",
+"When everything fell apart, \"David encouraged himself in the LORD his God.\" How do you encourage yourself in the Lord when no one else is there?"
+],
+[
+"2 Samuel 6:14",
+"David danced before the LORD with all his might. What keeps us from worshiping God wholeheartedly, and how can we let go of it?"
+],
+[
+"2 Samuel 12:7, 13",
+"When Nathan confronted him, David said, \"I have sinned against the LORD.\" Why is quick, honest repentance such an important part of a heart after God?"
+],
+[
+"Psalm 51:10",
+"\"Create in me a clean heart, O God.\" What would you ask God to renew in your heart this week?"
+]
+],
+"close": [
+"Psalm 51:10",
+"Create in me a clean heart, O God; and renew a right spirit within me."
+],
+"quiz": [
+[
+"1 Samuel 17:12",
+"David's father was...",
+[
+"Jesse",
+"Saul",
+"Samuel",
+"Boaz"
+],
+0
+],
+[
+"1 Samuel 16:11",
+"What was David doing when Samuel came to Jesse's house?",
+[
+"playing the harp",
+"keeping the sheep",
+"fighting the Philistines",
+"working in the field"
+],
+1
+],
+[
+"1 Samuel 16:13",
+"Samuel anointed David with a horn of...",
+[
+"water",
+"wine",
+"oil",
+"honey"
+],
+2
+],
+[
+"1 Samuel 17:4",
+"Goliath, the Philistine champion, was from which city?",
+[
+"Gaza",
+"Ashdod",
+"Ekron",
+"Gath"
+],
+3
+],
+[
+"1 Samuel 17:40",
+"How many smooth stones did David choose out of the brook?",
+[
+"three",
+"five",
+"seven",
+"twelve"
+],
+1
+],
+[
+"1 Samuel 17:36",
+"Which two animals had David slain while keeping his father's sheep?",
+[
+"a lion and a bear",
+"a wolf and a bear",
+"a lion and a wolf",
+"a leopard and a lion"
+],
+0
+],
+[
+"1 Samuel 18:1",
+"Whose soul was knit with the soul of David?",
+[
+"Saul",
+"Abner",
+"Jonathan",
+"Nathan"
+],
+2
+],
+[
+"2 Samuel 5:4",
+"How old was David when he began to reign?",
+[
+"twenty",
+"twenty-five",
+"forty",
+"thirty"
+],
+3
+],
+[
+"2 Samuel 5:4",
+"How many years did David reign in all?",
+[
+"twenty",
+"forty",
+"fifty",
+"sixty"
+],
+1
+],
+[
+"2 Samuel 12:7",
+"What did the prophet Nathan say to David?",
+[
+"Thou art the man",
+"Thy kingdom shall end",
+"Arise and go",
+"Fear not"
+],
+0
+]
+]
+},
+{
+"title": "Patience and Waiting on God",
+"intro": "Learn how to wait on the LORD with hope and endurance, trusting His timing when answers seem slow.",
+"q": [
+[
+"Isaiah 40:31",
+"\"They that wait upon the LORD shall renew their strength.\" How can waiting on God renew us instead of wearing us out?"
+],
+[
+"Psalm 27:14",
+"\"Wait on the LORD: be of good courage.\" Why does waiting take courage?"
+],
+[
+"Psalm 37:7",
+"\"Rest in the LORD, and wait patiently for him: fret not thyself.\" What tends to make you fret, and how can you rest in God instead?"
+],
+[
+"Genesis 21:1–2",
+"Sarah bore Isaac \"at the set time of which God had spoken.\" What promise or prayer are you still waiting on God to fulfill?"
+],
+[
+"Genesis 16:1–2",
+"Sarai tried to bring about God's promise through Hagar. What happens when we try to make things happen in our own strength?"
+],
+[
+"James 5:7",
+"The farmer waits patiently for the early and latter rain. What can the farmer's patience teach us about waiting on God?"
+],
+[
+"James 1:3–4",
+"\"Let patience have her perfect work.\" How has a trial in your life produced patience?"
+],
+[
+"Habakkuk 2:3",
+"\"Though it tarry, wait for it; because it will surely come.\" How do we hold on to what God has shown us when it seems slow in coming?"
+],
+[
+"Psalm 40:1",
+"\"I waited patiently for the LORD; and he inclined unto me, and heard my cry.\" Share a time God answered after a long wait."
+],
+[
+"2 Peter 3:9",
+"\"The Lord is not slack concerning his promise\" but is longsuffering toward us. How should God's patience with us shape our patience with others?"
+]
+],
+"close": [
+"Lamentations 3:25",
+"The LORD is good unto them that wait for him, to the soul that seeketh him."
+],
+"quiz": [
+[
+"Isaiah 40:31",
+"They that wait upon the LORD shall mount up with wings as...",
+[
+"eagles",
+"doves",
+"angels",
+"sparrows"
+],
+0
+],
+[
+"Psalm 40:1",
+"\"I waited patiently for the LORD; and he inclined unto me, and heard my...\"",
+[
+"song",
+"cry",
+"offering",
+"vow"
+],
+1
+],
+[
+"James 5:7",
+"The husbandman waits until he receives the early and...",
+[
+"harvest moon",
+"morning dew",
+"latter rain",
+"spring flood"
+],
+2
+],
+[
+"James 1:3",
+"The trying of your faith worketh...",
+[
+"sorrow",
+"pride",
+"fear",
+"patience"
+],
+3
+],
+[
+"Psalm 37:7",
+"\"Rest in the LORD, and wait patiently for him\" and...",
+[
+"fret not thyself",
+"go out to battle",
+"build thee an altar",
+"hasten thy steps"
+],
+0
+],
+[
+"Habakkuk 2:3",
+"Though the vision tarry, wait for it; because it will surely...",
+[
+"pass away",
+"come",
+"be hidden",
+"change"
+],
+1
+],
+[
+"Genesis 21:5",
+"How old was Abraham when Isaac was born?",
+[
+"seventy-five years",
+"ninety years",
+"an hundred years",
+"an hundred and twenty years"
+],
+2
+],
+[
+"Lamentations 3:26",
+"It is good that a man should both hope and quietly wait for...",
+[
+"riches",
+"his reward",
+"the morning",
+"the salvation of the LORD"
+],
+3
+],
+[
+"Romans 8:25",
+"If we hope for that we see not, then do we with ___ wait for it.",
+[
+"patience",
+"fear",
+"sorrow",
+"doubt"
+],
+0
+],
+[
+"Galatians 6:9",
+"In due season we shall reap, if we...",
+[
+"give much",
+"faint not",
+"pray daily",
+"sow early"
+],
+1
+]
+]
+},
+{
+"title": "Overcoming Temptation",
+"intro": "Learn how Jesus overcame temptation with the Word of God, and discover the way of escape God provides for us.",
+"q": [
+[
+"1 Corinthians 10:13",
+"God \"will with the temptation also make a way to escape.\" Can you think of a time God gave you a way out, and did you take it?"
+],
+[
+"Matthew 4:3–4",
+"Jesus answered each temptation with \"It is written.\" Why is knowing scripture so important when temptation comes?"
+],
+[
+"James 1:13–15",
+"James says every man is tempted when he is drawn away of his own lust, and enticed. Why is it important to own our desires rather than blame God or others?"
+],
+[
+"Genesis 3:1–6",
+"The serpent began by asking, \"Yea, hath God said...?\" How does temptation often start by getting us to doubt God's Word?"
+],
+[
+"Genesis 39:9–12",
+"Joseph asked, \"how then can I do this great wickedness, and sin against God?\" and then fled. When is running away the wisest and most faithful choice?"
+],
+[
+"2 Samuel 11:1–2",
+"David stayed home at the time when kings go forth to battle, and that is when he saw Bathsheba. How can being idle or in the wrong place open the door to temptation?"
+],
+[
+"Matthew 26:41",
+"Jesus said, \"Watch and pray, that ye enter not into temptation.\" What does watching and praying look like in practical, everyday terms?"
+],
+[
+"Hebrews 4:15–16",
+"Jesus \"was in all points tempted like as we are, yet without sin.\" How does it help to know our High Priest understands what we face?"
+],
+[
+"Psalm 119:11",
+"\"Thy word have I hid in mine heart, that I might not sin against thee.\" What scriptures could you memorize this week to help in your areas of weakness?"
+],
+[
+"James 4:7",
+"\"Submit yourselves therefore to God. Resist the devil, and he will flee from you.\" Why does submitting to God come before resisting the devil?"
+]
+],
+"close": [
+"James 1:12",
+"Blessed is the man that endureth temptation: for when he is tried, he shall receive the crown of life, which the Lord hath promised to them that love him."
+],
+"quiz": [
+[
+"Matthew 4:2",
+"How many days and nights did Jesus fast in the wilderness?",
+[
+"Seven",
+"Twelve",
+"Thirty",
+"Forty"
+],
+3
+],
+[
+"Matthew 4:3",
+"The tempter told Jesus to command that the stones be made...",
+[
+"bread",
+"gold",
+"water",
+"a throne"
+],
+0
+],
+[
+"Matthew 4:4",
+"Jesus answered, \"Man shall not live by bread alone, but by every word that proceedeth out of the mouth of...\"",
+[
+"God",
+"the prophets",
+"the priests",
+"Moses"
+],
+0
+],
+[
+"Matthew 4:5",
+"The devil took Jesus into the holy city and set Him on a pinnacle of the...",
+[
+"palace",
+"temple",
+"mountain",
+"city wall"
+],
+1
+],
+[
+"Matthew 4:10",
+"Jesus said, \"Thou shalt worship the Lord thy God, and him only shalt thou...\"",
+[
+"fear",
+"follow",
+"serve",
+"praise"
+],
+2
+],
+[
+"Genesis 39:12",
+"When Potiphar's wife caught Joseph by his garment, what did he do?",
+[
+"Argued with her",
+"Called for the guards",
+"Left his garment in her hand and fled",
+"Gave in to her"
+],
+2
+],
+[
+"1 Corinthians 10:13",
+"God will not suffer you to be tempted above that ye are...",
+[
+"willing",
+"able",
+"worthy",
+"ready"
+],
+1
+],
+[
+"James 4:7",
+"Resist the devil, and he will...",
+[
+"fight harder",
+"return soon",
+"laugh at you",
+"flee from you"
+],
+3
+],
+[
+"Psalm 119:11",
+"The psalmist hid God's word in his heart that he might not...",
+[
+"forget it",
+"sin against God",
+"be ashamed",
+"be afraid"
+],
+1
+],
+[
+"Matthew 26:41",
+"Jesus said, \"the spirit indeed is willing, but the flesh is...\"",
+[
+"strong",
+"wicked",
+"tired",
+"weak"
+],
+3
+]
+]
+},
+{
+"title": "Unity in the Body of Christ",
+"intro": "God made many members into one body; this study explores how believers can walk together in love, humility, and the bond of peace.",
+"q": [
+[
+"Psalm 133:1",
+"\"Behold, how good and how pleasant it is for brethren to dwell together in unity!\" Where have you seen the blessing of believers living in unity?"
+],
+[
+"John 17:20–21",
+"Jesus prayed \"that they all may be one\" so \"that the world may believe.\" Why does our unity matter to people who don't yet know Christ?"
+],
+[
+"Ephesians 4:1–2",
+"Paul tells us to walk \"with all lowliness and meekness, with longsuffering, forbearing one another in love.\" Which of these is hardest for you, and why?"
+],
+[
+"Ephesians 4:3",
+"We are to keep \"the unity of the Spirit in the bond of peace.\" What practical things can we do to keep peace in our church family?"
+],
+[
+"1 Corinthians 12:12, 14",
+"The body is one but has many members. Why do you think God made His people so different from one another?"
+],
+[
+"1 Corinthians 12:21–22",
+"\"The eye cannot say unto the hand, I have no need of thee.\" Have you ever felt like your part in the church did not matter, or that someone else's didn't?"
+],
+[
+"1 Corinthians 12:26",
+"When one member suffers, all the members suffer with it. How can an online church family carry one another's burdens even from a distance?"
+],
+[
+"Philippians 2:2–4",
+"Paul says, \"in lowliness of mind let each esteem other better than themselves.\" How does humility build unity, and how does pride tear it down?"
+],
+[
+"Galatians 3:28",
+"Paul wrote, \"ye are all one in Christ Jesus.\" How should this shape the way we treat believers of different backgrounds, races, or ages?"
+],
+[
+"Colossians 3:13–14",
+"Paul tells us to forgive one another and put on charity, \"which is the bond of perfectness.\" How does forgiving one another protect the unity of the church?"
+]
+],
+"close": [
+"Psalm 133:1",
+"Behold, how good and how pleasant it is for brethren to dwell together in unity!"
+],
+"quiz": [
+[
+"Psalm 133:1",
+"How good and how pleasant it is for brethren to dwell together in...",
+[
+"unity",
+"the land",
+"safety",
+"one house"
+],
+0
+],
+[
+"John 17:21",
+"Jesus prayed that they all may be one, that the world may...",
+[
+"fear God",
+"believe that thou hast sent me",
+"be at peace",
+"hear the gospel"
+],
+1
+],
+[
+"Ephesians 4:3",
+"Keep the unity of the Spirit in the bond of...",
+[
+"love",
+"faith",
+"peace",
+"truth"
+],
+2
+],
+[
+"Ephesians 4:5",
+"One Lord, one faith, one...",
+[
+"temple",
+"law",
+"nation",
+"baptism"
+],
+3
+],
+[
+"1 Corinthians 12:27",
+"Now ye are the body of Christ, and...",
+[
+"members in particular",
+"servants of God",
+"children of light",
+"a holy nation"
+],
+0
+],
+[
+"1 Corinthians 12:13",
+"By one Spirit are we all baptized into one...",
+[
+"church",
+"body",
+"family",
+"nation"
+],
+1
+],
+[
+"1 Corinthians 12:21",
+"The eye cannot say unto the hand, I have no...",
+[
+"love for thee",
+"part with thee",
+"need of thee",
+"place for thee"
+],
+2
+],
+[
+"Philippians 2:3",
+"In lowliness of mind let each esteem other better than...",
+[
+"their enemies",
+"the world",
+"their leaders",
+"themselves"
+],
+3
+],
+[
+"Galatians 3:28",
+"Ye are all one in...",
+[
+"Christ Jesus",
+"the law",
+"Moses",
+"the church"
+],
+0
+],
+[
+"Colossians 3:14",
+"Above all these things put on charity, which is the bond of...",
+[
+"peace",
+"perfectness",
+"fellowship",
+"unity"
+],
+1
+]
+]
+},
+{
+"title": "Hope in God",
+"intro": "Finding a sure and steady hope in God that holds us fast through every season of life.",
+"q": [
+[
+"Psalm 42:11",
+"The psalmist speaks to his own soul: \"hope thou in God.\" What do you tell yourself when you feel cast down?"
+],
+[
+"Lamentations 3:22–23",
+"God's compassions \"are new every morning.\" How can starting each day with that truth change how we face it?"
+],
+[
+"Lamentations 3:24",
+"\"The LORD is my portion.\" What does it mean to put our hope in God Himself, and not only in what He gives?"
+],
+[
+"Jeremiah 29:11",
+"God's thoughts toward His people are \"thoughts of peace, and not of evil.\" How does knowing God's heart toward you give you hope for the future?"
+],
+[
+"Isaiah 40:31",
+"What does it look like to \"wait upon the LORD,\" and how has God renewed your strength while you waited?"
+],
+[
+"Romans 5:3–5",
+"Paul says tribulation can lead to patience, experience, and hope. How have hard times grown hope in your life?"
+],
+[
+"Hebrews 6:19",
+"Hope is \"an anchor of the soul.\" What storms are pulling at you, and how does hope in God keep you steady?"
+],
+[
+"1 Peter 1:3",
+"Our \"lively hope\" rests on the resurrection of Jesus Christ. Why is the resurrection the foundation of a believer's hope?"
+],
+[
+"1 Thessalonians 4:13–14",
+"How does our hope in Christ change the way we grieve when we lose someone we love?"
+],
+[
+"Romans 15:13",
+"Paul prays that we would \"abound in hope.\" Who around you needs hope right now, and how can you share it with them?"
+]
+],
+"close": [
+"Romans 15:13",
+"Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost."
+],
+"quiz": [
+[
+"Psalm 42:11",
+"The psalmist asks, \"Why art thou cast down, O my soul?\" and then tells his soul to...",
+[
+"hope thou in God",
+"rest in the LORD",
+"fear not",
+"be still"
+],
+0
+],
+[
+"Lamentations 3:22–23",
+"The LORD's compassions are new every...",
+[
+"year",
+"season",
+"morning",
+"hour"
+],
+2
+],
+[
+"Lamentations 3:23",
+"Great is thy...",
+[
+"mercy",
+"love",
+"glory",
+"faithfulness"
+],
+3
+],
+[
+"Isaiah 40:31",
+"They that wait upon the LORD shall mount up with wings as...",
+[
+"doves",
+"eagles",
+"angels",
+"sparrows"
+],
+1
+],
+[
+"Isaiah 40:31",
+"They that wait upon the LORD shall run, and not be...",
+[
+"afraid",
+"alone",
+"moved",
+"weary"
+],
+3
+],
+[
+"Hebrews 6:19",
+"Our hope is described as an anchor of the...",
+[
+"church",
+"heart",
+"soul",
+"mind"
+],
+2
+],
+[
+"Romans 5:3",
+"Paul says that tribulation worketh...",
+[
+"patience",
+"pride",
+"sorrow",
+"fear"
+],
+0
+],
+[
+"1 Peter 1:3",
+"We are begotten again unto a lively hope by...",
+[
+"the law of Moses",
+"the resurrection of Jesus Christ from the dead",
+"our good works",
+"the words of the prophets"
+],
+1
+],
+[
+"Jeremiah 29:11",
+"The LORD's thoughts toward His people are thoughts of...",
+[
+"judgment",
+"testing",
+"peace",
+"sorrow"
+],
+2
+],
+[
+"1 Corinthians 13:13",
+"Which three things does Paul say abide?",
+[
+"faith, hope, charity",
+"joy, peace, love",
+"grace, truth, mercy",
+"hope, patience, peace"
+],
+0
+]
+]
+},
+{
+"title": "The Power of Our Words",
+"intro": "See what Scripture teaches about the tongue, and how our words can bring life or death, healing or harm.",
+"q": [
+[
+"Proverbs 18:21",
+"\"Death and life are in the power of the tongue.\" When have someone's words brought life to you, or harm?"
+],
+[
+"James 3:5",
+"\"Behold, how great a matter a little fire kindleth!\" How can a few careless words cause great damage?"
+],
+[
+"James 3:9–10",
+"Out of the same mouth come blessing and cursing. Where do we see this inconsistency in our own lives?"
+],
+[
+"Proverbs 15:1",
+"\"A soft answer turneth away wrath.\" Think of a recent conflict. How might a soft answer have changed it?"
+],
+[
+"Ephesians 4:29",
+"Our words should be good for edifying and \"minister grace unto the hearers.\" How can we use our words to build up our family?"
+],
+[
+"Matthew 12:34",
+"\"Out of the abundance of the heart the mouth speaketh.\" What do our words reveal about what is in our hearts?"
+],
+[
+"James 1:19",
+"Be \"swift to hear, slow to speak, slow to wrath.\" Which of these three is hardest for you, and why?"
+],
+[
+"Proverbs 25:11",
+"\"A word fitly spoken is like apples of gold in pictures of silver.\" Who needs an encouraging word from you this week?"
+],
+[
+"Matthew 12:36",
+"We will give account for every idle word. How should this shape what we say online, in texts, and on social media?"
+],
+[
+"Psalm 141:3",
+"\"Set a watch, O LORD, before my mouth; keep the door of my lips.\" What practical guards can we set over our speech?"
+]
+],
+"close": [
+"Psalm 19:14",
+"Let the words of my mouth, and the meditation of my heart, be acceptable in thy sight, O LORD, my strength, and my redeemer."
+],
+"quiz": [
+[
+"Proverbs 18:21",
+"Death and life are in the power of the...",
+[
+"tongue",
+"hand",
+"king",
+"sword"
+],
+0
+],
+[
+"James 3:6",
+"James says the tongue is a...",
+[
+"sword",
+"fire",
+"well",
+"door"
+],
+1
+],
+[
+"James 1:19",
+"Be swift to hear, slow to speak, slow to...",
+[
+"judge",
+"answer",
+"wrath",
+"believe"
+],
+2
+],
+[
+"Proverbs 15:1",
+"A soft answer turneth away...",
+[
+"sorrow",
+"enemies",
+"foolishness",
+"wrath"
+],
+3
+],
+[
+"Proverbs 25:11",
+"A word fitly spoken is like apples of gold in pictures of...",
+[
+"silver",
+"brass",
+"wood",
+"glass"
+],
+0
+],
+[
+"Matthew 12:34",
+"Out of the abundance of the heart the...",
+[
+"mind thinketh",
+"mouth speaketh",
+"hand worketh",
+"eye seeth"
+],
+1
+],
+[
+"James 3:8",
+"The tongue can no man...",
+[
+"measure",
+"silence",
+"tame",
+"hide"
+],
+2
+],
+[
+"Matthew 12:36",
+"Men shall give account of every idle word in the day of...",
+[
+"the feast",
+"the harvest",
+"trouble",
+"judgment"
+],
+3
+],
+[
+"Ephesians 4:29",
+"Let no ___ communication proceed out of your mouth.",
+[
+"corrupt",
+"loud",
+"long",
+"secret"
+],
+0
+],
+[
+"James 3:4",
+"Great ships are turned about with a very small...",
+[
+"sail",
+"helm",
+"anchor",
+"rope"
+],
+1
+]
+]
+},
+{
+"title": "Contentment",
+"intro": "Discover the secret Paul learned of being content in every situation, and how trusting God frees us from greed, comparison, and worry.",
+"q": [
+[
+"Philippians 4:11–12",
+"Paul said, \"I have learned, in whatsoever state I am, therewith to be content.\" Why do you think contentment is something we have to learn?"
+],
+[
+"Philippians 4:13",
+"\"I can do all things through Christ which strengtheneth me.\" How does reading this verse in its setting of contentment give it deeper meaning?"
+],
+[
+"1 Timothy 6:6–8",
+"\"Godliness with contentment is great gain.\" Paul says having food and raiment we should be content. Why is that enough when we have God?"
+],
+[
+"1 Timothy 6:9–10",
+"Paul warns that \"the love of money is the root of all evil.\" How can the desire to be rich quietly pull a believer away from the faith?"
+],
+[
+"Hebrews 13:5",
+"We are told to be content with such things as we have, because God said, \"I will never leave thee, nor forsake thee.\" How does God's presence make contentment possible?"
+],
+[
+"Luke 12:15",
+"Jesus said, \"a man's life consisteth not in the abundance of the things which he possesseth.\" How does our culture measure a person's life differently?"
+],
+[
+"Luke 12:16–21",
+"The rich fool built bigger barns but was not \"rich toward God.\" What does being rich toward God look like for us?"
+],
+[
+"Exodus 20:17",
+"God commanded, \"Thou shalt not covet.\" How does comparing ourselves with others, including on social media, feed covetousness?"
+],
+[
+"Matthew 6:31–33",
+"Jesus tells us not to worry about what we will eat or wear, but to seek first the kingdom of God. What does seeking His kingdom first look like in how we spend our time and money?"
+],
+[
+"Psalm 23:1",
+"\"The LORD is my shepherd; I shall not want.\" How would trusting the Lord as your Shepherd change the things you worry about lacking?"
+]
+],
+"close": [
+"1 Timothy 6:6",
+"But godliness with contentment is great gain."
+],
+"quiz": [
+[
+"Philippians 4:11",
+"Paul said he had learned, in whatsoever state he was, therewith to be...",
+[
+"rich",
+"content",
+"silent",
+"busy"
+],
+1
+],
+[
+"Philippians 4:12",
+"Paul said he knew both how to be abased and how to...",
+[
+"abound",
+"rule",
+"rest",
+"fight"
+],
+0
+],
+[
+"1 Timothy 6:6",
+"Godliness with contentment is...",
+[
+"hard to find",
+"great gain",
+"a small thing",
+"for the rich"
+],
+1
+],
+[
+"1 Timothy 6:7",
+"We brought nothing into this world, and it is certain we can carry...",
+[
+"our good works out",
+"our riches with us",
+"nothing out",
+"our names with us"
+],
+2
+],
+[
+"1 Timothy 6:8",
+"Having what two things, Paul says, let us be therewith content?",
+[
+"Gold and silver",
+"Houses and lands",
+"Friends and family",
+"Food and raiment"
+],
+3
+],
+[
+"1 Timothy 6:10",
+"The love of money is the root of...",
+[
+"all evil",
+"all wisdom",
+"some success",
+"hard work"
+],
+0
+],
+[
+"Hebrews 13:5",
+"Be content with such things as ye have: for He hath said, \"I will never leave thee, nor...\"",
+[
+"forget thee",
+"forsake thee",
+"fail thee",
+"test thee"
+],
+1
+],
+[
+"Luke 12:18",
+"What did the rich fool plan to do with all his fruits and goods?",
+[
+"Give them to the poor",
+"Sell them in Jerusalem",
+"Pull down his barns and build greater",
+"Offer them at the temple"
+],
+2
+],
+[
+"Luke 12:20",
+"God said to the rich man, \"Thou fool, ... thy soul shall be required of thee.\" When?",
+[
+"in a year",
+"at harvest",
+"in old age",
+"this night"
+],
+3
+],
+[
+"Psalm 23:1",
+"\"The LORD is my shepherd; I shall not...\"",
+[
+"want",
+"fear",
+"fall",
+"wander"
+],
+0
+]
+]
+},
+{
+"title": "Finishing Strong: Faithful to the End",
+"intro": "God calls us not only to start well but to finish well; this study looks at enduring in faith until the end of the race.",
+"q": [
+[
+"2 Timothy 4:7",
+"Near the end of his life Paul said, \"I have fought a good fight, I have finished my course, I have kept the faith.\" What would you want to be able to say at the end of your life?"
+],
+[
+"Hebrews 12:1",
+"We are to \"lay aside every weight, and the sin which doth so easily beset us.\" What weights slow you down in your race with God?"
+],
+[
+"Hebrews 12:2",
+"We run \"looking unto Jesus the author and finisher of our faith.\" How does keeping our eyes on Jesus help us keep going?"
+],
+[
+"Galatians 6:9",
+"\"Let us not be weary in well doing: for in due season we shall reap, if we faint not.\" Where are you tempted to grow weary, and what keeps you going?"
+],
+[
+"Philippians 3:13–14",
+"Paul was \"forgetting those things which are behind\" and pressing toward the mark. What from your past do you need to leave behind to keep moving forward?"
+],
+[
+"Matthew 24:13",
+"\"But he that shall endure unto the end, the same shall be saved.\" What does enduring look like in ordinary, everyday faithfulness?"
+],
+[
+"1 Kings 11:4",
+"When Solomon was old, his wives turned away his heart after other gods. What can we learn from people in scripture who started well but did not finish well?"
+],
+[
+"Joshua 14:10–12",
+"At eighty-five years old, Caleb said, \"Now therefore give me this mountain.\" How can we keep a strong faith and a fresh vision as we get older?"
+],
+[
+"Philippians 1:6",
+"Paul was confident that He which began a good work in you \"will perform it until the day of Jesus Christ.\" How does knowing God is finishing His work in you give you hope?"
+],
+[
+"Revelation 2:10",
+"\"Be thou faithful unto death, and I will give thee a crown of life.\" What helps you stay faithful when following Jesus costs you something?"
+]
+],
+"close": [
+"Galatians 6:9",
+"And let us not be weary in well doing: for in due season we shall reap, if we faint not."
+],
+"quiz": [
+[
+"2 Timothy 4:7",
+"Paul said, \"I have fought a good fight, I have finished my course, I have kept the...\"",
+[
+"faith",
+"law",
+"peace",
+"church"
+],
+0
+],
+[
+"2 Timothy 4:8",
+"Paul said there was laid up for him a crown of...",
+[
+"life",
+"righteousness",
+"glory",
+"gold"
+],
+1
+],
+[
+"Hebrews 12:1",
+"Let us run with ____ the race that is set before us.",
+[
+"speed",
+"strength",
+"patience",
+"boldness"
+],
+2
+],
+[
+"Hebrews 12:2",
+"Jesus is the author and ____ of our faith.",
+[
+"keeper",
+"teacher",
+"giver",
+"finisher"
+],
+3
+],
+[
+"Galatians 6:9",
+"In due season we shall reap, if we...",
+[
+"faint not",
+"pray always",
+"give much",
+"sow seed"
+],
+0
+],
+[
+"Philippians 3:14",
+"I press toward the mark for the prize of the high calling of God in...",
+[
+"heaven",
+"Christ Jesus",
+"the church",
+"the kingdom"
+],
+1
+],
+[
+"Joshua 14:10",
+"How old was Caleb when he asked Joshua for his mountain?",
+[
+"forty",
+"seventy",
+"eighty-five",
+"one hundred"
+],
+2
+],
+[
+"Revelation 2:10",
+"Be thou faithful unto death, and I will give thee a crown of...",
+[
+"glory",
+"gold",
+"righteousness",
+"life"
+],
+3
+],
+[
+"Matthew 24:13",
+"He that shall endure unto the end, the same shall be...",
+[
+"saved",
+"blessed",
+"rewarded",
+"exalted"
+],
+0
+],
+[
+"1 Corinthians 9:24",
+"In a race all run, but how many receive the prize?",
+[
+"all",
+"one",
+"twelve",
+"the first three"
+],
+1
+]
+]
+}
+];
+MORE_STUDIES.forEach(function(s){ STUDIES.push({title:s.title,intro:s.intro,q:s.q,close:s.close}); QUIZ.push(s.quiz); });
 
 (function(){
   // Today's date in Central Time (so the study changes at midnight Wednesday in Texas)
