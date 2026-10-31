@@ -821,7 +821,7 @@ window.addEventListener('hashchange',route);route();
 /* Contact form. To receive messages without showing an email address on the site,
    create a free form at formspree.io and paste its endpoint below, e.g. 'https://formspree.io/f/abcdwxyz'.
    Until then, Send opens the visitor's email app with the message filled in. */
-var FORM_ENDPOINT='';
+var FORM_ENDPOINT='https://formspree.io/f/xzeeaobk';
 (function(){
   var f=document.getElementById('contactForm');if(!f)return;
   var err=document.getElementById('formErr'),ok=document.getElementById('formOk');
@@ -830,7 +830,7 @@ var FORM_ENDPOINT='';
     if(f.website.value)return;
     var name=f.name.value.trim(),email=f.email.value.trim(),msg=f.message.value.trim();
     if(!name||!msg||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){err.textContent='Please fill in your name, a valid email, and your message.';err.hidden=false;return}
-    var data={name:name,email:email,phone:f.phone.value.trim(),topic:f.topic.value,private:f.private.checked?'Yes':'No',message:msg};
+    var data={name:name,email:email,phone:f.phone.value.trim(),topic:f.topic.value,private:f.private.checked?'Yes':'No',message:msg,_subject:'Walk4God website: '+f.topic.value+' from '+name,_replyto:email};
     var done=function(){f.hidden=true;ok.hidden=false;f.reset()};
     if(FORM_ENDPOINT){
       var btn=f.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Sending…';
